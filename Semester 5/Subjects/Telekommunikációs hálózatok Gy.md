@@ -6,6 +6,7 @@ credits: 3
 exam: false
 midterm: true
 assignments: true
+teachers:
 ---
 # Telekommunikációs hálózatok Gy
 ## Dates

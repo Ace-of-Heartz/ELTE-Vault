@@ -6,6 +6,7 @@ credits:
 exam: true
 midterm: false
 assignments: false
+teachers: "[[Dr. Gregorics Tibor]]"
 ---
 # Mesterséges intelligencia Ea
 ## Dates

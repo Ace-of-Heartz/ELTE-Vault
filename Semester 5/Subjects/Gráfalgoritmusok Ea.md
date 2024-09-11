@@ -6,6 +6,7 @@ credits:
 exam: true
 midterm: false
 assignments: false
+teachers: "[[Gyarmati Máté]]"
 ---
 # Diszkrét matematikai modellek és alkalmazásaik Ea
 ## Profs & Teachers

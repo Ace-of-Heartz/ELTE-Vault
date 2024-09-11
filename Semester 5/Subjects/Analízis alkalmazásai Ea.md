@@ -6,7 +6,7 @@ credits: 2
 exam: true
 midterm: false
 assignments: false
-teachers:  
+teachers: "[[Dr. Simon Péter Lajos]]"
 ---
 # Analízis alkalmazásai Ea
 ## Related subjects

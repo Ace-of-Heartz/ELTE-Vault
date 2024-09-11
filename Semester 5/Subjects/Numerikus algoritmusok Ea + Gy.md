@@ -6,6 +6,7 @@ credits:
 exam: false
 midterm: true
 assignments: true
+teachers: "[[Dr. Gergó Lajos]]"
 ---
 # Numerikus algoritmusok Ea + Gy
 ## Dates

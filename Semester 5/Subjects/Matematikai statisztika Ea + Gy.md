@@ -6,6 +6,7 @@ credits: 4
 exam: false
 midterm: true
 assignments: false
+teachers: "[[Dr. Arató Miklós]]"
 ---
 # Matematikai statisztika Ea + Gy 
 ## Dates:

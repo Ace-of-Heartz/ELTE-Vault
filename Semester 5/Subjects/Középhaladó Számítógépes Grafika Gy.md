@@ -6,5 +6,5 @@ credits: 2
 exam: false
 midterm: true
 assignments: true
-teachers: Bán Róbert
+teachers: "[[Bán Róbert]]"
 ---

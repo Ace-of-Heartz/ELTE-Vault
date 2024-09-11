@@ -6,6 +6,7 @@ credits:
 exam: false
 midterm: true
 assignments: true
+teachers: "[[Dr. Kozsik Tamás]]"
 ---
 # Konkurrens programozás Ea + Gy 
 ## Dates

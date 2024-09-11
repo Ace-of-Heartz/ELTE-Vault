@@ -1,4 +1,3 @@
 # Overview
-[[Subjects Overview]]
-
-[[To-Do List]]
+- [[Subjects Overview]]
+- [[To-Do List]]

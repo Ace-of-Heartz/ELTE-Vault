@@ -5,9 +5,11 @@ type: Ea
 credits: 2
 exam: true
 midterm: false
-assignments: 
+assignments: false
+teahers: "[[Dr. Laki Sándor]]"
 ---
 # Telekommunikációs hálózatok Ea
 ## Dates
 ## Requirements
 ## Notes
+
