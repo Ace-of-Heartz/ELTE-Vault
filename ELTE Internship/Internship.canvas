@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"a5fe4c21496e8fc0","type":"file","file":"ELTE/ELTE Internship/ELTE Internship Overview.md","x":40,"y":-580,"width":1368,"height":1186},
+		{"id":"00d8e51d6612785b","type":"file","file":"ELTE/ELTE Internship/Sonar Simulation.md","x":-1100,"y":-580,"width":1000,"height":980}
+	],
+	"edges":[]
+}
