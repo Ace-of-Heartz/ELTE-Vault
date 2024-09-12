@@ -6,19 +6,20 @@ credits:
 exam: false
 midterm: true
 assignments: true
-teachers: "[[Dr. Kozsik Tamás]]"
 ---
-# Konkurrens programozás Ea + Gy 
+# Konkurens programozás Ea + Gy 
 ## Dates
-**Lecture**: 
+**Lecture**: every Thursday 11:05 - 11:50
 **Seminar**: every Monday 19:00 - 19:45
 ## Requirements
-- 10 p - work in seminar
-- 20 p - assignment
-- 10 p - lecture quiz (?)
-- 60 p - midterm
-	- 10 p - theoretical part
+- 20 p - work in seminar
+- 15 p - assignment
+- 0 p - lecture quiz (?)
+- 65 p - midterm - only on school computers  - IDEs are allowed 
+	- 15 p - theoretical part
 	- 50 p - practical part
+	- Januar 16. or Januar 20.
+
 
 **Midterm**: 
 - on school PC
