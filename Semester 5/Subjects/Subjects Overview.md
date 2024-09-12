@@ -12,5 +12,5 @@
 - [[Numerikus algoritmusok Ea + Gy]] :LiCheck:
 - [[Haladó számítógépes grafika Ea]] ❌
 - [[Haladó számítógépes grafika Gy]] ❌
-- [[GPU Programozás]] ❌
+- [[GPU Programozás Ea + Gy]] ❌
 - [[Középhaladó Számítógépes Grafika Gy]] :LiCheck:
