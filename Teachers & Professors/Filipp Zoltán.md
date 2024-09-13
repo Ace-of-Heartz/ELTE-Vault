@@ -6,6 +6,6 @@ subjects:
   - Analízis 1 Gy
   - Analízis 2 Gy
   - Analízis 3 Gy
-  - Analízis Alkalmazásai Gy
   - Komplex analízis Ea + Gy
+  - "[[Analízis alkalmazásai Gy]]"
 ---
