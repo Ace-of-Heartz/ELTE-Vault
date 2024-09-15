@@ -14,3 +14,5 @@ teachers: "[[Dr. Simon Péter Lajos]]"
 ## Dates
 ## Requirements
 ## Notes
+## Related Documents
+- [[Exam Notes]]

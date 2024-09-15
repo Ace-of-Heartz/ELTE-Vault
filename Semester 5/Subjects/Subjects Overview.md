@@ -1,7 +1,7 @@
 # Subjects for Semester 5
 ## Compulsory
 - [[Gráfalgoritmusok Ea]] :LiCheck:
-- [[ELTE/Semester 5/Subjects/Analízis alkalmazásai Ea|Analízis alkalmazásai Ea ]]❌
+- [[ELTE-Vault/Semester 5/Subjects/Analízis alkalmazásai Ea|Analízis alkalmazásai Ea ]]❌
 - [[Analízis alkalmazásai Gy]] :LiCheck:
 - [[Telekommunikációs hálózatok Ea]] ❌
 - [[Telekommunikációs hálózatok Gy ]]:LiCheck:
