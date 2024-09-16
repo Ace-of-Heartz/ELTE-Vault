@@ -7,16 +7,18 @@
 | Concurrent Programming            | 0             | 0          | 1                  |
 | Numerical Algorithms              | 1             | 1          | 0                  |
 | Telecommunication Networks        | 0             | 1          | 0                  |
-| Intermediate Graphics Programming | -             | -          | -                  |
+| Intermediate Graphics Programming | 0             | 0          | 0                  |
 # Assignments:
 
-| Name                       | How many?                             | Deadlines          |
-| -------------------------- | ------------------------------------- | ------------------ |
-| Numerical Algorithms       | 2                                     |                    |
-| Concurrent Programming     | 1                                     |                    |
-| GPU Programming            | 1 very large, 2 smaller/optional ones | End of exam period |
-| Telecommunication Networks | 4 smaller, 1 larger                   |                    |
-| Rapid Prototyping          | -                                     | -                  |
+| Name                              | How many?                             | Deadlines          |
+| --------------------------------- | ------------------------------------- | ------------------ |
+| Numerical Algorithms              | 2                                     |                    |
+| Concurrent Programming            | 1                                     |                    |
+| GPU Programming                   | 1 very large, 2 smaller/optional ones | End of exam period |
+| Telecommunication Networks        | 4 smaller, 1 larger                   |                    |
+| Rapid Prototyping                 | -                                     | -                  |
+| Mathematical Statistics           | 1                                     | End of exam period |
+| Intermediate Graphics Programming | 1                                     | End of exam period |
 
 # Exams:
 

@@ -22,4 +22,4 @@ teachers: "[[Gyarmati Máté]]"
 ## Notes
 
 ## Related Documents:
-- [[ELTE/Semester 5/Subjects/Subject Notes/Graph Algo/2024-09-09_Ea|2024-09-09_Ea]]
+- [[Semester 5/Subjects/Subject Notes/Graph Algorithms/2024-09-09_Ea|2024-09-09_Ea]]

@@ -11,6 +11,15 @@ assignments: true
 ## Dates
 **Lecture**: every Thursday 11:05 - 11:50
 **Seminar**: every Monday 19:00 - 19:45
+
+**Exam dates**: 
+- December 19.
+- January 6.
+- January 8.
+- January 10.
+
+**Pótalkalom**:
+- January 12 (?)
 ## Requirements
 - 20 p - work in seminar
 - 15 p - assignment
@@ -18,7 +27,10 @@ assignments: true
 - 65 p - midterm - only on school computers  - IDEs are allowed 
 	- 15 p - theoretical part
 	- 50 p - practical part
-	- Januar 16. or Januar 20.
+	
+
+
+
 
 
 **Midterm**: 
