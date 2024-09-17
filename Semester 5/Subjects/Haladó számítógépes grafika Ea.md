@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - Optional
 semester: 5
 type: Ea
 credits: 2

@@ -1,6 +1,6 @@
 ---
 tags:
-  - "#KötVal"
+  - Optional
 semester: 5
 type: N/A
 credits: 

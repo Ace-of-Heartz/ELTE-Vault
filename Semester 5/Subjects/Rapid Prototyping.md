@@ -1,6 +1,6 @@
 ---
 tags:
-  - "#SzabVal"
+  - FreeToChoose
 semester: 5
 type: N/A
 credits: 2

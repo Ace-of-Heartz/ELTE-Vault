@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - Compulsory
 semester: 5
 type: Gy
 credits: 3
