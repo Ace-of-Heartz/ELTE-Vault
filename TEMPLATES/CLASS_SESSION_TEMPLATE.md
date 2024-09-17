@@ -1,0 +1,4 @@
+---
+is_lecture: 
+course:
+---
