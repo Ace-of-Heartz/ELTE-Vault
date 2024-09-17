@@ -23,4 +23,4 @@ teachers: "[[Dr. Arató Miklós]]"
 ## Related Documents:
 - [[ELTE-Vault/Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-09_Ea|2024-09-09_Ea]]
 - [[ELTE-Vault/Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-11_Gy|2024-09-11_Gy]]
-- [[2024-09-15_Ea]]
+- [[Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16]]

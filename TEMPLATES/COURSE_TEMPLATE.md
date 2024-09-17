@@ -1,0 +1,10 @@
+---
+tags: 
+semester: 
+type: 
+credits: 
+exam: 
+midterm: 
+assignments: 
+teachers: 
+---
