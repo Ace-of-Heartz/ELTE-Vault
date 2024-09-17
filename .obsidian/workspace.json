@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "b45d0aac57fcba17",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b5847871958e1b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3711a6009ee74541",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Semester 5/Subjects/GPU Programozás Ea + Gy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1be84bf13706d959",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Semester 5/To-Do List.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "88ff396c5f357862",
+    "type": "split",
+    "children": [
+      {
+        "id": "7fe530a4c8a6198c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd64eff39397ad47",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5efd683de502629c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8dd26fc9a1e59697",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ffc352e44d857fc0",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e129f369421372b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb15e3faff551c2a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Semester 5/To-Do List.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "29c322a2f18fdebe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Semester 5/To-Do List.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3ec68e7aba49e720",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5612405008dc0201",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Semester 5/To-Do List.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "1be84bf13706d959",
+  "lastOpenFiles": [
+    "Semester 5/S5 Overview.md",
+    "ELTE Overview.md",
+    "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-17.md",
+    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-16.md",
+    "Semester 5/Subjects/Subject Notes/Graph Algorithms/2024-09-09.md",
+    "README.md",
+    "Semester 5/Subjects/GPU Programozás Ea + Gy.md",
+    "Semester 5/Subjects/Rapid Prototyping.md",
+    "Semester 5/Subjects/Gráfalgoritmusok Ea.md",
+    "TEMPLATES/COURSE_TEMPLATE.md",
+    "TEMPLATES/CLASS_SESSION_TEMPLATE.md",
+    "Semester 5/Subjects/Mesterséges intelligencia Ea.md",
+    "Semester 5/Subjects/Subjects Overview.md",
+    "Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-09-09.md",
+    "Semester 5/Subjects/Subject Notes/Telecommunication Networks/2024-09-11.md",
+    "Semester 5/Subjects/Analízis alkalmazásai Ea.md",
+    "Semester 5/Subjects/Subject Notes/Telecommunication Networks/2024-09-11_Gy.md",
+    "Semester 5/Subjects/Subject Notes/Numerical Algorithms/2024-09-10.md",
+    "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md",
+    "Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-09-17.md",
+    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-12.md",
+    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-09.md",
+    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
+    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-11.md",
+    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-09.md",
+    "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-12.md",
+    "TEMPLATES"
+  ]
+}
