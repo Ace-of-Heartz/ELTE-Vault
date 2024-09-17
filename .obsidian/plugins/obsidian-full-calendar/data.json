@@ -1,0 +1,21 @@
+{
+  "calendarSources": [
+    {
+      "type": "local",
+      "color": "#f4f194",
+      "directory": "Semester 5/Semester Schedule"
+    },
+    {
+      "type": "local",
+      "color": "#92b5e3",
+      "directory": "Game Dev Club/Club Schedule"
+    }
+  ],
+  "defaultCalendar": 0,
+  "firstDay": 1,
+  "initialView": {
+    "desktop": "timeGridWeek",
+    "mobile": "timeGrid3Days"
+  },
+  "timeFormat24h": true
+}
