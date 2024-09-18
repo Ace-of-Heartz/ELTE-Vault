@@ -23,4 +23,4 @@ teahers: "[[Dr. Laki Sándor]]"
 		- Conclusions from the above
 		- Etc.
 ## Notes
-
+[[[Semester 5/Subjects/Subject Notes/Telecommunication Networks/2024-09-18|2024-09-18]]
