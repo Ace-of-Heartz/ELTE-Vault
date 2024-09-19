@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
+                "file": "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Game Dev Club/Game Jams.md",
+                "file": "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Game Dev Club/Game Jams.md",
+                "file": "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Game Dev Club/Game Jams.md"
+                "file": "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md"
               }
             }
           },
@@ -201,14 +201,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2bd1d4b20117d0f6",
+  "active": "6be1e555c1edfca4",
   "lastOpenFiles": [
-    "Game Dev Club/Game Jam Notes/2024-09-18_1BitJam.md",
+    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-19.md",
+    "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md",
+    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-12.md",
+    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-09.md",
+    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
     "Game Dev Club/Game Jams.md",
+    "Game Dev Club/Game Jam Notes/2024-09-18_1BitJam.md",
     "Game Dev Club/Game Jam Notes",
     "Game Dev Club/Game Dev Overview.md",
     "Game Dev Club/Club Meetings/2024-09-18.md",
-    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
     "Game Dev Club/Club Schedule/(Every W) Game Dev Club Session.md",
     "Semester 5/Subjects/Subject Notes/Graph Algorithms/2024-09-09.md",
     "Game Dev Club/Club Meetings/2024-09-09.md",
@@ -236,10 +240,6 @@
     "Semester 5/Subjects/GPU Programozás Ea + Gy.md",
     "Semester 5/Subjects/Haladó számítógépes grafika Ea.md",
     "Semester 5/To-Do List.md",
-    "Semester 5/S5 Overview.md",
-    "ELTE Overview.md",
-    "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-17.md",
-    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-16.md",
     "TEMPLATES"
   ]
 }
