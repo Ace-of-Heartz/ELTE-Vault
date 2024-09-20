@@ -4,67 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "5b5847871958e1b5",
+        "id": "947a9a913f5eb747",
         "type": "tabs",
         "children": [
           {
-            "id": "3711a6009ee74541",
+            "id": "753127e291a98c80",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Semester 5/Subjects/GPU Programozás Ea + Gy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1be84bf13706d959",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Semester 5/Subjects/Matematikai statisztika Ea + Gy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0c67037039dc2167",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
+              "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "6be1e555c1edfca4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2bd1d4b20117d0f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Game Dev Club/Game Jams.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md"
-              }
+              "state": {}
             }
           },
           {
@@ -201,10 +148,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6be1e555c1edfca4",
+  "active": "753127e291a98c80",
   "lastOpenFiles": [
-    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-19.md",
+    "Semester 5/Subjects/Subject Notes/Untitled/Közép.md",
+    "Semester 5/Subjects/Subject Notes/Numerical Algorithms/2024-09-10.md",
+    "Semester 5/Subjects/Subject Notes/Untitled",
     "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md",
+    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-19.md",
     "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-12.md",
     "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-09.md",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
@@ -238,8 +188,6 @@
     "Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-09-17.md",
     "Semester 5/Subjects/Mesterséges intelligencia Ea.md",
     "Semester 5/Subjects/GPU Programozás Ea + Gy.md",
-    "Semester 5/Subjects/Haladó számítógépes grafika Ea.md",
-    "Semester 5/To-Do List.md",
     "TEMPLATES"
   ]
 }
