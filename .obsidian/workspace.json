@@ -11,8 +11,12 @@
             "id": "753127e291a98c80",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-23.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-23.md"
+              }
             }
           },
           {
@@ -150,24 +158,34 @@
   },
   "active": "753127e291a98c80",
   "lastOpenFiles": [
-    "Semester 5/Subjects/Subject Notes/Untitled/Közép.md",
-    "Semester 5/Subjects/Subject Notes/Numerical Algorithms/2024-09-10.md",
-    "Semester 5/Subjects/Subject Notes/Untitled",
-    "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md",
+    "Semester 5/Subjects/Subject Notes/Applications of Analysis/Exam Notes.md",
+    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-23.md",
+    "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md",
+    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-09.md",
+    "Teachers & Professors/Dr. Kisteleki Károly.md",
+    "Semester 5/Requirements during the Semester.md",
     "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-19.md",
+    "Semester 5/Subjects/Subject Notes/Numerical Algorithms/2024-09-10.md",
+    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-11.md",
+    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
+    "Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-09-09.md",
+    "Semester 5/Subjects/Mesterséges intelligencia Ea.md",
+    "Semester 5/Subjects/Rapid Prototyping.md",
+    "Semester 5/Subjects/Subjects Overview.md",
+    "Semester 5/Subjects/Subject Notes/Telecommunication Networks/Word List.md",
+    "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-12.md",
+    "Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-09-17.md",
+    "Semester 5/Subjects/Subject Notes/Graph Algorithms/2024-09-09.md",
+    "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md",
+    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-16.md",
+    "Semester 5/Subjects/Subject Notes/Untitled/Közép.md",
+    "Semester 5/Subjects/Subject Notes/Untitled",
     "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-12.md",
     "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-09.md",
-    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
     "Game Dev Club/Game Jams.md",
     "Game Dev Club/Game Jam Notes/2024-09-18_1BitJam.md",
     "Game Dev Club/Game Jam Notes",
     "Game Dev Club/Game Dev Overview.md",
-    "Game Dev Club/Club Meetings/2024-09-18.md",
-    "Game Dev Club/Club Schedule/(Every W) Game Dev Club Session.md",
-    "Semester 5/Subjects/Subject Notes/Graph Algorithms/2024-09-09.md",
-    "Game Dev Club/Club Meetings/2024-09-09.md",
-    "Semester 5/Subjects/Matematikai statisztika Ea + Gy.md",
-    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-11.md",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/Images/Pasted image 20240916104023.png",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/Images/Pasted image 20240916104052.png",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/Images/Pasted image 20240916104310.png",
@@ -178,16 +196,6 @@
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/Images/Pasted image 20240916103544.png",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/Images/Pasted image 20240916103516.png",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/Images/Pasted image 20240916103401.png",
-    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-09.md",
-    "Semester 5/Subjects/Subject Notes/Telecommunication Networks/2024-09-18.md",
-    "Semester 5/Subjects/Subject Notes/Telecommunication Networks/Word List.md",
-    "Semester 5/Subjects/Subject Notes/Telecommunication Networks/2024-09-11.md",
-    "Semester 5/Subjects/Telekommunikációs hálózatok Ea.md",
-    "Semester 5/Subjects/Subjects Overview.md",
-    "Semester 5/Subjects/Telekommunikációs hálózatok Gy.md",
-    "Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-09-17.md",
-    "Semester 5/Subjects/Mesterséges intelligencia Ea.md",
-    "Semester 5/Subjects/GPU Programozás Ea + Gy.md",
     "TEMPLATES"
   ]
 }
