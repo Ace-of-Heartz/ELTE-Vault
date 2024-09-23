@@ -27,11 +27,19 @@ $g(r,\phi,\psi) = (x,y,z) = (r * sin(\psi) * cos(\phi),\ r * sin(\psi) * sin(\ph
 ## Surfaces
 1. Euler-Monge paraméterezés
 2. Felszín menti norma kiszámítása vektoriális szorzattal
-	- 
 
 | i                  | j                  | k                  |
 | ------------------ | ------------------ | ------------------ |
 | $\delta_1f(x,y).x$ | $\delta_1f(x,y).y$ | $\delta_1f(x,y).z$ |
 | $\delta_2f(x,y).x$ | $\delta_2f(x,y).y$ | $\delta_2f(x,y).z$ |
- 
+### Gauss paraméterezés
+Pl. 
+$$
+\psi(u,v) := (u * \cos(v), u * \sin(v),u)\ ; (u,v) \in [a,b] *[c,d]
+$$
 ### Euler-Monge paraméterezés 
+Pl. 
+$$
+z = f(x,y) 
+$$
+Azaz egy függvény egy kimeneti komponensének kifejezése a többi komponenssel.

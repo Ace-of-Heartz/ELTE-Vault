@@ -11,11 +11,36 @@
             "id": "753127e291a98c80",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "markdown",
+              "state": {
+                "file": "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a712afc10e91a0a",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-view",
               "state": {}
             }
+          },
+          {
+            "id": "6be1e555c1edfca4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teachers & Professors/Filipp Zoltán.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +145,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md"
+              }
             }
           },
           {
@@ -148,19 +177,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "753127e291a98c80",
+  "active": "9a712afc10e91a0a",
   "lastOpenFiles": [
-    "Semester 5/Subjects/Subject Notes/Untitled/Közép.md",
-    "Semester 5/Subjects/Subject Notes/Numerical Algorithms/2024-09-10.md",
-    "Semester 5/Subjects/Subject Notes/Untitled",
-    "Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19.md",
-    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-19.md",
-    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-12.md",
-    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-09.md",
-    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
-    "Game Dev Club/Game Jams.md",
-    "Game Dev Club/Game Jam Notes/2024-09-18_1BitJam.md",
-    "Game Dev Club/Game Jam Notes",
+    "Semester 5/Subjects/Subject Notes/Applications of Analysis/Exam Notes.md",
+    "Teachers & Professors/Dr. Simon Péter Lajos.md",
+    "Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-09-17.md",
+    "Semester 5/Subjects/Mesterséges intelligencia Ea.md",
+    "Game Dev Club/Club Meetings/2024-09-18.md",
+    "Game Dev Club/Club Meetings/2024-09-09_to_16.md",
     "Game Dev Club/Game Dev Overview.md",
     "Game Dev Club/Club Meetings/2024-09-18.md",
     "Game Dev Club/Club Schedule/(Every W) Game Dev Club Session.md",
@@ -182,12 +206,8 @@
     "Semester 5/Subjects/Subject Notes/Telecommunication Networks/2024-09-18.md",
     "Semester 5/Subjects/Subject Notes/Telecommunication Networks/Word List.md",
     "Semester 5/Subjects/Subject Notes/Telecommunication Networks/2024-09-11.md",
-    "Semester 5/Subjects/Telekommunikációs hálózatok Ea.md",
-    "Semester 5/Subjects/Subjects Overview.md",
-    "Semester 5/Subjects/Telekommunikációs hálózatok Gy.md",
-    "Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-09-17.md",
-    "Semester 5/Subjects/Mesterséges intelligencia Ea.md",
-    "Semester 5/Subjects/GPU Programozás Ea + Gy.md",
+    "Semester 5/Subjects/Analízis alkalmazásai Ea.md",
+    "Semester 5/Subjects/Subject Notes/Telecommunication Networks/2024-09-11_Gy.md",
     "TEMPLATES"
   ]
 }
