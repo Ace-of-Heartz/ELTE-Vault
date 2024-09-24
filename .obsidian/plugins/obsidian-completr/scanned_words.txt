@@ -42,7 +42,6 @@ Feladat
 Fontos
 FreeToChoose
 Független
->>>>>>> Stashed changes
 teles
 terez
 többi
@@ -98,7 +97,6 @@ terhalmaz
 ter
 tek
 terjedelme
->>>>>>> Stashed changes
 lok
 lis
 ls
@@ -118,14 +116,8 @@ legyen
 lt
 let
 lett
-<<<<<<< Updated upstream
-la
-large
-le
-=======
 lyozzuk
 lehets
->>>>>>> Stashed changes
 sz
 sa
 szorzattal
@@ -173,7 +165,6 @@ szleli
 szig
 szerint
 sorbarendezve
->>>>>>> Stashed changes
 rt
 ra
 rajel
@@ -216,7 +207,6 @@ Ism
 Interkvartilis
 IQR
 Innent
->>>>>>> Stashed changes
 függv
 formulas
 false
@@ -244,7 +234,6 @@ fogad
 fsz
 függetlenek
 folytonosak
->>>>>>> Stashed changes
 ny
 norma
 nek
@@ -265,7 +254,6 @@ norm
 nnek
 ni
 nez
->>>>>>> Stashed changes
 Definitions
 Determinant
 Deep
@@ -283,7 +271,6 @@ December
 Defin
 Diszkr
 Def
->>>>>>> Stashed changes
 Other
 Operation
 Opacity
@@ -332,7 +319,6 @@ ismeret
 ind
 ink
 illetve
->>>>>>> Stashed changes
 Space
 Surfaces
 SM
@@ -380,7 +366,6 @@ Adott
 AT
 Alakmutat
 Abszol
->>>>>>> Stashed changes
 Mass
 Monge
 Module
@@ -409,7 +394,6 @@ Mez
 Mintat
 Mint
 Mindegyik
->>>>>>> Stashed changes
 Euler
 Els
 Element
@@ -443,7 +427,6 @@ programokkal
 percentilisek
 pünk
 pusai
->>>>>>> Stashed changes
 menti
 mai
 mos
@@ -479,7 +462,6 @@ mintaköz
 momentum
 minimum
 maximum
->>>>>>> Stashed changes
 kisz
 kimeneti
 komponens
@@ -544,7 +526,6 @@ kezdetben
 keinek
 kapcsolatos
 kapjuk
->>>>>>> Stashed changes
 vektori
 vek
 vertex
@@ -554,7 +535,24 @@ vsz
 virtu
 vezet
 velet
-vissza
+val
+visszafel
+veletnek
+veleti
+valamelyik
+vezet
+vagy
+van
+vertik
+vonatkoz
+vüli
+visszal
+vett
+vizsg
+visszavezet
+vül
+vez
+vektorv
 Gauss
 GPU
 GeForce
@@ -573,7 +571,6 @@ Grafikus
 Gini
 Glob
 Gr
->>>>>>> Stashed changes
 egy
 egys
 ek
@@ -623,7 +620,6 @@ ekkor
 elemeit
 ez
 elemeinek
->>>>>>> Stashed changes
 ges
 gek
 gyorsabb
@@ -876,4 +872,3 @@ zs
 Javaslatok
 Jelek
 ütemterv
->>>>>>> Stashed changes
