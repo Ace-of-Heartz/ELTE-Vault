@@ -28,3 +28,4 @@ assignments: true
 
 ## Other Links
 [Game Programming Patterns - Data Locality (Cache)](https://gameprogrammingpatterns.com/data-locality.html)
+[GPGPU Lecture Website ](https://cv.inf.elte.hu/index.php/education/)
