@@ -29,6 +29,7 @@ Programoz
 Felt
 Formulas
 Felsz
+<<<<<<< Updated upstream
 Function
 Fermi
 FMA
@@ -36,6 +37,12 @@ Fuse
 FP
 Fetch
 Fut
+=======
+Feladat
+Fontos
+FreeToChoose
+Független
+>>>>>>> Stashed changes
 teles
 terez
 többi
@@ -59,8 +66,39 @@ tani
 tja
 terek
 telek
+<<<<<<< Updated upstream
 tags
 type
+=======
+tor
+tartalmaz
+tott
+ttekinthet
+tengelyen
+tva
+tlag
+tapasztalati
+tlagos
+törtr
+tercilisek
+terjedelem
+tlagt
+to
+termin
+tartalm
+that
+tett
+tr
+thet
+tabu
+tumok
+tottan
+terv
+terhalmaz
+ter
+tek
+terjedelme
+>>>>>>> Stashed changes
 lok
 lis
 ls
@@ -80,9 +118,14 @@ legyen
 lt
 let
 lett
+<<<<<<< Updated upstream
 la
 large
 le
+=======
+lyozzuk
+lehets
+>>>>>>> Stashed changes
 sz
 sa
 szorzattal
@@ -102,6 +145,7 @@ sokhoz
 single
 shader
 seg
+<<<<<<< Updated upstream
 sok
 szekvenci
 st
@@ -118,6 +162,18 @@ szupersk
 saj
 semester
 smaller
+=======
+spec
+szgr
+szül
+sikeres
+search
+simulated
+szleli
+szig
+szerint
+sorbarendezve
+>>>>>>> Stashed changes
 rt
 ra
 rajel
@@ -135,6 +191,7 @@ rhuzamos
 rhuzamoss
 rhuzamosan
 rövidebb
+<<<<<<< Updated upstream
 regiszter
 rhat
 rtelmez
@@ -147,6 +204,19 @@ ISA
 Instruction
 Interrupted
 IsInterrupted
+=======
+rletez
+rand
+Implicit
+Integral
+Integrals
+Inverz
+Invari
+Ism
+Interkvartilis
+IQR
+Innent
+>>>>>>> Stashed changes
 függv
 formulas
 false
@@ -156,6 +226,7 @@ fgiesen
 fokoz
 float
 for
+<<<<<<< Updated upstream
 fut
 független
 figyelni
@@ -163,6 +234,17 @@ ford
 függetlenek
 felt
 fellm
+=======
+feladatt
+fkeres
+fv
+felületen
+figyelmen
+fogad
+fsz
+függetlenek
+folytonosak
+>>>>>>> Stashed changes
 ny
 norma
 nek
@@ -175,9 +257,15 @@ nagyobb
 nyos
 nagy
 nincs
+<<<<<<< Updated upstream
 nem
 nlatos
 norm
+=======
+nnek
+ni
+nez
+>>>>>>> Stashed changes
 Definitions
 Determinant
 Deep
@@ -188,6 +276,14 @@ Decode
 DE
 Dates
 Documents
+<<<<<<< Updated upstream
+=======
+Diagramok
+December
+Defin
+Diszkr
+Def
+>>>>>>> Stashed changes
 Other
 Operation
 Opacity
@@ -224,8 +320,19 @@ oszt
 in
 is
 interpol
+<<<<<<< Updated upstream
 int
 instruction
+=======
+interkvartilis
+intersection
+intelligencia
+ismeretek
+ismeret
+ind
+ink
+illetve
+>>>>>>> Stashed changes
 Space
 Surfaces
 SM
@@ -245,6 +352,7 @@ Set
 Szekvenci
 SISD
 Seminar
+<<<<<<< Updated upstream
 Savitzky
 Applications
 Azaz
@@ -256,6 +364,23 @@ Ada
 Algoritmusok
 AI
 Adatok
+=======
+Szempontok
+Sz
+Sphere
+Seg
+Szimul
+Statisztikai
+Statisztik
+Spec
+Applications
+Azaz
+Akkor
+Adott
+AT
+Alakmutat
+Abszol
+>>>>>>> Stashed changes
 Mass
 Monge
 Module
@@ -271,6 +396,20 @@ MinMax
 Megold
 Ma
 Minden
+<<<<<<< Updated upstream
+=======
+Minta
+Megmutatja
+Mo
+Medi
+Me
+Mesters
+Mikor
+Mez
+Mintat
+Mint
+Mindegyik
+>>>>>>> Stashed changes
 Euler
 Els
 Element
@@ -286,6 +425,7 @@ pixel
 processzorok
 polinomok
 pl
+<<<<<<< Updated upstream
 processing
 pipeline
 pontos
@@ -299,6 +439,11 @@ programoz
 parancs
 pontjai
 programokkal
+=======
+percentilisek
+pünk
+pusai
+>>>>>>> Stashed changes
 menti
 mai
 mos
@@ -312,6 +457,7 @@ megjelen
 mesh
 mindig
 miatt
+<<<<<<< Updated upstream
 mok
 megmondani
 mozg
@@ -319,6 +465,21 @@ min
 megbecsül
 midterm
 ma
+=======
+majd
+mon
+modellje
+mez
+mintanagys
+megfigyelt
+msorozat
+mintaelemekkel
+momentumok
+mintaköz
+momentum
+minimum
+maximum
+>>>>>>> Stashed changes
 kisz
 kimeneti
 komponens
@@ -329,16 +490,66 @@ konys
 kv
 között
 kell
+<<<<<<< Updated upstream
 kevesebbet
 kialak
 közelebbre
 kital
 kevesebb
 kellett
+=======
+kezd
+kiolvasott
+kra
+kig
+kiindul
+keltet
+különböz
+közös
+ke
+kisebb
+közvetlenül
+korrig
+követ
+következ
+közvetleznül
+kummul
+kvantilisek
+kvantilis
+keresett
+közvetlen
+kvantilisre
+kvartilisek
+kvartilis
+kvintilisek
+kegys
+kban
+kies
+kezdeti
+közül
+kiv
+köv
+kis
+környezet
+kel
+körül
+köd
+kapcsolatban
+kiegyenes
+kedvez
+köröket
+kutca
+különbs
+kezdetben
+keinek
+kapcsolatos
+kapjuk
+>>>>>>> Stashed changes
 vektori
 vek
 vertex
 vez
+<<<<<<< Updated upstream
 vsz
 virtu
 vezet
@@ -352,6 +563,17 @@ GPC
 Graphics
 Groups
 Golay
+=======
+vektorv
+Gauss
+Gy
+Gyakorlati
+Gener
+Grafikus
+Gini
+Glob
+Gr
+>>>>>>> Stashed changes
 egy
 egys
 ek
@@ -369,6 +591,7 @@ el
 egyszerre
 egym
 elv
+<<<<<<< Updated upstream
 exam
 egyenlet
 course
@@ -388,6 +611,19 @@ hat
 haszn
 hoz
 gyors
+=======
+evol
+elemeire
+eddigi
+er
+ekvidisztans
+egyenes
+elfogad
+ekkor
+elemeit
+ez
+elemeinek
+>>>>>>> Stashed changes
 ges
 gek
 gyorsabb
@@ -395,14 +631,71 @@ grafikus
 gz
 grafik
 grehajt
+<<<<<<< Updated upstream
 grehajthat
 gyenge
 alkalmaz
 ar
 adtak
 absztrakci
+=======
+gy
+gnek
+gi
+ghisztogram
+got
+gok
+gnyi
+gben
+gyzetb
+glob
+gia
+gyerek
+gyeng
+gtelen
+ge
+ggel
+gyzet
+gfüggv
+hez
+hete
+hoz
+halmaza
+hat
+hosszuk
+halad
+haladva
+ha
+hi
+halmazhoz
+halmazt
+halmaz
+halmazba
+hisztogram
+hossz
+hosszra
+hely
+helyen
+hogy
+hossza
+heurisztika
+heurisztikus
+heurisztik
+hagy
+halmazban
+Legyen
+Lecture
+Lok
+azaz
+assignments
+adatok
+alaphalmazzal
+azonosak
+ami
+>>>>>>> Stashed changes
 az
 adatokat
+<<<<<<< Updated upstream
 architekt
 adat
 aj
@@ -439,9 +732,50 @@ RZ
 Reduk
 RISC
 Reduced
+=======
+azonos
+ar
+adatokb
+amelyikben
+als
+amelyn
+ahol
+ad
+alkalmaz
+al
+abszol
+as
+alkalmazhat
+annak
+algo
+aktu
+annealing
+akt
+aktualiz
+ak
+adik
+credits
+course
+ci
+cs
+csb
+csok
+csak
+csoss
+csokra
+cser
+csoknak
+csot
+ccsal
+csnak
+csökkennek
+csal
+Wednesday
+>>>>>>> Stashed changes
 Requirements
 RadeonExplorer
 Related
+<<<<<<< Updated upstream
 db
 dolog
 deep
@@ -467,3 +801,79 @@ Links
 Volta
 VR
 Ötlet
+=======
+Repr
+Reprezent
+Relat
+Realiz
+Rendezett
+jegy
+jelleg
+jut
+jelöli
+jelent
+jobb
+je
+jobbra
+jra
+ja
+ZH
+Notes
+Nevezetes
+Needs
+November
+összetett
+defini
+de
+dekompoz
+dekompon
+diszkr
+dusz
+duszt
+dszer
+decilisek
+dos
+db
+duplik
+dok
+dimenzi
+Kezd
+Kapcsolatuk
+Keres
+Kördiagram
+Köz
+Korrig
+Közvetlen
+KR
+Konkr
+bonyolults
+bb
+ban
+ba
+bont
+br
+ben
+be
+beam
+bej
+bel
+beragad
+utak
+ugrik
+ugyanannyi
+ugyanez
+utolj
+Visszafel
+Vonaldiagram
+Vez
+Ha
+Hisztogram
+Hegym
+zol
+zolja
+zal
+zs
+Javaslatok
+Jelek
+ütemterv
+>>>>>>> Stashed changes
