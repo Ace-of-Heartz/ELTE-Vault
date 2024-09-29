@@ -28,12 +28,8 @@ assignments: true
 - 65 p - midterm - only on school computers  - IDEs are allowed 
 	- 15 p - theoretical part
 	- 50 p - practical part
-	
-
-
-
-
-
 **Midterm**: 
 - on school PC
 ## Notes
+
+

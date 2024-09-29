@@ -6,7 +6,7 @@
 | Mathematical Statistics           | 1             | 1          | 1                  |
 | Concurrent Programming            | 0             | 0          | 1                  |
 | Numerical Algorithms              | 1             | 1          | 0                  |
-| Telecommunication Networks        | 0             | 1          | 0                  |
+| Telecommunication Networks        | 1             | 0          | 0                  |
 | Intermediate Graphics Programming | 0             | 0          | 0                  |
 # Assignments:
 
