@@ -131,6 +131,8 @@ lyai
 legutols
 legv
 lys
+llyal
+lehetnek
 sz
 sa
 szorzattal
@@ -191,6 +193,9 @@ szig
 szerint
 sorbarendezve
 skor
+sorrendi
+sorrendje
+sre
 rt
 rend
 risan
@@ -231,6 +236,7 @@ ret
 rövidebb
 rletez
 rand
+rekurz
 Implicit
 Integral
 Integrals
@@ -240,6 +246,7 @@ Ism
 Interkvartilis
 IQR
 Innent
+Implement
 függv
 formulas
 felt
@@ -270,6 +277,7 @@ fogad
 fsz
 függetlenek
 folytonosak
+fokon
 ny
 norma
 nek
@@ -317,6 +325,7 @@ Base
 Beadand
 Bonyolults
 Boxplot
+Bizony
 of
 oszlopvektorokb
 oper
@@ -452,6 +461,8 @@ momentum
 minimum
 maximum
 megadott
+modelfügg
+mindig
 kisz
 kimeneti
 komponens
@@ -514,6 +525,9 @@ kapcsolatos
 kapjuk
 kör
 korl
+kiz
+kett
+körmentes
 vektori
 vizsga
 vebb
@@ -583,6 +597,9 @@ elemeit
 ez
 elemeinek
 esetben
+ek
+els
+egyet
 ges
 ga
 gs
@@ -635,6 +652,7 @@ heurisztik
 hagy
 halmazban
 hozz
+heurisztikusak
 Legyen
 Lecture
 Lok
@@ -672,6 +690,7 @@ akt
 aktualiz
 ak
 adik
+algoritmus
 credits
 course
 ci
@@ -760,6 +779,7 @@ Visszafel
 Vonaldiagram
 Vez
 Visszal
+VL
 Ha
 Hisztogram
 Hegym
