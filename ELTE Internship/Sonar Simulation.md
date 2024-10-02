@@ -58,10 +58,10 @@ DirectX 12 wrapper: https://github.com/axodox/axodox-graphics
 - [RTX Implementation - GPU Accelerated Ray-Tracing for Simulation Sound Propagation in Water](https://liu.diva-portal.org/smash/get/diva2:1352170/FULLTEXT01.pdf) #ReviewDone
 - [RTX Implementation - BELLHOP](https://oalib-acoustics.org/website_resources/AcousticsToolbox/Bellhop-2010-1.pdf) #ToReview
 - [Reverberation](https://dosits.org/science/movement/how-does-sound-move/reverberation/) - [[Reverberation]] #ReviewDone 
-- [ASW Systems](https://man.fas.org/dod-101/navy/docs/es310/asw_sys/asw_sys.htm) - [[Anti-submarine Warfare (ASW) Systems]] #ReviewDone
+		- [ASW Systems](https://man.fas.org/dod-101/navy/docs/es310/asw_sys/asw_sys.htm) - [[Anti-submarine Warfare (ASW) Systems]] #ReviewDone
 - [Sonar - Noise](https://dosits.org/science/advanced-topics/sonar-equation/sonar-equation-example-active-sonar/) #ReviewDone
 - [Principles of Sonar Performance Modelling](https://vdoc.pub/download/principles-of-sonar-performance-modelling-5pken40teq10) #ToReview - Ongoing
-- [PC-Based Propagation and Sonar Prediction Models](https://openlibrary.cmre.nato.int/bitstream/handle/20.500.12489/307/SR-240-UU.pdf?sequence=1&isAllowed=y) #ReviewDone - Outdated
+			- [PC-Based Propagation and Sonar Prediction Models](https://openlibrary.cmre.nato.int/bitstream/handle/20.500.12489/307/SR-240-UU.pdf?sequence=1&isAllowed=y) #ReviewDone - Outdated
 - ![[Numerical_methods_in_underwater_aco-1.pdf | Numerical Methods in Underwater Acoustics - Sound Propagation and Backscattering]]
 ##### Implementations / Projects:
 - [Simwave - Python (Finite Difference Method)](https://github.com/hpcsys-lab/simwave?tab=readme-ov-file) #ToReview 
@@ -82,7 +82,7 @@ DirectX 12 wrapper: https://github.com/axodox/axodox-graphics
 - [Sound Scattering Layers](https://dosits.org/science/movement/sound-scattering-layers/)
 #### Other projects:
 - [HoloOcean](https://byu-holoocean.github.io/holoocean-docs/v1.0.0/index.html) #ToReview
-- [ArcGis](https://storymaps.arcgis.com/stories/e245977def474bdba60952f30576908f)  #ToReview
+	- [ArcGis](https://storymaps.arcgis.com/stories/e245977def474bdba60952f30576908f)  #ToReview
 - [AquaCoustics](http://www.aquacoustics.com/proj_3dmodel.html)  #ToReview
 - https://ieeexplore.ieee.org/document/6608090 #ToReview
 - [OpenGL Raytracing](https://www.sciencedirect.com/science/article/abs/pii/S1524070320300278) #ToReview
