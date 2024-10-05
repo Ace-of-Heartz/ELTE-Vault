@@ -61,7 +61,7 @@ DirectX 12 wrapper: https://github.com/axodox/axodox-graphics
 		- [ASW Systems](https://man.fas.org/dod-101/navy/docs/es310/asw_sys/asw_sys.htm) - [[Anti-submarine Warfare (ASW) Systems]] #ReviewDone
 - [Sonar - Noise](https://dosits.org/science/advanced-topics/sonar-equation/sonar-equation-example-active-sonar/) #ReviewDone
 - [Principles of Sonar Performance Modelling](https://vdoc.pub/download/principles-of-sonar-performance-modelling-5pken40teq10) #ToReview - Ongoing
-			- [PC-Based Propagation and Sonar Prediction Models](https://openlibrary.cmre.nato.int/bitstream/handle/20.500.12489/307/SR-240-UU.pdf?sequence=1&isAllowed=y) #ReviewDone - Outdated
+- [PC-Based Propagation and Sonar Prediction Models](https://openlibrary.cmre.nato.int/bitstream/handle/20.500.12489/307/SR-240-UU.pdf?sequence=1&isAllowed=y) #ReviewDone - Outdated
 - ![[Numerical_methods_in_underwater_aco-1.pdf | Numerical Methods in Underwater Acoustics - Sound Propagation and Backscattering]]
 ##### Implementations / Projects:
 - [Simwave - Python (Finite Difference Method)](https://github.com/hpcsys-lab/simwave?tab=readme-ov-file) #ToReview 
