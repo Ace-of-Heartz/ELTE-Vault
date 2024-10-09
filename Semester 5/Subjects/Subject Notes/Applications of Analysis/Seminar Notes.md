@@ -43,3 +43,13 @@ $$
 z = f(x,y) 
 $$
 Azaz egy függvény egy kimeneti komponensének kifejezése a többi komponenssel.
+
+## Fluxus / Surface Integral
+- 2-es integrál
+- $\phi$ fv. ~ felület megadása (jelenleg 2 paraméterrel), azaz $\phi \in \mathbb{R}^2 \to \mathbb{R}^3$
+
+## Parametric Integrals
+
+
+
+# Implicit function theorem

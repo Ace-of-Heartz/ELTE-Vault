@@ -8,63 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9a712afc10e91a0a",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "e748d77153e07c1b",
+            "id": "030e24a2ede539c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-23.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "23e4e232f941f582",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ELTE Internship/Presentation  Outline.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c60bcf498453b69d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "27873c4021ebc9ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
+                "file": "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-23.md",
+                "file": "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-23.md",
+                "file": "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-23.md"
+                "file": "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md"
               }
             }
           },
@@ -201,23 +156,28 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e748d77153e07c1b",
+  "active": "030e24a2ede539c2",
   "lastOpenFiles": [
+    "Semester 5/Subjects/Subject Notes/Applications of Analysis/Exam Notes.md",
+    "Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-10-08.md",
+    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
+    "Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-09-09.md",
+    "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md",
+    "Semester 5/Subjects/Analízis alkalmazásai Ea.md",
+    "ELTE Internship/Presentation  Outline.md",
+    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/Stuff.md",
+    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-23.md",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-25.md",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-09.md",
-    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16.md",
-    "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-23.md",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-30.md",
     "Semester 5/Subjects/Subject Notes/Telecommunication Networks/2024-10-02.md",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-11.md",
     "ELTE Internship/Sonar Simulation.md",
     "ELTE Internship/Worknotes/Latex.md",
-    "ELTE Internship/Presentation  Outline.md",
     "ELTE Internship/ELTE Internship Overview.md",
     "Game Dev Club/Club Meetings/2024-09-09.md",
     "Game Dev Club/Club Meetings/2024-09-18.md",
     "ELTE Internship/Worknotes/Reverberation.md",
-    "Semester 5/Subjects/Subject Notes/Applications of Analysis/Seminar Notes.md",
     "Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-10-01.md",
     "Pasted image 20241004211539.png",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/Images/Pasted image 20240923231813.png",
@@ -227,11 +187,6 @@
     "Untitled.md",
     "Teachers & Professors/Filipp Zoltán.md",
     "Semester 5/Subjects/Telekommunikációs hálózatok Gy.md",
-    "Semester 5/Subjects/Subject Notes/Telecommunication Networks/2024-09-25.md",
-    "Semester 5/Subjects/Subject Notes/Középhaladó Grafika/2024-09-27.md",
-    "Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-30.md",
-    "Game Dev Club/Game Jam Notes/Untitled.md",
-    "2024-09-24.md",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/Images/Pasted image 20240916104023.png",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/Images/Pasted image 20240916104052.png",
     "Semester 5/Subjects/Subject Notes/Mathematical Statistics/Images/Pasted image 20240916104310.png",
