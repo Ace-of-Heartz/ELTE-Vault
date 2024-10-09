@@ -2,8 +2,10 @@
 - "Az én projektem ..."
 # 2
 - Sugárkövetés használatának, technikájának megismerése - "szoros kapcsolatban volt"
+- 
 # 3
 - Absztrakciót nyújtotta a sugárkövetés megvalósításához - DXR - könnyű, gyors sugárkövetés
+- Wrapperek
 # 4
 - "Projektem során..."
 - Absztrakció a szonárhoz - általános megoldás
