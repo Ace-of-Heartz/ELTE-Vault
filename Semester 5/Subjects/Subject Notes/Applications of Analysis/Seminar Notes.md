@@ -15,15 +15,23 @@ $g(r,\phi,\psi) = (x,y,z) = (r * sin(\psi) * cos(\phi),\ r * sin(\psi) * sin(\ph
 **Determinant** of $g'(r,\phi,\psi)$ : $det(g'(r,\phi,\psi)) = r^2 * sin(\psi)$  
 
 # Applications of Integrals
+
+## Volume
+- $V(E) = \int \int \int_{E}\ 1\ dx\ dy\ dz$
 ## Mass
 **Base formulas**: 
-- $m(E) = \int \int \int_E \rho(x,y,z)$ 
+- $m(E) = \int \int \int_E \rho(x,y,z)\ dx\ dy\ dz$ 
 
 ## Centre of Mass 
 **Base formulas**:  (*Coordinates*)
 - $x_{tkp} = 1/m(E) * \int \int \int_E x*\rho(x,y,z)\ dx\ dy\ dz$     
 - $y_{tkp} = 1/m(E) * \int \int \int_E y*\rho(x,y,z)\ dx\ dy\ dz$ 
 - $z_{tkp} = 1/m(E) * \int \int \int_E z*\rho(x,y,z)\ dx\ dy\ dz$ 
+
+## Inertia
+**Base formulas**: 
+- $i(E) = \int \int \int_{E}\ \rho(x,y,z) *r^2(x,y,z)\ dx\ dy\ dz$ 
+- "Density x Distance squared"
 ## Surfaces
 1. Euler-Monge paraméterezés
 2. Felszín menti norma kiszámítása vektoriális szorzattal
