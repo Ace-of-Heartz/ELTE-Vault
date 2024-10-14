@@ -22,6 +22,10 @@ teachers: "[[Dr. Arató Miklós]]"
 	- Beadandó (???)
 ## Notes:
 - [ELTE - R szintaxis](http://zempleni.elte.hu/Stat_R_Prohle_Zempleni)
+- ZH-nál lehet használni:
+	- Generatív AI
+	- Előadás jegyzet
+	- Gyakorlat jegyzet
 ## Related Documents:
 - [[Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-09|2024-09-09]]
 - [[Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-11|2024-09-11]]
