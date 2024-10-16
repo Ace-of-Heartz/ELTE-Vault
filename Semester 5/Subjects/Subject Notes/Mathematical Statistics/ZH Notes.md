@@ -1,0 +1,2 @@
+- Maximum likelihood fv.-nél kalapos becslés kiírása!
+-
