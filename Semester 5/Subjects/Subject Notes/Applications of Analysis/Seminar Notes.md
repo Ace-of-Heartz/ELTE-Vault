@@ -5,7 +5,7 @@
 # Integration Tips & Tricks
 $\int f'(g(x)) * g'(x) dx = f(g(x))$
 
-## Integral Transforming
+## Integral Substitution 
 $\int f(x)dx = \int f(g(t)) * g'(t) dt\ |\ t = g^{-1}(x)$ 
 ### Trigonometric Functions
 Mivel $\cos^2(\alpha) = \frac{1}{1+\tan^2(\alpha)}$
@@ -26,7 +26,8 @@ $(f*g)' = f'*g + f*g' \implies \int (f*g)' =\int f'*g + \int f*g' \implies \int 
 
 ## Triangles
 $Ax + By + Cz = D$, **where** $(A,B,C)$ are the give points of the triangle
-=> Transform it into an equation with only $D$ => get the actual equation
+1. Transform it into an equation with only $D$
+2. Solve the equation for $D$
 
 
 # Integral Transforms
@@ -36,14 +37,18 @@ $Ax + By + Cz = D$, **where** $(A,B,C)$ are the give points of the triangle
 - $x = r * cos(\phi)$
 - $y = r * sin(\phi)$
 - $z = z$ 
+
 $g(z,r,\phi) = (x,y,z) = (r * cos(\phi),\ r * sin(\phi),\ z)$
-**Determinant** of $g'(r,z,\phi)$ : $det(g'(r,z,\phi))=r$
+
+**Determinant** of $g'(r,z,\phi)$ : $\det(g'(r,z,\phi))=r$
 
 ## Polar Coordinates in Plane
  **Base Formulas**:
 - $x = r * \cos(\phi)$
 - $y = r*\sin(\phi)$
+
 $g(r,\phi) =(x,y) = (r*\cos(\phi),r*\sin(\phi))$
+
 **Determinant** of $g'(r,\phi)$:  $\det(g'(r,\phi)) = r$
 
 ## Polar Coordinates in Space
@@ -56,24 +61,37 @@ $g(r,\phi,\psi) = (x,y,z) = (r * sin(\psi) * cos(\phi),\ r * sin(\psi) * sin(\ph
 
 # Applications of Integrals
 
-## Volume
+## Area (*Terület*)
+**Base formulas**:
+- $t(E) = \int \int_{E} 1\ dx \ dy$
+
+## Geometric Center (*Súlypont*)
+**Base formulas**: (*Coordinates*)
+- $x_{s} = \frac{1}{t(E)} \int \int_{E} x\ dx\ dy$
+- $y_{s} = \frac{1}{t(E)} \int \int_{E} y\ dx \ dy$
+
+## Volume (*Térfogat*)
+**Base formulas**:
 - $V(E) = \int \int \int_{E}\ 1\ dx\ dy\ dz$
-## Mass
+
+## Mass (*Tömeg*)
 **Base formulas**: 
 - $m(E) = \int \int \int_E \rho(x,y,z)\ dx\ dy\ dz$ 
 - $\rho(x,y,z)$ - density function
 
-## Centre of Mass 
+## Center of Mass (*Tömeg középpont*)
 **Base formulas**:  (*Coordinates*)
 - $x_{tkp} = 1/m(E) * \int \int \int_E x*\rho(x,y,z)\ dx\ dy\ dz$     
 - $y_{tkp} = 1/m(E) * \int \int \int_E y*\rho(x,y,z)\ dx\ dy\ dz$ 
 - $z_{tkp} = 1/m(E) * \int \int \int_E z*\rho(x,y,z)\ dx\ dy\ dz$ 
 - $\rho(x,y,z)$ - density function
-## Inertia
+
+## Moment of Inertia (*Tehetetlenségi nyomaték*)
 **Base formulas**: 
 - $T(E) = \int \int \int_{E}\ \rho(x,y,z) *r^2(x,y,z)\ dx\ dy\ dz$ 
 - "Density times Distance squared"
-## Surfaces
+
+## Surface (*Felszín*)
 1. Euler-Monge paraméterezés
 2. Felszín menti norma kiszámítása vektoriális szorzattal
 
@@ -81,24 +99,26 @@ $g(r,\phi,\psi) = (x,y,z) = (r * sin(\psi) * cos(\phi),\ r * sin(\psi) * sin(\ph
 | ------------------ | ------------------ | ------------------ |
 | $\delta_1f(x,y).x$ | $\delta_1f(x,y).y$ | $\delta_1f(x,y).z$ |
 | $\delta_2f(x,y).x$ | $\delta_2f(x,y).y$ | $\delta_2f(x,y).z$ |
+
 $$
-S = \int \int \lvert\lvert n_{\phi}(u,v) \rvert\rvert_{2} \ du\ dv
+S = \int \int_{E} \lvert\lvert n_{\phi}(u,v) \rvert\rvert_{2} \ du\ dv
 $$
+
 **ahol**:
 - $\partial_{1}\phi \times \partial_{2}\phi = n_{\phi}$  
-### Gauss paraméterezés
+### Gauss parametrization
 Pl. 
 $$
 \psi(u,v) := (u * \cos(v), u * \sin(v),u)\ ; (u,v) \in [a,b] *[c,d]
 $$
-### Euler-Monge paraméterezés 
+### Euler-Monge parametrization  
 Pl. 
 $$
 z = f(x,y) 
 $$
 Azaz egy függvény egy kimeneti komponensének kifejezése a többi komponenssel.
 
-## Fluxus / Surface Integral
+## Fluxus / Surface Integral (*Fluxus*)
 - 2-es integrál
 - $\phi$ fv. ~ felület megadása (jelenleg 2 paraméterrel), azaz $\phi \in \mathbb{R}^2 \to \mathbb{R}^3$
 $$
@@ -107,7 +127,7 @@ $$
 **ahol**:
 - $\partial_{1}\phi \times \partial_{2}\phi = n_{\phi}$  
 
-## Parametric Integrals
+## Parametric Integrals (*Parametrikus integrál*)
 $$
 F(a) = \int f(a,x)\ dx
 $$
@@ -137,6 +157,7 @@ $$
 - $f \in C^1$ 
 - $\det f'(z) \neq 0, where\ z\in Df$  
 - $f(z) = a$ 
+
 **Then**:
 - $\exists K(z), V\ open\ set: F = (f|K(z))^{-1}$
 - $F \in C^{1}$
@@ -146,6 +167,7 @@ $$
 **Legyen**:
 - $f:\mathbb{R}^n \to \mathbb{R}$
 - $g:\mathbb{R}^n \to \mathbb{R}$ ; $\{ g=0 \}$
+
 **Ekkor**:
 $L : \mathbb{R}^n \to \mathbb{R}$
 Pl. 
@@ -158,7 +180,7 @@ Pl.
 	- $g = 0: \ \ g(x,y,z) = 0$
 2. Lineáris függetlenség:
 	- $g(c_{i})\neq 0\ \ (i =0,\dots)$ 
-3. $Q = <L''(x,y,z) * h,h>$, úgy hogy $g(c_{i}) * h = 0 \ \ (h \neq \underline{0})$
+3. $Q(h) = <L''(x,y,z) * h,h>$, úgy hogy $g(c_{i}) * h = 0 \ \ (h \neq \underline{0})$
 
 ## Conditional absolute extreme values
 **If**: 
