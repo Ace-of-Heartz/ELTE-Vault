@@ -6,13 +6,14 @@ type: Ea + Gy
 credits: 4
 exam: false
 midterm: true
-assignments: false
-teachers: "[[Dr. Arató Miklós]]"
+assignments: true
+teachers:
+  - "[[Dr. Arató Miklós]]"
 ---
 # Matematikai statisztika Ea + Gy 
 ## Dates:
 **Lecture:** every Monday - 09:15 - 10:00
-**Seminar:** every Wednesday - 
+**Seminar:** every Wednesday - 14:00 - 16:00 
 ## Requirements:
 - Gyakorlati jegy pontszám:
 	- ZH - elmélet + gyakorlati
@@ -30,3 +31,8 @@ teachers: "[[Dr. Arató Miklós]]"
 - [[Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-09|2024-09-09]]
 - [[Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-11|2024-09-11]]
 - [[Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16 |2024-09-16]]
+
+## Points
+1. Midterm: 4 + 
+2. Midterm: 
+3. Midterm: 

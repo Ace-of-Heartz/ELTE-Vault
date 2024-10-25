@@ -128,10 +128,21 @@ $$
 	- $\phi(a) = b$ 
 	- $\phi \in C^1$  
 	- $\phi'(a) = -[\partial_{2}f(a,b)]^{-1} *\partial_{1}f(a,b)$ 
-
+## Finding the implicit function without the theorem
+1. Try to get the other components using the designated component
+2. Try to solve the equations and get solutions for the designated component
+3. If the solutions don't make up an open set, then the implicit function doesn't exist
 # Inverse function theorem
-
-# Lagrange-multiplicator
+**Conditions**/**If**: 
+- $f \in C^1$ 
+- $\det f'(z) \neq 0, where\ z\in Df$  
+- $f(z) = a$ 
+**Then**:
+- $\exists K(z), V\ open\ set: F = (f|K(z))^{-1}$
+- $F \in C^{1}$
+- $F'(a) = f^{-1}(z)$
+# Conditional extreme values
+## Lagrange-multiplicator
 **Legyen**:
 - $f:\mathbb{R}^n \to \mathbb{R}$
 - $g:\mathbb{R}^n \to \mathbb{R}$ ; $\{ g=0 \}$
@@ -148,3 +159,10 @@ Pl.
 2. Lineáris függetlenség:
 	- $g(c_{i})\neq 0\ \ (i =0,\dots)$ 
 3. $Q = <L''(x,y,z) * h,h>$, úgy hogy $g(c_{i}) * h = 0 \ \ (h \neq \underline{0})$
+
+## Conditional absolute extreme values
+**If**: 
+- $\{ g = 0 \}$ is compact (closed and limited)
+- $f \in C$
+**Then**:
+- we can use Weierstrass's Theorem: $\exists\ abs. max ,\ abs. min$  => we just calculate  $f(c_{i})$ ($i = 1,\dots$)
