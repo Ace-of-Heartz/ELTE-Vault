@@ -19,4 +19,4 @@ teachers: "[[Filipp Zoltán]]"
 ## Notes
 
 ## Related Documents
-- [[ELTE-Vault/Semester 5/Subjects/Subject Notes/Applications of Analysis/2024-09-09_Gy|2024-09-09_Gy]]
+- [[Seminar Notes]] 

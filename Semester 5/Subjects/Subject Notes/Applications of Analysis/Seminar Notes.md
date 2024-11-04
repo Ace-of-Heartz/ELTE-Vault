@@ -164,27 +164,53 @@ $$
 - $F'(a) = f^{-1}(z)$
 # Conditional extreme values
 ## Lagrange-multiplicator
-**Legyen**:
+**Let**:
 - $f:\mathbb{R}^n \to \mathbb{R}$
 - $g:\mathbb{R}^n \to \mathbb{R}$ ; $\{ g=0 \}$
 
-**Ekkor**:
+**Then**:
 $L : \mathbb{R}^n \to \mathbb{R}$
 Pl. 
 - $f(x,y,z)$; $g(x,y,z)$
 - $\lambda\in \mathbb{R}$
 - $L(x,y,z) = f(x,y,z) + \lambda*g(x,y,z)$
-1. Egyenletrendszer megoldásai:
+1. Get the solutions of the systems of equations:
 	- $\partial_{1}L(x,y,z) = 0$
 	- $\partial_{2}L(x,y,z) = 0$
 	- $g = 0: \ \ g(x,y,z) = 0$
-2. Lineáris függetlenség:
+2. Check for linear independence:
 	- $g(c_{i})\neq 0\ \ (i =0,\dots)$ 
-3. $Q(h) = <L''(x,y,z) * h,h>$, úgy hogy $g(c_{i}) * h = 0 \ \ (h \neq \underline{0})$
+3. $Q(h) = <L''(x,y,z) * h,h>$, so that  $g(c_{i}) * h = 0 \ \ (h \neq \underline{0})$
 
 ## Conditional absolute extreme values
 **If**: 
 - $\{ g = 0 \}$ is compact (closed and limited)
 - $f \in C$
+
 **Then**:
 - we can use Weierstrass's Theorem: $\exists\ abs. max ,\ abs. min$  => we just calculate  $f(c_{i})$ ($i = 1,\dots$)
+
+# Differential Equations 
+## Ordinary differential equations (ODEs)
+### Separable ODE.:
+
+1. **Check for separability**:
+	- $y'(x) = g(x) * h(y(x))$ , where:
+		- $h : J \to \mathbb{R} / \{0  \}$, where $J$ is an open set *and* $0 \notin R_{h}$
+		- $g: I \to \mathbb{R}$ where $I$ is an open set  
+	- Make differential equation separable if not explicitly separable using the following:
+		1. $y'(x) = f(x * a + y(x) * b + c)$  
+		2. $z(x) = x*a + y(x) * b + c$ => $z'(x) = a + y'(x) * b$ => $y'(x) = \frac{z'(x) - a}{b}$
+		3. $z'(x) = a + b * f(z(x)) = 1*(a + b*f(z(x)))$
+1. **Check for interval**: 
+	 - If we have a *starting value*: use the open interval that includes this *starting value* 
+	 - If we **don't** have a *starting value*: we must continue separately with all of the open intervals
+2.  **Algorithm**: 
+	1. $y'(x) = \frac{dy}{dx} = g(x) * h(y(x))$
+	2. $\int h(y)\ dy = \int g(x)\ dz$ 
+	3. Integrate both sides separately
+	4. $H(y) + \tilde{c} = G(x) + c$, where we can assume that $\tilde{c} = 0$ 
+	5. Calculate the value of $c$ using the *starting value*
+	6. $y(x) = H^{-1}(*{G(x) + c})$ - bring the equation to an explicit solution
+
+### Exact ODE.:
