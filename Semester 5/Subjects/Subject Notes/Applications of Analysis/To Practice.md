@@ -1,0 +1,3 @@
+- Centre of Mass
+- Inertia
+- Parametric Integral
