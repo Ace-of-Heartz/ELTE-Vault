@@ -10,5 +10,9 @@
 ### Internship 
 [[ELTE Internship Overview]]
 - [[Sonar Simulation]]
+
+### Internship Continuation
+[[]]
+
 ### Exchange Studies & Internships
-- [[Tampere Overview]]
+
