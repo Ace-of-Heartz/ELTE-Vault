@@ -8,4 +8,5 @@ subjects:
   - Analízis 3 Gy
   - Komplex analízis Ea + Gy
   - "[[Analízis alkalmazásai Gy]]"
+  - Matematikai alapok
 ---
