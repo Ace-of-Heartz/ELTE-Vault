@@ -198,13 +198,13 @@ Pl.
 	- $y'(x) = g(x) * h(y(x))$ , where:
 		- $h : J \to \mathbb{R} / \{0  \}$, where $J$ is an open set *and* $0 \notin R_{h}$
 		- $g: I \to \mathbb{R}$ where $I$ is an open set  
-	- Make differential equation separable if not explicitly separable using the following:
+	- Make differential equation separable if not explicitly separable using the following steps:
 		1. $y'(x) = f(x * a + y(x) * b + c)$  
 		2. $z(x) = x*a + y(x) * b + c$ => $z'(x) = a + y'(x) * b$ => $y'(x) = \frac{z'(x) - a}{b}$
 		3. $z'(x) = a + b * f(z(x)) = 1*(a + b*f(z(x)))$
 1. **Check for interval**: 
 	 - If we have a *starting value*: use the open interval that includes this *starting value* 
-	 - If we **don't** have a *starting value*: we must continue separately with all of the open intervals
+	 - If we **don't** have a *starting value*: we must continue separately with all open intervals
 2.  **Algorithm**: 
 	1. $y'(x) = \frac{dy}{dx} = g(x) * h(y(x))$
 	2. $\int h(y)\ dy = \int g(x)\ dz$ 
@@ -214,3 +214,25 @@ Pl.
 	6. $y(x) = H^{-1}(*{G(x) + c})$ - bring the equation to an explicit solution
 
 ### Exact ODE.:
+ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x,y)}{Q(x,y)} =-\frac{P(x,y(x))}{Q(x,y(x))}$ 
+**Szükséges feltétel**: $\partial_{2}P(x,y) = \partial_{1}(Q(x,y))$ !
+
+1. $F \in \mathbb{R}^{2} \to \mathbb{R}; F\in D; F' = (\partial_{1}F,\partial_{2}F) = (P,Q)$ fv. keresése, azaz:
+	- $\partial_{1}F(x,y) = P(x,y)$
+	- $\partial_{2}F(x,y) = Q(x,y)$
+2. 1. Feltétel alapján: $F(x,y) = \int P(x)\ dx = F_{1}(x,y) + c(y)$, ahol:
+	- $c:\mathbb{R}\to \mathbb{R}$
+	- $c \in D$
+3. 2. Feltétel alapján: 
+	- $\partial_{2}F(x,y) = Q(x,y)$
+	- $\partial_{2}(F_{1}(x,y) +c(y)) = \partial_{2}(F_{1}(x,y)) + c'(y)$ 
+	- és $\partial_{2}F(x,y) = \partial_{2}(F_{1}(x,y) + c(y)) \implies Q(x,y) = \partial_{2}(F_{1}(x,y)) + c'(y)$ 
+4. $c'(y) = Q(x,y) -\partial_{2}(F(x,y)) \implies c(y) = \int c'(y)\ dy$  
+5. $F(x,y)$ felírása
+
+**Megoldás**:
+- $\exists k \in \mathbb{R}: F(x,y(x)) = k \iff c(x) + F_{1}(x,y(x)) = \alpha$, ahol:
+	- $\alpha \in \mathbb{R}$
+	- $x \in K_{\delta}(\tau)$, ahol $\delta > 0$ alkalmas
+	- és ha  $\alpha = \xi$ -> *k.é.p.* kielégítő fv.: $x = \tau$ és $y = \xi$ most (behelyettesítés)
+
