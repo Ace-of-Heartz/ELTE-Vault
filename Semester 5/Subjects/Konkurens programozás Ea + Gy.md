@@ -31,5 +31,9 @@ assignments: true
 **Midterm**: 
 - on school PC
 ## Notes
-
+**ZH-ra kell**: 
+- BlockingQueue
+- Jelzések (Signal)
+- Thread indítás
+- Thread blocking
 
