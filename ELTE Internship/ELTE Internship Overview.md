@@ -10,7 +10,7 @@
 ## Description:
 ![[CAE_téma_ötletek.pdf]]
 ## Projects:
-[[Sonar Simulation]] #BSc #Graphics 
+[[ELTE Internship/Sonar Simulation]] #BSc #Graphics 
 
 ## Calendar:
 

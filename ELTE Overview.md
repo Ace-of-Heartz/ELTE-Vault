@@ -9,7 +9,7 @@
 ## Other
 ### Internship 
 [[ELTE Internship Overview]]
-- [[Sonar Simulation]]
+- [[ELTE Internship/Sonar Simulation]]
 
 ### Internship Continuation
 [[]]
