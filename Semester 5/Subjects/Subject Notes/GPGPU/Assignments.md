@@ -1,62 +1,14 @@
-# Edge Detection & Localization on GPUs
-- **Points**: 50%
-## Sources
-- [Line-detection (Wikipedia)](https://en.wikipedia.org/wiki/Line_detection)
-- [Canny Edge detector (Wikipedia)](https://en.wikipedia.org/wiki/Canny_edge_detector)
-## Tasks
-- CPU implementation
-- GPU implementation
-- Algorithm
-- Documentation (Test results + implementation)
-
 # N-Body simulation with Extras
 - **Points**: 90%
-## Sources
-## Tasks
-- GPU implementation
-- Algorithm
-- Re-parametrization 
-- 3D implementation (navigation) - Vulkan/OpenGL
-# Stereo Disparity Estimation
-- **Points**: 80%
-## Sources 
-- [MSE (Wikipedia)](https://en.wikipedia.org/wiki/Canny_edge_detector)
-- [SSIM (Wikipedia)](https://en.wikipedia.org/wiki/Structural_similarity)
-- [.PLY](http://paulbourke.net/dataformats/ply/)
-- [MeshLab](http://www.meshlab.net/)
-- [Images to use](http://vision.middlebury.edu/stereo/data/scenes2005/)
-## Tasks
-- IO read/write
-- Algorithm (2)
-- Comparison with other datasets
-- 3D point cloud conversion 
 
-# Image Denoising
-- **Points**: 80%
-## Sources
-- [Total Variation Image Denoising](https://en.wikipedia.org/wiki/Total_variation_denoising)
-## Tasks
-- GUI
-- Algorithm
-- Metric comparisons
-- Diagrams, technique comparisons
-# Contour Lines on the GPU
-- **Points**: 85%
-## Sources
-- [Marching Squares (Wikipedia)](https://en.wikipedia.org/wiki/Marching_squares)
-- [Contours](http://u235axe.web.elte.hu/GPUCourse/Contours/)
-- [STB Image Write (GitHub)](https://github.com/nothings/stb/blob/master/stb_image_write.h)
-## Tasks
-- Algorithm
-- Image display
-- OpenGL display
-- Bézier curves computation
-- Bézier rendering
+## Notes
+"Numerical integration is usually performed over small timesteps using a method such as [leapfrog integration](https://en.wikipedia.org/wiki/Leapfrog_integration "Leapfrog integration"). However all numerical integration leads to errors. Smaller steps give lower errors but run more slowly. Leapfrog integration is roughly 2nd order on the timestep, other integrators such as [Runge–Kutta methods](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods "Runge–Kutta methods") can have 4th order accuracy or much higher.
 
-# Height Map estimation from Normal Map
-- **Points**: 120%
-## Sources 
-## Tasks
-- Poisson System (establish + solve)
-- Inverse-filtered FFT filtering
-- Result comparison
+One of the simplest refinements is that each particle carries with it its own timestep variable, so that particles with widely different dynamical times don't all have to be evolved forward at the rate of that with the shortest time."
+
+## Sources
+- [N-Body Simulation](https://en.wikipedia.org/wiki/N-body_simulation)
+- [NVIDIA - N-Body Simulation](https://developer.nvidia.com/gpugems/gpugems3/part-v-physics-simulation/chapter-31-fast-n-body-simulation-cuda) 
+- [Barnes-Hut](http://arborjs.org/docs/barnes-hut)
+- [Barnes-Hut Paper](https://iss.oden.utexas.edu/Publications/Papers/burtscher11.pdf)
+- [GitHub - GPU N-Body](https://github.com/bneukom/gpu-nbody)
