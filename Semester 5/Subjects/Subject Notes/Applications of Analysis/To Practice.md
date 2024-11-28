@@ -1,3 +1,6 @@
-- Centre of Mass
-- Inertia
-- Parametric Integral
+# D.E.:
+- Szeparábilis
+- Egzakt
+- Lineáris
+- Lineáris egyenletrendszer
+ 

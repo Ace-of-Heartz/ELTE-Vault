@@ -206,8 +206,9 @@ Pl.
 	 - If we have a *starting value*: use the open interval that includes this *starting value* 
 	 - If we **don't** have a *starting value*: we must continue separately with all open intervals
 2.  **Algorithm**: 
-	1. $y'(x) = \frac{dy}{dx} = g(x) * h(y(x))$
-	2. $\int h(y)\ dy = \int g(x)\ dz$ 
+	1. $y'(x) = \frac{dy}{dx} = g(x) * h(y(x))$ és $h(y) \neq 0$ és $\dots$
+		-  keressük meg az intervallumokat (aszimptoták) 
+	2. $\int \frac{1}{h(y)}\ dy = \int g(x)\ dz$ 
 	3. Integrate both sides separately
 	4. $H(y) + \tilde{c} = G(x) + c$, where we can assume that $\tilde{c} = 0$ 
 	5. Calculate the value of $c$ using the *starting value*
@@ -236,3 +237,7 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 	- $x \in K_{\delta}(\tau)$, ahol $\delta > 0$ alkalmas
 	- és ha  $\alpha = \xi$ -> *k.é.p.* kielégítő fv.: $x = \tau$ és $y = \xi$ most (behelyettesítés)
 
+### Lineáris ODE
+#### Homogén megoldások 
+
+#### Inhomogén megoldások

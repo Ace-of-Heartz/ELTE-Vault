@@ -20,7 +20,7 @@ azaz lineárisan független oszlopvektorokból áll a 2. komponens általi mátr
 g(x,y) = 0
 $$
 2.)
-
+  
 ## Másodrendű elégséges feltétel a lokális szélsőérték létezéséhez
 **Legyen**:
 **Ekkor**:
