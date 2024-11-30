@@ -198,12 +198,31 @@ Pl.
 	- $y'(x) = g(x) * h(y(x))$ , where:
 		- $h : J \to \mathbb{R} / \{0  \}$, where $J$ is an open set *and* $0 \notin R_{h}$
 		- $g: I \to \mathbb{R}$ where $I$ is an open set  
-	- Make differential equation separable if not explicitly separable using the following steps:
+	- Make differential equation separable if not explicitly separable using the following steps *v1*. :
 		1. $y'(x) = f(x * a + y(x) * b + c)$  
 		2. $z(x) = x*a + y(x) * b + c$ => $z'(x) = a + y'(x) * b$ => $y'(x) = \frac{z'(x) - a}{b}$
 		3. $z'(x) = a + b * f(z(x)) = 1*(a + b*f(z(x)))$
+	- Make differential equation separable if not explicitly separable using the following steps *v2*. :
+		1. $y'(x) = f\left( \frac{a_{1}x + b_{1}y(x)+ c_{1}}{a_{2}x + b_{2}y(x) + c_{2}} \right)$, ahol $a_{1},a_{2},b_{1},b_{2},c_{1},c_{2} \in \mathbb{R}: a_{1}b_{2} - b_{1}a_{2} = 0$ vagy $a_{1}b_{2}-b_{1}a_{2} \neq 0$  
+		2. Ha $a_{1}b_{2} - b_{1}a_{2} = \det \begin{bmatrix}a_{1} &b_{1} \\ a_{2} & b_{2}\end{bmatrix} = 0$  
+			1. Akkor alkalmas $\lambda,\mu \in \mathbb{R}$  számokkal:
+				- $a_{1} = \lambda a_{2}$ és $b_{1}=\lambda b_{2}$
+				-  vagy
+				- $a_{2}=\mu a_{1}$ és $b_{2}=\mu b_{1}$ 
+			2. $f\left( \frac{a_{1}x + b_{1}y(x)+c_{1}}{a_{2}x+b_{2}y(x) + c_{2}} \right) =f\left( \frac{\lambda(a_{2}x + b_{2}y(x)) + c_{1}}{a_{2}x + b_{2}y(x)  +c_{2}} \right)$ vagy (ld. $\mu$-vel való helyettesítés)
+			3. Ha $b_{2}=0$ vagy $b_{1} = 0$, akkor trivi.
+			4. Ha nem: (most $z \equiv \psi$)
+				1. $\psi(x) = a_{2}x + b_{2}\phi(x)$ vagy (ld. $\mu$)
+				2. $$\psi'(x) = a_{2}+b_{2}\phi'(x) = a_{2}+b_{2}f\left( \frac{a_{1}x + b_{1}y(x)+c_{1}}{a_{2}x+b_{2}y(x) + c_{2}} \right) = a_{2}+b_{2}f\left( \frac{\lambda \psi(x)+c_{1}}{\psi(x)+c_{2}} \right) =:h(\psi(x))$$
+				3. Azaz $\psi$ a $z'=h\ o\ z$ autonom diff. egy. megoldása
+		 1.  Ha nem:
+			 1. $a_{1}x+b_{1}y+c_{1} = 0$ és $a_{2}x+b_{2}y+c_{2}=0$ egyenletrendszernek pontosan 1 megoldása van: $x=\xi$ és $y=\eta$
+			 2. Ha: $x=:u+\xi$ és $y=\nu+\eta$
+				 1. $\psi(u):=\phi(u+\xi)-\eta$ ($u \in D_{\phi}-\xi$) =>
+				 2. $\psi'(u) = \phi'(u+\xi)= f\left( \frac{a_{1}(u+\xi)+b_{1}\phi(u+\xi)+c_{1}}{a_{2}(u+\xi)+b_{2}\phi(u+\xi)+c_{2}} \right)=\dots=f\left( \frac{a_{1}+b_{1}\left( \frac{\psi(u)}{u} \right)}{a_{2}+b_{2}\left( \frac{\psi(u)}{u} \right)} \right)=:h\left( \frac{\psi(u)}{u} \right)$
+				 3. Azaz $z'(x) = h\left( \frac{z(x)}{x} \right)$ ($x\in D_{y}-\xi$) megoldása $\psi$ 
 1. **Check for interval**: 
-	 - If we have a *starting value*: use the open interval that includes this *starting value* 
+	 - If we have a *starting value*: use the open interval that includes this *starting value* $y(\tau ) = \xi$ 
 	 - If we **don't** have a *starting value*: we must continue separately with all open intervals
 2.  **Algorithm**: 
 	1. $y'(x) = \frac{dy}{dx} = g(x) * h(y(x))$ és $h(y) \neq 0$ és $\dots$
@@ -213,6 +232,11 @@ Pl.
 	4. $H(y) + \tilde{c} = G(x) + c$, where we can assume that $\tilde{c} = 0$ 
 	5. Calculate the value of $c$ using the *starting value*
 	6. $y(x) = H^{-1}(*{G(x) + c})$ - bring the equation to an explicit solution
+	7. $x \in K_{\delta}(\tau)$, where $\delta$ is sufficient (*megfelelő*)
+
+#### Notes:
+When $z=a*x + b*y + c$, we can say $z \lambda(a*x+b*y+c)$ as well in case we need to remove any additions or subtractions.
+Homogén fokszámú diff. egyenlet: $y=u*x$ alakkal kell dolgozni
 
 ### Exact ODE.:
 ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x,y)}{Q(x,y)} =-\frac{P(x,y(x))}{Q(x,y(x))}$ 
@@ -234,7 +258,7 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 **Megoldás**:
 - $\exists k \in \mathbb{R}: F(x,y(x)) = k \iff c(x) + F_{1}(x,y(x)) = \alpha$, ahol:
 	- $\alpha \in \mathbb{R}$
-	- $x \in K_{\delta}(\tau)$, ahol $\delta > 0$ alkalmas
+	- $x \in K_{\delta}(\tau)$, where $\delta > 0$ is sufficient (*alkalmas*)
 	- és ha  $\alpha = \xi$ -> *k.é.p.* kielégítő fv.: $x = \tau$ és $y = \xi$ most (behelyettesítés)
 
 ### Lineáris ODE
