@@ -236,11 +236,13 @@ Pl.
 
 #### Notes:
 When $z=a*x + b*y + c$, we can say $z \lambda(a*x+b*y+c)$ as well in case we need to remove any additions or subtractions.
-Homogén fokszámú diff. egyenlet: $y=u*x$ alakkal kell dolgozni
+Homogén fokszámú diff. egyenlet: $y=u*x$ alakkal kell dolgozni:
+- $u(x) = \frac{x}{y(x)}$
+- $u'(x) = \frac{y(x) - x*y'(x)}{y^2(x)}$ 
 
 ### Exact ODE.:
 ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x,y)}{Q(x,y)} =-\frac{P(x,y(x))}{Q(x,y(x))}$ 
-**Szükséges feltétel**: $\partial_{2}P(x,y) = \partial_{1}(Q(x,y))$ !
+**Szükséges feltétel**: $\partial_{2}P(x,y) = \partial_{1}(Q(x,y))$ ! (*[[Analysis 3 Exam#Young tétel|Young Tétel]]*)
 
 1. $F \in \mathbb{R}^{2} \to \mathbb{R}; F\in D; F' = (\partial_{1}F,\partial_{2}F) = (P,Q)$ fv. keresése, azaz:
 	- $\partial_{1}F(x,y) = P(x,y)$
@@ -252,8 +254,8 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 	- $\partial_{2}F(x,y) = Q(x,y)$
 	- $\partial_{2}(F_{1}(x,y) +c(y)) = \partial_{2}(F_{1}(x,y)) + c'(y)$ 
 	- és $\partial_{2}F(x,y) = \partial_{2}(F_{1}(x,y) + c(y)) \implies Q(x,y) = \partial_{2}(F_{1}(x,y)) + c'(y)$ 
-4. $c'(y) = Q(x,y) -\partial_{2}(F(x,y)) \implies c(y) = \int c'(y)\ dy$  
-5. $F(x,y)$ felírása
+4. $c'(y) = Q(x,y) -\partial_{2}(F_{1}(x,y)) \implies c(y) = \int c'(y)\ dy$  
+5. $F(x,y)$ felírása ($F(x,y) = F_{1}(x,y)+c(y)$) 
 
 **Megoldás**:
 - $\exists k \in \mathbb{R}: F(x,y(x)) = k \iff c(x) + F_{1}(x,y(x)) = \alpha$, ahol:
@@ -261,7 +263,33 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 	- $x \in K_{\delta}(\tau)$, where $\delta > 0$ is sufficient (*alkalmas*)
 	- és ha  $\alpha = \xi$ -> *k.é.p.* kielégítő fv.: $x = \tau$ és $y = \xi$ most (behelyettesítés)
 
+#### "Explicit Egzaktá alakítás" / Multiplikátor Módszer
+**Mikor kell**: ha $\partial_{2}P(x,y) \neq \partial_{1}Q(x,y)$ 
+**Lépések**:
+- $Pdx =Qdy \ | *m (\neq 0) \implies$ $P*m\ dx = Q* m\ dy \implies$ $\partial_{2}(P*m) = \partial_{1}(Q*m) \implies$ $m* \partial_{2}P + P* \partial_{2}m = m*\partial_{1}Q+Q*\partial_{1}m$ 
+-  $(\partial_{2}P - \partial_{1}Q)*m =Q*\partial_{1}m - P*\partial_{2}m$
+-  Ha $m$ csak $x$-től függő: $\implies (\partial_{2}P -\partial_{1}Q)*m = Q*m' \implies \frac{m'(x)}{m(x)} = \frac{\partial_{2}P(x,y)-\partial_{1}Q(x,y)}{Q(x,y)}$ (*csak x-től szabad függenie*)
+- Ha $m$ csak $y$-től függő: $\implies (\partial_{2}P - \partial_{1}Q)m = -P*m' \implies \frac{m'(y)}{m(y)}=-\frac{\partial_{2}P(x,y) - \partial_{1} Q(x,y)}{P(x,y)}$ (*csak y-tól szabad függenie*)
+- Tehát így kell keresünk egy $m$-t és az eredeti egyenletet ezzel kell beszoroznunk
+- Így egzakt d.e.-t kapunk 
+##### Notes:
+$m(x) = g(x)$ => $M(x) =G(x)$ => $e^{G(x)}$ lesz a multiplikátor fv. 
 ### Lineáris ODE
-#### Homogén megoldások 
+#### Lépések
+**Homogén megoldások**:
+- $y_{h}(x)=\alpha*e^{-\int g(x)dx} = \dots$
+**Partikuláris megoldás az inhomogén egyenlethez**:
 
-#### Inhomogén megoldások
+**Összes megoldás**:
+
+**Kezdeti feltétel**:
+
+**K.É.P. megoldása (fv.)**
+
+### Lineáris D.E. rendszerek
+
+### Bernoulli-típusú D.E.
+
+### Magasabb rendű D.E.
+
+#### Állandó együtthatós eset *és* kvázipolinom jobb oldal

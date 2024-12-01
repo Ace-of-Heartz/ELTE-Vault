@@ -10,3 +10,19 @@ Minták szórása: $\frac{\sigma}{\sqrt{ n }}$
 Fontos:
 - **Nullhipotézis** tartalmazzon (=)-et
 - Kétoldali próbánál mindig a felső %-hoz való **kritikus értéket** keressük -> ennek (-)-szerese lesz az alsó **kritikus érték**
+
+# Próbák:
+
+| Egymintás         |         |     |
+| ----------------- | ------- | --- |
+| Ismert szórás     | u-próba |     |
+| Ismeretlen szórás | t-próba |     |
+
+
+| Kétmintás |     |
+| --------- | --- |
+|           |     |
+
+# Kérdések:
+- Mi alapján $1 - pt(\dots)$ vagy simán $pt(\dots)$ 
+- u-próba esetén hogyan? (BSDA package használata)
