@@ -7,6 +7,7 @@ $\int f'(g(x)) * g'(x) dx = f(g(x))$
 
 ## Integral Substitution 
 $\int f(x)dx = \int f(g(t)) * g'(t) dt\ |\ t = g^{-1}(x)$ 
+
 ### Trigonometric Functions
 Mivel $\cos^2(\alpha) = \frac{1}{1+\tan^2(\alpha)}$
 - $\sin(x) = \frac{2*\tan\left( \frac{x}{2} \right)}{1+\tan^2\left( \frac{x}{2} \right)} = \frac{2t}{1+t^2}$ 
@@ -263,8 +264,9 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 	- $x \in K_{\delta}(\tau)$, where $\delta > 0$ is sufficient (*alkalmas*)
 	- és ha  $\alpha = \xi$ -> *k.é.p.* kielégítő fv.: $x = \tau$ és $y = \xi$ most (behelyettesítés)
 
-#### "Explicit Egzaktá alakítás" / Multiplikátor Módszer
+#### Multiplikátor Módszer
 **Mikor kell**: ha $\partial_{2}P(x,y) \neq \partial_{1}Q(x,y)$ 
+
 **Lépések**:
 - $Pdx =Qdy \ | *m (\neq 0) \implies$ $P*m\ dx = Q* m\ dy \implies$ $\partial_{2}(P*m) = \partial_{1}(Q*m) \implies$ $m* \partial_{2}P + P* \partial_{2}m = m*\partial_{1}Q+Q*\partial_{1}m$ 
 -  $(\partial_{2}P - \partial_{1}Q)*m =Q*\partial_{1}m - P*\partial_{2}m$
@@ -274,17 +276,42 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 - Így egzakt d.e.-t kapunk 
 ##### Notes:
 $m(x) = g(x)$ => $M(x) =G(x)$ => $e^{G(x)}$ lesz a multiplikátor fv. 
-### Lineáris ODE
+### Lineáris D.E.
 #### Lépések
+
 **Homogén megoldások**:
-- $y_{h}(x)=\alpha*e^{-\int g(x)dx} = \dots$
+- *Általános levezetés*: 
+	1. $y'(x) + g(x) * y(x) = \ln(x)$ 
+	2. $y'(x) + g(x) * y(x) = 0$ 
+	3. $\frac{y'(x)}{y(x)} = - g(x)$
+	4. $\ln| y(x)| = -\int g(x)\ dx$
+	5. $|y(x)| = e^{-\int g(x)\ dx}$ 
+	6. $y(x) =\pm e^{-\int g(x)\ dx} =\pm e^{G(x)+c}$, ahol $G \in \int g \neq \emptyset$ 
+	7. $\dots=e^c * e^{G(x)} = \alpha*e^{G(x)}$  
+- **Tömör forma**: $y_{h}(x)=\alpha*e^{-\int g(x)dx} = \dots = \alpha * h(x)$
+
 **Partikuláris megoldás az inhomogén egyenlethez**:
+1. $\exists y_{p}(x) = \beta(x) * {g(x)}$ ~ *Inhomogén megoldás*
+2. **Ekkor**: $y_p'(x) = f(x,y_{p}(x))$ (D.E.) és a fenti alapján fejezzük ki $\beta'(x)$-et
+	- **Fontos**: $\beta(x)$ részeknek mindig ki kell esniük -> ha nem, baj van!
+3. $\beta'(x) = g(x)$ formájú egyenletet kapunk
+4. Határozzuk meg $\beta(x)$-t (*integrálás*). 
+	- *Megjegyzés*: Integrálás során kapott $c\in \mathbb{R}$ konstanst válasszuk meg a legegyszerűbbnek
+5. Helyettesítsük be $y_{p}(x)$-be $\beta(x)$ értékét.
 
 **Összes megoldás**:
+- $y(x) = y_{h}(x) + y_{p}(x)$ = $\alpha* h(x) + y_{p}(x)$ 
+- Ekkor még $\alpha$ ismeretlen.
 
 **Kezdeti feltétel**:
+Használjuk fel a kezdeti értékünket:
+- $y(\tau) = \xi$ alapján: $y(\tau) = \alpha*h(\tau) + y_{p}(\tau) = \xi \implies \alpha := \frac{\xi - y_{p}(\tau)}{h(\tau)}$  
 
-**K.É.P. megoldása (fv.)**
+**K.É.P. megoldása**: 
+Írjuk fel $y(x)$-et az előbb kapott $\alpha$ értékével.
++ Írjuk fel $x$ legbővebb halmazát ($D_{y}$)
+
+
 
 ### Lineáris D.E. rendszerek
 
