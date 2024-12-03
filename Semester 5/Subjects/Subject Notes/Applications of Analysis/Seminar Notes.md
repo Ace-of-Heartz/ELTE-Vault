@@ -277,7 +277,6 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 ##### Notes:
 $m(x) = g(x)$ => $M(x) =G(x)$ => $e^{G(x)}$ lesz a multiplikátor fv. 
 ### Lineáris D.E.
-#### Lépések
 
 **Homogén megoldások**:
 - *Általános levezetés*: 
@@ -296,7 +295,7 @@ $m(x) = g(x)$ => $M(x) =G(x)$ => $e^{G(x)}$ lesz a multiplikátor fv.
 	- **Fontos**: $\beta(x)$ részeknek mindig ki kell esniük -> ha nem, baj van!
 3. $\beta'(x) = g(x)$ formájú egyenletet kapunk
 4. Határozzuk meg $\beta(x)$-t (*integrálás*). 
-	- *Megjegyzés*: Integrálás során kapott $c\in \mathbb{R}$ konstanst válasszuk meg a legegyszerűbbnek
+	- *Megjegyzés*: Integrálás során kapott $c\in \mathbb{R}$ konstanst válasszuk meg a legegyszerűbbnek 
 5. Helyettesítsük be $y_{p}(x)$-be $\beta(x)$ értékét.
 
 **Összes megoldás**:
@@ -311,9 +310,46 @@ Használjuk fel a kezdeti értékünket:
 Írjuk fel $y(x)$-et az előbb kapott $\alpha$ értékével.
 + Írjuk fel $x$ legbővebb halmazát ($D_{y}$)
 
-
-
 ### Lineáris D.E. rendszerek
+
+#### Kezdet:
+- $\begin{matrix} y_{1}(x) = \dots \\ y_{2}(x) = \dots \\ \dots \\ y_{n}(x) = \dots \end{matrix}$ egyenletek
+- **Kezdeti értékek**: $y_{1}(\tau) = \xi_{1}$, $y_{2}(\tau) = \xi_{2}$, $\dots$, $y_{n}(\tau) =\xi_{n}$ 
+- **Legyen**: 
+	- $y(x) =  \left(\begin{matrix}y_{1}(x) \\y_{2}(x) \\ \dots \\ y_{n}(x) \end{matrix} \right)$ $x\in D_{y}$ vektorfv.
+	- $A:= \begin{bmatrix} 1 & 2 \\ 2 & 1\end{bmatrix}$
+	- $b(x) = \left(\begin{matrix} g_{1}(x) \\ g_{2}(x) \\ \dots \\ g_{n}(x) \end{matrix}\right)$ , ahol $g_{i}(x)$ a $y_{i}(x)$ csak x-et tartalmazó része
+- **Így**: $y'(x) = A*y(x) + b(x)$ , ahol $x \in D_{y} = I$  
+
+#### Algo.:
+1. Keressük meg $A$ *sajátértékeit*: $\det(A - \lambda I)$ 
+2. Diszkrimináns alapján $\dots$
+	- Ha $D > 0$ azaz $\lambda_{i} \neq \lambda_{j},u.h.\ j\neq i$
+		1. Keressük meg $A$ *sajátvektorjait*:  $A * \begin{bmatrix}a_{1} \\ a_{2} \\ \dots \\ a_{n} \end{bmatrix} = \lambda_{} * \begin{bmatrix} a_{1} \\ a_{2}\\ \dots \\ a_{n}\end{bmatrix}$ vagy $(A-\lambda I) * s_{i} = 0$
+		2. Lin. egyenlet rendszer megoldás -> Válasszunk egy tetsz. jó megoldást $s_{i}$-hez! 
+		3. **Valós alaprendszer**:
+			-  $\phi_{1}(x) = e^{\lambda_{1}x}*s_{1}$
+			- $\phi_{2}(x) = e^{\lambda_{2}x}*s_{2}$
+			- $\dots$
+			- $\phi_{n}(x) = e^{\lambda_{n}x}*s_{n}$
+			- és: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*
+	- Ha $D = 0$
+	- Ha $D < 0$
+3. **Homogén lineáris D.E.R megoldásai** $y'(x) = A*y(x)$ ahol $x \in \mathbb{R}$
+	- $y_{h}(x) = \alpha * \phi_{1}(x) + \beta*\phi_{2}(x) + \dots +\dots \zeta*\phi_{n}(x) = \Phi(x) * \left(\begin{matrix}\alpha \\ \beta \\ \dots \\ \zeta \end{matrix}\right)$
+	- $\alpha,\beta,\dots,\zeta \in \mathbb{R}, x\in \mathbb{R}$
+4. **Partikuláris megoldás megadása** (*állandók variálása*)
+	- $\exists y_{p}(x) = \Phi(x) * \left( \begin{matrix}\alpha(x) \\ \beta(x) \\ \dots \\ \zeta(x)\end{matrix}\right)$, ahol $\left( \begin{matrix}\alpha(x) \\ \beta(x) \\ \dots \\ \zeta(x)\end{matrix}\right) =: c(x)$
+	- **ahol**: $\Phi(x) *\left( \begin{matrix}\alpha'(x) \\ \beta'(x) \\ \dots \\ \zeta'(x)\end{matrix}\right) = b(x)$ => $c'(x) = \Phi^{-1}(x) * b(x)$, ahol $b(x)$ lásd feljebb!
+	- **Fejezzük ki** $c'(x)$-et, majd írjuk fel az integrálokat! (Azaz számítsuk ki $c(x)$-et)
+		- **Fontos**: a konstans $c$-ket válasszuk meg a legegyszerűbbnek (pl. 0)
+	- **Fejezzük ki** $y_{p}(x) = \Phi(x)*c(x)$-et 
+5. **Összes megoldás**
+	- $y(x) = y_{h}(x) + y_{p}(x)$
+	- Ebben még vannak ismeretlen együtthatók
+6. **Kezdeti kikötés**
+	1. $y(\tau) = \left(\begin{matrix}\xi_{1} \\ \xi_{2} \\ \dots \\ \xi_{n}\end{matrix} \right) = \dots$ => határozzuk meg az ismeretlen együtthatókat! 
+7. **K.É.P. probléma megoldása** (felírás) + $x$ legbővebb halmaza
 
 ### Bernoulli-típusú D.E.
 
