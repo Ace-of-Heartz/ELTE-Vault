@@ -270,10 +270,11 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 **Lépések**:
 - $Pdx =Qdy \ | *m (\neq 0) \implies$ $P*m\ dx = Q* m\ dy \implies$ $\partial_{2}(P*m) = \partial_{1}(Q*m) \implies$ $m* \partial_{2}P + P* \partial_{2}m = m*\partial_{1}Q+Q*\partial_{1}m$ 
 -  $(\partial_{2}P - \partial_{1}Q)*m =Q*\partial_{1}m - P*\partial_{2}m$
--  Ha $m$ csak $x$-től függő: $\implies (\partial_{2}P -\partial_{1}Q)*m = Q*m' \implies \frac{m'(x)}{m(x)} = \frac{\partial_{2}P(x,y)-\partial_{1}Q(x,y)}{Q(x,y)}$ (*csak x-től szabad függenie*)
-- Ha $m$ csak $y$-től függő: $\implies (\partial_{2}P - \partial_{1}Q)m = -P*m' \implies \frac{m'(y)}{m(y)}=-\frac{\partial_{2}P(x,y) - \partial_{1} Q(x,y)}{P(x,y)}$ (*csak y-tól szabad függenie*)
-- Tehát így kell keresünk egy $m$-t és az eredeti egyenletet ezzel kell beszoroznunk
-- Így egzakt d.e.-t kapunk 
+-  Ha $m$ csak $x$-től függő: $\implies (\partial_{2}P -\partial_{1}Q)*m = Q*m' \implies m(\dots) = \frac{\partial_{2}P(x,y)-\partial_{1}Q(x,y)}{Q(x,y)}$ (*csak x-től szabad függenie*)
+- Ha $m$ csak $y$-től függő: $\implies (\partial_{2}P - \partial_{1}Q)m = -P*m' \implies m(\dots)=-\frac{\partial_{2}P(x,y) - \partial_{1} Q(x,y)}{P(x,y)}$ (*csak y-tól szabad függenie*)
+- Ekkor pl.: $M = \int m$
+- $\dots$ és a multiplikátorunk: $\mu(x,y) = e^{M(\dots)}$ 
+- Ezzel a $\mu$ multiplikátorral szorozzuk be $P$ és $Q$ fv.-eket -> **Egzakt ODE-t kapunk!** 
 ##### Notes:
 $m(x) = g(x)$ => $M(x) =G(x)$ => $e^{G(x)}$ lesz a multiplikátor fv. 
 ### Lineáris D.E.
@@ -290,7 +291,7 @@ $m(x) = g(x)$ => $M(x) =G(x)$ => $e^{G(x)}$ lesz a multiplikátor fv.
 - **Tömör forma**: $y_{h}(x)=\alpha*e^{-\int g(x)dx} = \dots = \alpha * h(x)$
 
 **Partikuláris megoldás az inhomogén egyenlethez**:
-1. $\exists y_{p}(x) = \beta(x) * {g(x)}$ ~ *Inhomogén megoldás*
+1. $\exists y_{p}(x) = \beta(x) * {h(x)}$ ~ *Inhomogén megoldás*
 2. **Ekkor**: $y_p'(x) = f(x,y_{p}(x))$ (D.E.) és a fenti alapján fejezzük ki $\beta'(x)$-et
 	- **Fontos**: $\beta(x)$ részeknek mindig ki kell esniük -> ha nem, baj van!
 3. $\beta'(x) = g(x)$ formájú egyenletet kapunk
