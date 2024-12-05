@@ -1,11 +1,11 @@
 Minták szórása: $\frac{\sigma}{\sqrt{ n }}$ 
 **Elsőfajú hiba** ~ ennek valószínűsége megegyezik a harang görbe kritikus tartományba eső részének nagyságával
-^ Ezen valószínűség az ú.n. *szignifikanciaszint*. Jelölése: $\alpha$ í
+^ Ezen valószínűség az ú.n. *szignifikanciaszint*. Jelölése: $\alpha$ 
 - Meghatározható!
 
 **Másodfajú hiba** ~ Ennek valószínűsége az új eloszlás alapján leírt valószínűsége annak, hogy a *nem* kritikus tartományban vagyunk (azaz ennek a tartománynak az új eloszlás szerinti nagysága)
 ^ Jelölése: $\beta$ 
-- Nem meghatározható igazán
+- Nem határozható meg igazán
 
 **Fontos** (*Mateking*): 
 - Kétoldali próbánál mindig a felső %-hoz való **kritikus értéket** keressük -> ennek (-)-szerese lesz az alsó **kritikus érték**
@@ -39,7 +39,11 @@ Mert hogy $\dots$
 $T_{1}(x) = \bar{x} - \theta^{-1}\left( 1-\frac{\alpha}{2} \right) *\sqrt{ \frac{\sigma^2}{n} }$
 $T_{2}(x)=\bar{x} + \theta^{-1}\left( 1-\frac{\alpha}{2} \right)*\sqrt{ \frac{\sigma^2}{n} }$
 
+## Max. $x$ hosszú konf. int
+`(2*sigma*qnorm(1-alpha/2)/x)^2
+`
 # Relatív gyakoriság (vagy más milyen param. becslése)
+**Hatásos becsléshez** kell:
 1. **Torzítatlanság vizsgálata**: $\mathbb{E}(\hat{p}) = p$
 2. **Minimális variancia**:
 	1. $\hat{p}$ varianciájának kiszámítása $\mathbb{D}^2(\dots)$ 
@@ -48,3 +52,7 @@ $T_{2}(x)=\bar{x} + \theta^{-1}\left( 1-\frac{\alpha}{2} \right)*\sqrt{ \frac{\s
 # Fischer információ
 $I_{n}(\theta) = \mathbb{E}\left( \left[ \frac{\partial l}{\partial \theta} \right]^2 \right) = -\mathbb{E}\left( \frac{\partial^2 l}{\partial \theta^2} \right)$ <- utolsó csak technikai feltételek mellett teljesül
 **Fontos**: $I_{n}(\theta)$ csak pozitív lehet
+
+## Infóhatár
+- $\psi(\alpha) = \dots$ formában megadott fv.-ekre kell megadni
+- $D^2(T(x)) \geq \frac{\psi'(\alpha)}{I_{n}(\alpha)}$ 
