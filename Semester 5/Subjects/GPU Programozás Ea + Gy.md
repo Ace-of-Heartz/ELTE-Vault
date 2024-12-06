@@ -28,6 +28,8 @@ assignments: true
 - [[Semester 5/Subjects/Subject Notes/GPGPU/2024-09-17|2024-09-17]]
 - [[Semester 5/Subjects/Subject Notes/GPGPU/2024-09-19|2024-09-19]]
 - [[Semester 5/Subjects/Subject Notes/GPGPU/2024-09-24|2024-09-24]]
+- [[Assignments]]
+- [[Personal Notes]] 
 ## Other Links
 - [Game Programming Patterns - Data Locality (Cache)](https://gameprogrammingpatterns.com/data-locality.html)
 - [GPGPU Lecture Website ](https://cv.inf.elte.hu/index.php/education/)

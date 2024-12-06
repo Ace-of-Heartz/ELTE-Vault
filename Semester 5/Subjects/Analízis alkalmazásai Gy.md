@@ -26,3 +26,5 @@ teachers: "[[Filipp Zoltán]]"
 
 ## Related Documents
 - [[Seminar Notes]] 
+- [[To Practice]] 
+- [[Questions]]

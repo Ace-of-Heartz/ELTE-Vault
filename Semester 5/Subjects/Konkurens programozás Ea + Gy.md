@@ -37,3 +37,14 @@ assignments: true
 - Thread indítás
 - Thread blocking
 
+## Related Documents
+- [[Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-09|2024-09-09]] Gy
+- [[Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-12|2024-09-12]] Ea
+- [[Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-16|2024-09-16]] Gy
+- [[Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-19|2024-09-19]] Ea
+- [[Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-23|2024-09-23]] Gy
+- [[Semester 5/Subjects/Subject Notes/Concurrent Programming/2024-09-30|2024-09-30]] Gy
+- [[2024-10-07]]  Gy
+- [[2024-10-10]] Ea
+- [[2024-10-14]] Gy
+- [[2024-11-11]] Gy 

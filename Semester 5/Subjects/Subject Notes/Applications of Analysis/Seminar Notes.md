@@ -334,26 +334,94 @@ Használjuk fel a kezdeti értékünket:
 			- $\dots$
 			- $\phi_{n}(x) = e^{\lambda_{n}x}*s_{n}$
 			- és: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*
-	- Ha $D = 0$
-	- Ha $D < 0$
-3. **Homogén lineáris D.E.R megoldásai** $y'(x) = A*y(x)$ ahol $x \in \mathbb{R}$
+	- Ha $D = 0$, azaz $\lambda_{i} = \lambda_{j}$,u.h. $j \neq i$ valamilyen $j,i$-re
+		1. Keressük meg $\lambda_{i}$ sajátvektorját az előző módon 
+		2. Alkalmazzunk perturbációt $\lambda_{j}$-hez tartozó sajátvektor meghatározásához (így lesz független a két s.v.) 
+		3. $A*s_{j} = \lambda_{j}*s_{j} + s_{i}$ => $s_{i}$ legyen valami egyszerű
+		4. **Valós alaprendszer**:
+			- $\phi_{i}(x) = e^{\lambda_{i}x}* s_{i}$
+			- $\phi_{j}(x) = e^{\lambda_{j}x} * (s_{j} + x*s_{i})$
+			- Többi hasonlóan az előző esethez.
+	- Ha $D < 0$, azaz $\lambda_{i}, \lambda_{j}$ két konjugált komplex szám
+		1. $s_{i}$ hasonlóan meghatározva, csak most elemei $\in \mathbb{C}$ 
+		2. $s_{j} := \bar{s_{i}}$
+		3. **Valós alaprendszer**: 
+			- $\phi_{i}(x) = \mathrm{Re}(e^{\lambda_{i}x} * s_ {i})$
+			- $\phi_{j}(x) = \mathrm{Im}(e^{\lambda_{i}x} * s_{i})$
+		- ahol:
+			- $e^{\mathrm{Im}(\lambda_{i})x} =\cos(x) + i\sin(x)$
+1. **Homogén lineáris D.E.R megoldásai** $y'(x) = A*y(x)$ ahol $x \in \mathbb{R}$
 	- $y_{h}(x) = \alpha * \phi_{1}(x) + \beta*\phi_{2}(x) + \dots +\dots \zeta*\phi_{n}(x) = \Phi(x) * \left(\begin{matrix}\alpha \\ \beta \\ \dots \\ \zeta \end{matrix}\right)$
 	- $\alpha,\beta,\dots,\zeta \in \mathbb{R}, x\in \mathbb{R}$
-4. **Partikuláris megoldás megadása** (*állandók variálása*)
+2. **Partikuláris megoldás megadása** (*állandók variálása*)
 	- $\exists y_{p}(x) = \Phi(x) * \left( \begin{matrix}\alpha(x) \\ \beta(x) \\ \dots \\ \zeta(x)\end{matrix}\right)$, ahol $\left( \begin{matrix}\alpha(x) \\ \beta(x) \\ \dots \\ \zeta(x)\end{matrix}\right) =: c(x)$
 	- **ahol**: $\Phi(x) *\left( \begin{matrix}\alpha'(x) \\ \beta'(x) \\ \dots \\ \zeta'(x)\end{matrix}\right) = b(x)$ => $c'(x) = \Phi^{-1}(x) * b(x)$, ahol $b(x)$ lásd feljebb!
 	- **Fejezzük ki** $c'(x)$-et, majd írjuk fel az integrálokat! (Azaz számítsuk ki $c(x)$-et)
 		- **Fontos**: a konstans $c$-ket válasszuk meg a legegyszerűbbnek (pl. 0)
 	- **Fejezzük ki** $y_{p}(x) = \Phi(x)*c(x)$-et 
-5. **Összes megoldás**
+3. **Összes megoldás**
 	- $y(x) = y_{h}(x) + y_{p}(x)$
 	- Ebben még vannak ismeretlen együtthatók
-6. **Kezdeti kikötés**
+4. **Kezdeti kikötés**
 	1. $y(\tau) = \left(\begin{matrix}\xi_{1} \\ \xi_{2} \\ \dots \\ \xi_{n}\end{matrix} \right) = \dots$ => határozzuk meg az ismeretlen együtthatókat! 
-7. **K.É.P. probléma megoldása** (felírás) + $x$ legbővebb halmaza
+5. **K.É.P. probléma megoldása** (felírás) + $x$ legbővebb halmaza
 
 ### Bernoulli-típusú D.E.
+#### Kezdet: 
+- $\emptyset = I \subseteq \mathbb{R}$ nyílt int.
+- $g,h: I \to \mathbb{R}$ folytonosak
+- $y'(x) + g(x)*y(x) = g(x)*y^\alpha(x)$ ($x \in D_{y} \subset I$), ahol $\alpha \in \mathbb{R}/\{ 1 \}$
+
+#### Algo.: 
+**Ötlet**: Alakítsuk lineáris. D.E-re 
+1. $y'(x) * y^{-\alpha}(x) + g(x) * y^{1-\alpha}(x)= h(x)$
+2. **Legyen**: $z(x) = y^{1-\alpha}(x)$ 
+3. **Ekkor**: $z'(x) =(1-\alpha) * y^{-\alpha} * y'(x)$
+4. **Behelyettesítve**: $\frac{z'(x)}{1-\alpha} + g(x) * z(x) = h(x)$
+- Ez már *lineáris differenciál egyenlet* 
 
 ### Magasabb rendű D.E.
+
+#### Homogén eset
+##### Kezdet 
+$a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ (nem kell mindegyik derivált)
+**Ötlet**: $y(x) = e^{\lambda x}$ alakban keresése
+1. $a_{n}(e^{\lambda x})^{(n)}+ a_{n-1}(e^{\lambda x})^{(n-1)} + \dots + a_{1}(e^{\lambda x})^{(1)} + a_{0}(e^{\lambda x})^{(0)} = 0$
+2.  $a_{n}\lambda^ne^{\lambda x} + a_{n-1}\lambda^{n-1}e^{\lambda x} + \dots + a_{1}\lambda e^{\lambda x} + a_{0}e^{\lambda x}$ $|\ \  /e^{\lambda x}$
+3. $a_{n}\lambda^n + a_{n-1}\lambda^{n-1} + \dots + a_{1}\lambda + a_{0}$ 
+##### Algo.: 
+1. Karakterisztikus egyenlet megoldása: $\lambda_{i}$ értékeket megkapjuk
+2. Ha $D > 0$: ($\lambda_{i} \neq \lambda_{j}$)
+	1. **Valós alaprendszer**:
+		- $y_{n}(x) = e^{\lambda_{n}x}$
+		-  $y_{n-1}(x) = e^{\lambda_{n-1}x}$ 
+		- $\dots$
+		-  $y_{2}(x) = e^{\lambda_{2}x}$
+		-  $y_{1}(x) = e^{\lambda_{1}x}$
+2. Ha $D = 0$: ($\lambda_{i} = \lambda_{j}$)
+	1. **Valós alaprendszer**: 
+		- $y_{i}(x) = e^{\lambda_{i}x}$
+		- $y_{j}(x) = e^{\lambda_{j}x}*x$
+1. Ha $D < 0$: ($\lambda_{i},\lambda_{j}$ konjugált komplex szám)
+	2. **Valós alaprendszer**: 
+		- $y_{i} = \mathrm{Re}(y^{\lambda_{i} x})$
+		- $y_{j} = \mathrm{Im}(e^{\lambda_{j}x})$
+	- Ebben az esetben egy ú.n. kvázipolinom fog megjelenni
+2. $y_{h}(x) = \alpha_{1} *y_{1}(x) + \alpha_{2}*y_{2}(x) + \dots + \alpha_{n} * y_{n}(x)$, azaz lesz $n$ db ismeretlenünk
+3. Ez egyben az **összes megoldás** is
+
+#### Megj.:
+- $\alpha + i*\beta \in \mathbb{C}$ gyök:
+	- $e^{\alpha x}*\cos(\beta x)$
+	- $e^{\alpha x} * \sin(\beta x)$ 
+
+#### Inhomogén eset
+
+##### Kezdet
+$a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = g(x)$ ~ (nem kell mindegyik derivált)
+##### Algo.:
+1. **Homogén rész**: $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ (nem kell mindegyik derivált) megoldása az előzőek alapján
+3. **Inhomogén rész**: $a_{n}$
+
 
 #### Állandó együtthatós eset *és* kvázipolinom jobb oldal
