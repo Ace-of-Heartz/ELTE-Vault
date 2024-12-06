@@ -185,7 +185,7 @@ Használjuk fel a kezdeti értékünket:
 2. **Legyen**: $z(x) = y^{1-\alpha}(x)$ 
 3. **Ekkor**: $z'(x) =(1-\alpha) * y^{-\alpha} * y'(x)$
 4. **Behelyettesítve**: $\frac{z'(x)}{1-\alpha} + g(x) * z(x) = h(x)$
-- Ez már *lineáris differenciál egyenlet* 
+- Ez már [[#Lineáris D.E.|lineáris differenciál egyenlet]] 
 
 ### Magasabb rendű D.E.
 
@@ -200,11 +200,8 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
 1. Karakterisztikus egyenlet megoldása: $\lambda_{i}$ értékeket megkapjuk
 2. Ha $D > 0$: ($\lambda_{i} \neq \lambda_{j}$)
 	1. **Valós alaprendszer**:
-		- $y_{n}(x) = e^{\lambda_{n}x}$
-		-  $y_{n-1}(x) = e^{\lambda_{n-1}x}$ 
-		- $\dots$
-		-  $y_{2}(x) = e^{\lambda_{2}x}$
-		-  $y_{1}(x) = e^{\lambda_{1}x}$
+		- $y_{i}(x) = e^{\lambda_{i}x}$
+		- $y_{j}(x) = e^{\lambda_{j}x}$
 2. Ha $D = 0$: ($\lambda_{i} = \lambda_{j}$)
 	1. **Valós alaprendszer**: 
 		- $y_{i}(x) = e^{\lambda_{i}x}$
@@ -213,7 +210,7 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
 	2. **Valós alaprendszer**: 
 		- $y_{i} = \mathrm{Re}(y^{\lambda_{i} x})$
 		- $y_{j} = \mathrm{Im}(e^{\lambda_{j}x})$
-	- Ebben az esetben egy ú.n. kvázipolinom fog megjelenni
+	- Ebben az esetben egy ú.n. [[Misc.#Quasi-polynomial (*Kvázipolinom*)|kvázipolinom]] fog megjelenni
 2. $y_{h}(x) = \alpha_{1} *y_{1}(x) + \alpha_{2}*y_{2}(x) + \dots + \alpha_{n} * y_{n}(x)$, azaz lesz $n$ db ismeretlenünk
 3. Ez egyben az **összes megoldás** is
 
@@ -227,7 +224,7 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
 ##### Kezdet
 $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = g(x)$ ~ ($a_{n}$ lehet 0)
 ##### Algo.:
-1. **Homogén rész**: $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ (nem kell mindegyik derivált) megoldása az előzőek alapján 
+1. **Homogén rész**: $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ (ld. [[#Homogén eset]])
 2. **Inhomogén rész**: (partikuláris megoldás)
 	1. $\exists y_{p}(x) = \alpha(x)*e^{\lambda_{1}x}+\beta(x)*e^{\lambda_{2}x}$ 
 	2. $\begin{bmatrix}e^{\lambda_{1}x} & e^{\lambda_{2}x} \\ (e^{\lambda_{1}x})' & (e^{\lambda_{2}x})'\end{bmatrix} = \begin{bmatrix}\alpha'(x) \\ \beta'(x)\end{bmatrix} = \begin{bmatrix} 0 \\ g(x)\end{bmatrix}$, ahol most $0$ egyébként tetszőleges egyenlet
@@ -240,8 +237,8 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = g(x)$ ~ ($a_{n}$ lehet 0
 #### Állandó együtthatós eset *és* kvázipolinom jobb oldal
 
 ##### Algo.:
-1. **Homogén rész** (ld. feljebb)
-2. **Partikuláris rész** (ld. feljebb)
+1. **Homogén rész** (ld. [[#Homogén eset]])
+2. **Partikuláris rész** (ld. [[#Inhomogén eset]])
 3. **Ha** a jobb oldal (azaz $g(x)$) ú.n. [[Misc.#Quasi-polynomial (*Kvázipolinom*)|kvázipolinom]] ($P(x)*e^{\alpha x} * (a*\cos(\beta x) + b*\sin(\beta x))$):
 	1. $\exists y_{p}(x) = Q(x) * e^{\alpha x}*(A*\cos(\beta x) + B *\sin(\beta x)) * x^k$ (X? vagy x?)
 	- $deg\ Q(x) \leq deg\ P(x)$,
