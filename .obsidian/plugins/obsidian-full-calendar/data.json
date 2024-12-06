@@ -9,6 +9,11 @@
       "type": "local",
       "color": "#92b5e3",
       "directory": "Game Dev Club/Club Schedule"
+    },
+    {
+      "type": "local",
+      "color": "#9d1515",
+      "directory": "Semester 5/Exam Dates"
     }
   ],
   "defaultCalendar": 0,
