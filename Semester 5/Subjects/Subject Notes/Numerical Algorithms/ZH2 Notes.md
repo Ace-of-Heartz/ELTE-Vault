@@ -17,3 +17,12 @@
 3. Alkalmazzuk a fenti sorbafejtést és a $y(x_{i+1})$-re a Taylor-sorba fejtést
 4. Írjuk fel a $g_{i}$-t már csak az $O(h^3)$-al 
 5. Így $p=2$ 
+
+
+# Runge-Kutta módszer stabilitása
+**Segéd fv.:** $\phi(x,y) = \sum^s_{i=1}c_{i}*k_{i}(x,y)$
+1. Lokális hiba és módszer képletének felírása
+2. Globális hiba felírása ezek különbségéből
+
+
+# Runge-Kutta módszer konzisztencia (vázlat)
