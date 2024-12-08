@@ -85,10 +85,11 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 ##### Notes:
 $m(x) = g(x)$ => $M(x) =G(x)$ => $e^{G(x)}$ lesz a multiplikátor fv. 
 ### Lineáris D.E.
+**Kezdeti alak**: $y'(x) + g(x) * y(x) = a(x)$
+
 
 **Homogén megoldások**:
 - *Általános levezetés*: 
-	1. $y'(x) + g(x) * y(x) = \ln(x)$ 
 	2. $y'(x) + g(x) * y(x) = 0$ 
 	3. $\frac{y'(x)}{y(x)} = - g(x)$
 	4. $\ln| y(x)| = -\int g(x)\ dx$
@@ -117,6 +118,8 @@ Használjuk fel a kezdeti értékünket:
 **K.É.P. megoldása**: 
 Írjuk fel $y(x)$-et az előbb kapott $\alpha$ értékével.
 + Írjuk fel $x$ legbővebb halmazát ($D_{y}$)
+
+#### Cauchy-multiplikátor módszer
 
 ### Lineáris D.E. rendszerek
 
@@ -186,6 +189,7 @@ Használjuk fel a kezdeti értékünket:
 3. **Ekkor**: $z'(x) =(1-\alpha) * y^{-\alpha} * y'(x)$
 4. **Behelyettesítve**: $\frac{z'(x)}{1-\alpha} + g(x) * z(x) = h(x)$
 - Ez már [[#Lineáris D.E.|lineáris differenciál egyenlet]] 
+5. Lineáris D.E. elvégeztével térjünk vissza $y(x)$-re 
 
 ### Magasabb rendű D.E.
 
