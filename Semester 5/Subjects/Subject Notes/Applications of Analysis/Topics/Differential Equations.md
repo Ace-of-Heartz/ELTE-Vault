@@ -128,7 +128,7 @@ Használjuk fel a kezdeti értékünket:
 - **Kezdeti értékek**: $y_{1}(\tau) = \xi_{1}$, $y_{2}(\tau) = \xi_{2}$, $\dots$, $y_{n}(\tau) =\xi_{n}$ 
 - **Legyen**: 
 	- $y(x) =  \left(\begin{matrix}y_{1}(x) \\y_{2}(x) \\ \dots \\ y_{n}(x) \end{matrix} \right)$ $x\in D_{y}$ vektorfv.
-	- $A:= \begin{bmatrix} 1 & 2 \\ 2 & 1\end{bmatrix}$
+	- $A:= \begin{bmatrix} \dots\end{bmatrix}$ ~ együtthatók mátrixa
 	- $b(x) = \left(\begin{matrix} g_{1}(x) \\ g_{2}(x) \\ \dots \\ g_{n}(x) \end{matrix}\right)$ , ahol $g_{i}(x)$ a $y_{i}(x)$ csak x-et tartalmazó része
 - **Így**: $y'(x) = A*y(x) + b(x)$ , ahol $x \in D_{y} = I$  
 
@@ -139,11 +139,8 @@ Használjuk fel a kezdeti értékünket:
 		1. Keressük meg $A$ *sajátvektorjait*:  $A * \begin{bmatrix}a_{1} \\ a_{2} \\ \dots \\ a_{n} \end{bmatrix} = \lambda_{} * \begin{bmatrix} a_{1} \\ a_{2}\\ \dots \\ a_{n}\end{bmatrix}$ vagy $(A-\lambda I) * s_{i} = 0$
 		2. Lin. egyenlet rendszer megoldás -> Válasszunk egy tetsz. jó megoldást $s_{i}$-hez! 
 		3. **Valós alaprendszer**:
-			-  $\phi_{1}(x) = e^{\lambda_{1}x}*s_{1}$
-			- $\phi_{2}(x) = e^{\lambda_{2}x}*s_{2}$
-			- $\dots$
-			- $\phi_{n}(x) = e^{\lambda_{n}x}*s_{n}$
-			- és: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*
+			-  $\phi_{i}(x) = e^{\lambda_{i}x}*s_{i}$
+			- $\phi_{j}(x) = e^{\lambda_{j}x}*s_{j}$
 	- Ha $D = 0$, azaz $\lambda_{i} = \lambda_{j}$,u.h. $j \neq i$ valamilyen $j,i$-re
 		1. Keressük meg $\lambda_{i}$ sajátvektorját az előző módon 
 		2. Alkalmazzunk perturbációt $\lambda_{j}$-hez tartozó sajátvektor meghatározásához (így lesz független a két s.v.) 
@@ -151,7 +148,6 @@ Használjuk fel a kezdeti értékünket:
 		4. **Valós alaprendszer**:
 			- $\phi_{i}(x) = e^{\lambda_{i}x}* s_{i}$
 			- $\phi_{j}(x) = e^{\lambda_{j}x} * (s_{j} + x*s_{i})$
-			- Többi hasonlóan az előző esethez.
 	- Ha $D < 0$, azaz $\lambda_{i}, \lambda_{j}$ két konjugált komplex szám
 		1. $s_{i}$ hasonlóan meghatározva, csak most elemei $\in \mathbb{C}$ 
 		2. $s_{j} := \bar{s_{i}}$
@@ -159,7 +155,8 @@ Használjuk fel a kezdeti értékünket:
 			- $\phi_{i}(x) = \mathrm{Re}(e^{\lambda_{i}x} * s_ {i})$
 			- $\phi_{j}(x) = \mathrm{Im}(e^{\lambda_{i}x} * s_{i})$
 		- ahol:
-			- $e^{\mathrm{Im}(\lambda_{i})x} =\cos(x) + i\sin(x)$
+			- $e^{\mathrm{Im}(\lambda_{i})x} =\cos(x) + i\sin(x)$ű
+	- **Ekkor**: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*
 1. **Homogén lineáris D.E.R megoldásai** $y'(x) = A*y(x)$ ahol $x \in \mathbb{R}$
 	- $y_{h}(x) = \alpha * \phi_{1}(x) + \beta*\phi_{2}(x) + \dots +\dots \zeta*\phi_{n}(x) = \Phi(x) * \left(\begin{matrix}\alpha \\ \beta \\ \dots \\ \zeta \end{matrix}\right)$
 	- $\alpha,\beta,\dots,\zeta \in \mathbb{R}, x\in \mathbb{R}$
@@ -198,7 +195,7 @@ Használjuk fel a kezdeti értékünket:
 $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
 **Ötlet**: $y(x) = e^{\lambda x}$ alakban keresése
 1. $a_{n}(e^{\lambda x})^{(n)}+ a_{n-1}(e^{\lambda x})^{(n-1)} + \dots + a_{1}(e^{\lambda x})^{(1)} + a_{0}(e^{\lambda x})^{(0)} = 0$
-2.  $a_{n}\lambda^ne^{\lambda x} + a_{n-1}\lambda^{n-1}e^{\lambda x} + \dots + a_{1}\lambda e^{\lambda x} + a_{0}e^{\lambda x}$ $|\ \  /e^{\lambda x}$
+2. 			- és: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix* $a_{n}\lambda^ne^{\lambda x} + a_{n-1}\lambda^{n-1}e^{\lambda x} + \dots + a_{1}\lambda e^{\lambda x} + a_{0}e^{\lambda x}$ $|\ \  /e^{\lambda x}$
 3. $a_{n}\lambda^n + a_{n-1}\lambda^{n-1} + \dots + a_{1}\lambda + a_{0}$ 
 ##### Algo.: 
 1. Karakterisztikus egyenlet megoldása: $\lambda_{i}$ értékeket megkapjuk
@@ -218,7 +215,7 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
 2. $y_{h}(x) = \alpha_{1} *y_{1}(x) + \alpha_{2}*y_{2}(x) + \dots + \alpha_{n} * y_{n}(x)$, azaz lesz $n$ db ismeretlenünk
 3. Ez egyben az **összes megoldás** is
 
-#### Megj.:
+#### Megj.:			- és: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*
 - $\alpha + i*\beta \in \mathbb{C}$ gyök:
 	- $e^{\alpha x}*\cos(\beta x)$
 	- $e^{\alpha x} * \sin(\beta x)$ 
@@ -231,7 +228,7 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = g(x)$ ~ ($a_{n}$ lehet 0
 1. **Homogén rész**: $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ (ld. [[#Homogén eset]])
 2. **Inhomogén rész**: (partikuláris megoldás)
 	1. $\exists y_{p}(x) = \alpha(x)*e^{\lambda_{1}x}+\beta(x)*e^{\lambda_{2}x}$ 
-	2. $\begin{bmatrix}e^{\lambda_{1}x} & e^{\lambda_{2}x} \\ (e^{\lambda_{1}x})' & (e^{\lambda_{2}x})'\end{bmatrix} = \begin{bmatrix}\alpha'(x) \\ \beta'(x)\end{bmatrix} = \begin{bmatrix} 0 \\ g(x)\end{bmatrix}$, ahol most $0$ egyébként tetszőleges egyenlet
+	2. $\begin{bmatrix}e^{\lambda_{1}x} & e^{\lambda_{2}x} \\ (e^{\lambda_{1}x})' & (e^{\lambda_{2}x})'\end{bmatrix} = \begin{bmatrix}\alpha'(x) \\ \beta'(x)\end{bmatrix} = \begin{bmatrix} 0 \\ g(x)\end{bmatrix}$, ahol most $0$ eg			- és: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*yébként tetszőleges egyenlet
 	3. **Legyen**: $c:= \begin{bmatrix}\alpha'(x)\\ \beta'(x)\end{bmatrix}$
 	4. Megkapjuk a derivált függvényeket => Integráljuk őket egyesével $x$ szerint és a konstansokat válasszuk meg a legegyszerűbbnek
 	5. Helyettesítsük be őket $y_{p}(x)$-be
@@ -242,11 +239,13 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = g(x)$ ~ ($a_{n}$ lehet 0
 
 ##### Algo.:
 1. **Homogén rész** (ld. [[#Homogén eset]])
-2. **Partikuláris rész** (ld. [[#Inhomogén eset]])
-3. **Ha** a jobb oldal (azaz $g(x)$) ú.n. [[Misc.#Quasi-polynomial (*Kvázipolinom*)|kvázipolinom]] ($P(x)*e^{\alpha x} * (a*\cos(\beta x) + b*\sin(\beta x))$):
+2. **Partikuláris rész** (azaz *állandók variálása*) (ld. [[#Inhomogén eset]])
+VAGY
+2. **Ha** a jobb oldal (azaz $g(x)$) ú.n. [[Misc.#Quasi-polynomial (*Kvázipolinom*)|kvázipolinom]] ($P(x)*e^{\alpha x} * (a*\cos(\beta x) + b*\sin(\beta x))$):
 	1. $\exists y_{p}(x) = Q(x) * e^{\alpha x}*(A*\cos(\beta x) + B *\sin(\beta x)) * x^k$ (X? vagy x?)
 	- $deg\ Q(x) \leq deg\ P(x)$,
 	- K := "$(\alpha+i*\beta)$ hányszoros gyöke a kvázipolinomnak" => Azaz vizsgáljuk meg $\lambda_{i}$-ket
-	3. **Ekkor** ez a $y_{p}(x)$ megoldás $\iff$ $a_n(y_{p}(x))^{(n)} + \dots + a_{1} (y_{p}(x) )' + a_{0}(y_{p}(x) ) = g(x)$,  
-	4. **Ekkor** megkapjuk $A$ és $B$ értékeket, amiket helyettesítsünk be
-4. **Összes megoldás**: $y(x) = y_{h}(x) + y_{p}(x)$ 
+	- $\alpha$ és $\beta$ itt ($P(x)*e^{\alpha x} * (a*\cos(\beta x) + b*\sin(\beta x))$)-ból származnak
+	2. **Ekkor** ez a $y_{p}(x)$ megoldás $\iff$ $a_n(y_{p}(x))^{(n)} + \dots + a_{1} (y_{p}(x) )' + a_{0}(y_{p}(x) ) = g(x)$,  
+	3. **Ekkor** megkapjuk $A$ és $B$ értékeket, amiket helyettesítsünk be
+5. **Összes megoldás**: $y(x) = y_{h}(x) + y_{p}(x)$ 			- és: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*
