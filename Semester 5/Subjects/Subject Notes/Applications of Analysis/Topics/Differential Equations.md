@@ -70,15 +70,23 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 	- $\alpha \in \mathbb{R}$
 	- $x \in K_{\delta}(\tau)$, where $\delta > 0$ is sufficient (*alkalmas*)
 	- és ha  $\alpha = \xi$ -> *k.é.p.* kielégítő fv.: $x = \tau$ és $y = \xi$ most (behelyettesítés)
-
+- Fejezzük ki explicit $y(x)$ 
 #### Multiplikátor Módszer
 **Mikor kell**: ha $\partial_{2}P(x,y) \neq \partial_{1}Q(x,y)$ 
 
 **Lépések**:
 - $Pdx =Qdy \ | *m (\neq 0) \implies$ $P*m\ dx = Q* m\ dy \implies$ $\partial_{2}(P*m) = \partial_{1}(Q*m) \implies$ $m* \partial_{2}P + P* \partial_{2}m = m*\partial_{1}Q+Q*\partial_{1}m$ 
 -  $(\partial_{2}P - \partial_{1}Q)*m =Q*\partial_{1}m - P*\partial_{2}m$
--  Ha $m$ csak $x$-től függő: $\implies (\partial_{2}P -\partial_{1}Q)*m = Q*m' \implies m(\dots) = \frac{\partial_{2}P(x,y)-\partial_{1}Q(x,y)}{Q(x,y)}$ (*csak x-től szabad függenie*)
-- Ha $m$ csak $y$-től függő: $\implies (\partial_{2}P - \partial_{1}Q)m = -P*m' \implies m(\dots)=-\frac{\partial_{2}P(x,y) - \partial_{1} Q(x,y)}{P(x,y)}$ (*csak y-tól szabad függenie*)
+
+**1. fajta jelöléssel**
+-  Ha $m$ csak $x$-től függő: $\implies (\partial_{2}P -\partial_{1}Q)*m = Q*m' \implies \frac{m'}{m} = \frac{\partial_{2}P(x,y)-\partial_{1}Q(x,y)}{Q(x,y)}$ (*csak x-től szabad függenie*)
+- Ha $m$ csak $y$-től függő: $\implies (\partial_{2}P - \partial_{1}Q)m = -P*m' \implies \frac{m'}{m}=-\frac{\partial_{2}P(x,y) - \partial_{1} Q(x,y)}{P(x,y)}$ (*csak y-tól szabad függenie*)
+- Ekkor világos, hogy $\int \frac{m'}{m} =\ln(m)$ => $e^{ln(m)} = m$ 
+- Ezzel az $m$ multiplikátorral szorozzuk be a P és Q fv.-eket -> **Egzakt ODE-t kapunk!**
+
+**2. fajta jelöléssel**:
+-  Ha $m$ csak $x$-től függő: $\implies (\partial_{2}P -\partial_{1}Q)*m = Q*m' \implies m= \frac{\partial_{2}P(x,y)-\partial_{1}Q(x,y)}{Q(x,y)}$ (*csak x-től szabad függenie*)
+- Ha $m$ csak $y$-től függő: $\implies (\partial_{2}P - \partial_{1}Q)m = -P*m' \implies m=-\frac{\partial_{2}P(x,y) - \partial_{1} Q(x,y)}{P(x,y)}$ (*csak y-tól szabad függenie*)
 - Ekkor pl.: $M = \int m$
 - $\dots$ és a multiplikátorunk: $\mu(x,y) = e^{M(\dots)}$ 
 - Ezzel a $\mu$ multiplikátorral szorozzuk be $P$ és $Q$ fv.-eket -> **Egzakt ODE-t kapunk!** 
@@ -109,7 +117,7 @@ $m(x) = g(x)$ => $M(x) =G(x)$ => $e^{G(x)}$ lesz a multiplikátor fv.
 
 **Összes megoldás**:
 - $y(x) = y_{h}(x) + y_{p}(x)$ = $\alpha* h(x) + y_{p}(x)$ 
-- Ekkor még $\alpha$ ismeretlen.
+- $\alpha \in \mathbb{R}$ ismeretlen
 
 **Kezdeti feltétel**:
 Használjuk fel a kezdeti értékünket:
@@ -124,11 +132,11 @@ Használjuk fel a kezdeti értékünket:
 ### Lineáris D.E. rendszerek
 
 #### Kezdet:
-- $\begin{matrix} y_{1}(x) = \dots \\ y_{2}(x) = \dots \\ \dots \\ y_{n}(x) = \dots \end{matrix}$ egyenletek
+- $\begin{matrix} y_{1}'(x) = a_{11}*y_{1}(x) + a_{12}*y_{2}(x) + \dots + a_{1n}*y_{n} +g_{1}(x) \\ y_{2}'(x) = a_{21}*y_{1}(x) + a_{22}*y_{2}(x) + \dots + a_{2n}*y_{n} + g_{2}(x) \\ \dots \\ y_{n}'(x) = a_{n1} * y_{1}(x) + a_{n2} * y_{2}(x) + \dots +a_{nn}*y_{n} + g_{n}(x) \end{matrix}$ ~ $n$ db egyenlet
 - **Kezdeti értékek**: $y_{1}(\tau) = \xi_{1}$, $y_{2}(\tau) = \xi_{2}$, $\dots$, $y_{n}(\tau) =\xi_{n}$ 
 - **Legyen**: 
 	- $y(x) =  \left(\begin{matrix}y_{1}(x) \\y_{2}(x) \\ \dots \\ y_{n}(x) \end{matrix} \right)$ $x\in D_{y}$ vektorfv.
-	- $A:= \begin{bmatrix} \dots\end{bmatrix}$ ~ együtthatók mátrixa
+	- $A:= \begin{bmatrix} a_{11} & a_{12} & \dots & a_{1n} \\ a_{21} & a_{22} & \dots & a_{2n} \\ \dots & \dots & \dots & \dots \\ a_{n1} & a_{n2} & \dots & a_{nn} \end{bmatrix}$ ~ együtthatók mátrixa
 	- $b(x) = \left(\begin{matrix} g_{1}(x) \\ g_{2}(x) \\ \dots \\ g_{n}(x) \end{matrix}\right)$ , ahol $g_{i}(x)$ a $y_{i}(x)$ csak x-et tartalmazó része
 - **Így**: $y'(x) = A*y(x) + b(x)$ , ahol $x \in D_{y} = I$  
 
@@ -155,7 +163,7 @@ Használjuk fel a kezdeti értékünket:
 			- $\phi_{i}(x) = \mathrm{Re}(e^{\lambda_{i}x} * s_ {i})$
 			- $\phi_{j}(x) = \mathrm{Im}(e^{\lambda_{i}x} * s_{i})$
 		- ahol:
-			- $e^{\mathrm{Im}(\lambda_{i})x} =\cos(x) + i\sin(x)$ű
+			- $e^{\mathrm{Im}(\lambda_{i})x} =\cos(x) + i\sin(x)$
 	- **Ekkor**: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*
 1. **Homogén lineáris D.E.R megoldásai** $y'(x) = A*y(x)$ ahol $x \in \mathbb{R}$
 	- $y_{h}(x) = \alpha * \phi_{1}(x) + \beta*\phi_{2}(x) + \dots +\dots \zeta*\phi_{n}(x) = \Phi(x) * \left(\begin{matrix}\alpha \\ \beta \\ \dots \\ \zeta \end{matrix}\right)$
@@ -189,13 +197,15 @@ Használjuk fel a kezdeti értékünket:
 5. Lineáris D.E. elvégeztével térjünk vissza $y(x)$-re 
 
 ### Magasabb rendű D.E.
-
+r5
 #### Homogén eset
 ##### Kezdet 
 $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
+**Opcionálisan** *K.É.P.* : $y(\tau) =\xi_{1},\ y'(\tau)=\xi_{2},\ y''(\tau)=\xi_{3},\ \dots,\ y^{(n-1)}(\tau) =\xi_{n},\ y^{(n)}(\tau)=\xi_{n+1}$ 
+
 **Ötlet**: $y(x) = e^{\lambda x}$ alakban keresése
 1. $a_{n}(e^{\lambda x})^{(n)}+ a_{n-1}(e^{\lambda x})^{(n-1)} + \dots + a_{1}(e^{\lambda x})^{(1)} + a_{0}(e^{\lambda x})^{(0)} = 0$
-2. 			- és: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix* $a_{n}\lambda^ne^{\lambda x} + a_{n-1}\lambda^{n-1}e^{\lambda x} + \dots + a_{1}\lambda e^{\lambda x} + a_{0}e^{\lambda x}$ $|\ \  /e^{\lambda x}$
+2.  $a_{n}\lambda^ne^{\lambda x} + a_{n-1}\lambda^{n-1}e^{\lambda x} + \dots + a_{1}\lambda e^{\lambda x} + a_{0}e^{\lambda x}$ $|\ \  /e^{\lambda x}$
 3. $a_{n}\lambda^n + a_{n-1}\lambda^{n-1} + \dots + a_{1}\lambda + a_{0}$ 
 ##### Algo.: 
 1. Karakterisztikus egyenlet megoldása: $\lambda_{i}$ értékeket megkapjuk
@@ -215,25 +225,21 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
 2. $y_{h}(x) = \alpha_{1} *y_{1}(x) + \alpha_{2}*y_{2}(x) + \dots + \alpha_{n} * y_{n}(x)$, azaz lesz $n$ db ismeretlenünk
 3. Ez egyben az **összes megoldás** is
 
-#### Megj.:			- és: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*
+#### Megj.:	
 - $\alpha + i*\beta \in \mathbb{C}$ gyök:
 	- $e^{\alpha x}*\cos(\beta x)$
 	- $e^{\alpha x} * \sin(\beta x)$ 
 
 #### Inhomogén eset
-
-##### Kezdet
-$a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = g(x)$ ~ ($a_{n}$ lehet 0)
 ##### Algo.:
 1. **Homogén rész**: $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ (ld. [[#Homogén eset]])
 2. **Inhomogén rész**: (partikuláris megoldás)
 	1. $\exists y_{p}(x) = \alpha(x)*e^{\lambda_{1}x}+\beta(x)*e^{\lambda_{2}x}$ 
-	2. $\begin{bmatrix}e^{\lambda_{1}x} & e^{\lambda_{2}x} \\ (e^{\lambda_{1}x})' & (e^{\lambda_{2}x})'\end{bmatrix} = \begin{bmatrix}\alpha'(x) \\ \beta'(x)\end{bmatrix} = \begin{bmatrix} 0 \\ g(x)\end{bmatrix}$, ahol most $0$ eg			- és: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*yébként tetszőleges egyenlet
+	2. $\begin{bmatrix}e^{\lambda_{1}x} & e^{\lambda_{2}x} \\ (e^{\lambda_{1}x})' & (e^{\lambda_{2}x})'\end{bmatrix} = \begin{bmatrix}\alpha'(x) \\ \beta'(x)\end{bmatrix} = \begin{bmatrix} 0 \\ g(x)\end{bmatrix}$, ahol most $0$ egyébként tetszőleges egyenlet
 	3. **Legyen**: $c:= \begin{bmatrix}\alpha'(x)\\ \beta'(x)\end{bmatrix}$
 	4. Megkapjuk a derivált függvényeket => Integráljuk őket egyesével $x$ szerint és a konstansokat válasszuk meg a legegyszerűbbnek
 	5. Helyettesítsük be őket $y_{p}(x)$-be
 3. **Összes megoldás**: $y(x) = y_{h}(x) + y_{p}(x)$
-
 
 #### Állandó együtthatós eset *és* kvázipolinom jobb oldal
 
@@ -243,9 +249,10 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = g(x)$ ~ ($a_{n}$ lehet 0
 VAGY
 2. **Ha** a jobb oldal (azaz $g(x)$) ú.n. [[Misc.#Quasi-polynomial (*Kvázipolinom*)|kvázipolinom]] ($P(x)*e^{\alpha x} * (a*\cos(\beta x) + b*\sin(\beta x))$):
 	1. $\exists y_{p}(x) = Q(x) * e^{\alpha x}*(A*\cos(\beta x) + B *\sin(\beta x)) * x^k$ (X? vagy x?)
-	- $deg\ Q(x) \leq deg\ P(x)$,
+	- $deg\ Q(x) \leq deg\ P(x)$, így például:
+		- $deg\ P(x) = 2\implies Q(x):= t_{1}x^2+t_{2}x+t_{3}$, alakú, ahol $t_{i}$ ismeretlen együtthatók
 	- K := "$(\alpha+i*\beta)$ hányszoros gyöke a kvázipolinomnak" => Azaz vizsgáljuk meg $\lambda_{i}$-ket
 	- $\alpha$ és $\beta$ itt ($P(x)*e^{\alpha x} * (a*\cos(\beta x) + b*\sin(\beta x))$)-ból származnak
-	2. **Ekkor** ez a $y_{p}(x)$ megoldás $\iff$ $a_n(y_{p}(x))^{(n)} + \dots + a_{1} (y_{p}(x) )' + a_{0}(y_{p}(x) ) = g(x)$,  
-	3. **Ekkor** megkapjuk $A$ és $B$ értékeket, amiket helyettesítsünk be
-5. **Összes megoldás**: $y(x) = y_{h}(x) + y_{p}(x)$ 			- és: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*
+	1. **Ekkor** ez a $y_{p}(x)$ megoldás $\iff$ $a_n(y_{p}(x))^{(n)} + \dots + a_{1} (y_{p}(x) )' + a_{0}(y_{p}(x) ) = g(x)$,  
+	2. **Ekkor** megkapjuk $A$ és $B$ értékeket, amiket helyettesítsünk be
+3. **Összes megoldás**: $y(x) = y_{h}(x) + y_{p}(x)$ 
