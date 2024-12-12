@@ -1,7 +1,11 @@
-# ELTE-Vault 
+# ELTE-Vault
 ## Description:
-If you are here, you found my personal repository for holding my Obsidian vault about my studies at Eötvös Lóránd University of Hungary. Feel free to use my notes in case you are a fellow student. 
+If you are here, you found my personal repository for holding my Obsidian vault about my studies at **Eötvös Loránd University of Hungary**. Feel free to use any of my notes, especially if you are a fellow student of ELTE. 
 
+The usage of this repository is recommended with **Obsidian** due to the following happening with the lack of it:
+- Some of the LaTex renders not working natively.
+- Broken links between notes.
+- 
 ## Plugins:
 List of plugins I use in this vault:
 - [Advanced Tables]()
