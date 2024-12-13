@@ -6,3 +6,8 @@ $\sum_{n=0}q^n$
 
 **Abszolút konvergencia**: $\iff |q| < 1$ 
 **Összegfüggvény**: $f(x) :=\frac{1}{1-q}$
+
+# Páros és páratlan függvények
+- $páros *páros = páros$
+- $páratlan * páros = páratlan$
+- $páratlan * páratlan = páros$ 
