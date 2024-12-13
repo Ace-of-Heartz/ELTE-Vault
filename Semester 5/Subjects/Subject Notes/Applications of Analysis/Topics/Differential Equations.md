@@ -128,6 +128,13 @@ Használjuk fel a kezdeti értékünket:
 + Írjuk fel $x$ legbővebb halmazát ($D_{y}$)
 
 #### Cauchy-multiplikátor módszer
+**Homogén és Inhomogén megoldás** helyett
+
+1. $y'(x) + g(x)*y(x) = h(x)\ \ \ \ /*e^{\int g(x)\ dx}$   
+2. $y' * e^{\int g} + g*y*e^{\int g}=h*e^{\int g}$
+3. $\left( y*e^{\int g} \right)' = h*e^{\int g} \implies y*e^{\int g}= \int h*e^{\int g}$
+4. $y = e^{-\int g}* \int h * e^{\int g}$
+5. Oldjuk meg a **kezdeti kikötésre** is az $y$-t
 
 ### Lineáris D.E. rendszerek
 
