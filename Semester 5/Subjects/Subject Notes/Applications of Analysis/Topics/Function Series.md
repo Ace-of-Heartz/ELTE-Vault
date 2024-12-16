@@ -12,14 +12,14 @@
 2. **Legyen:** $\epsilon$ fix, $x \in D_{0}$
 3. Adjunk egy olyan csak $n$-től függő becslést, amely eleget tesz annak, hogy $< \epsilon$, ez most legyen $g(n)$
 5. **Ekkor**: $\forall \epsilon > 0\ \exists\ N:= [g(n)]+1\in \mathbb{N}\  \forall n \in \mathbb{N}: n>N$ és $\forall x\in D_{0}$=> $|f_{n}(x) - f(x)| \leq \frac{1}{n} < \frac{1}{N} < \epsilon$, azaz a *konvergencia egyenletes*
-Ált. ezt a legbővebb $D_{0}$ halmazt kell meghatároznunk
+Ált. ezt a legbővebb $D_{0}$ halmazt kell meghatároznunk.
 
 ## Egyenletes konvergencia cáfolása
 
 ### Tétellel
-Egy $A \subset (-1,1], A \neq \emptyset$ halmazra egyenletesen konvergens egy fv. sorozat $\iff$ $\pm 1 \in A'$ 
+Egy $A \subset (-1,1], A \neq \emptyset$ halmazra egyenletesen konvergens egy fv. sorozat $\iff$ $\pm 1 \in A'$.
 
-**Általánosan**: a $A'$-nek ($A$ torlódási pontjainak halmazának) van olyan eleme, ahol $f$ nem folytonos $\iff$ *nem* egyenletesen konvergens a fv. sorozat $A$-n
+**Általánosan**: a $A'$-nek ($A$ torlódási pontjainak halmazának) van olyan eleme, ahol $f$ nem folytonos $\iff$ *nem* egyenletesen konvergens a fv. sorozat $A$-n.
 ### Definícióval
 Először megsejtük, hogy valóban nem igaz az egyenletes konvergencia most.
 **Majd**:

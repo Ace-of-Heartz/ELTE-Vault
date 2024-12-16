@@ -4,7 +4,7 @@ tags:
 semester: 5
 type: Gy
 credits: 2
-exam: 
+exam: false
 midterm: true
 assignments: true
 teachers:
@@ -17,6 +17,8 @@ teachers:
 ## Requirements
 - Shadertoy assignment
 - Major assignment
+	- Multiple, offline dates for presenting your work
+	- **Deadline**: 15th of January
 ## Notes
 - [[2024-09-20]]
 - [[2024-09-27]]
