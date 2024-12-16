@@ -1,5 +1,5 @@
 
-|                | Very Important                                                    | Important                                                                                | Less Important       |
-| -------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | -------------------- |
-| **Short-Term** | - GPGPU presentation (Good for now)<br>- MatStat practice<br><br> | - DirectX Stuff<br>- Analízis practice<br>- NumAlgo practice<br>- MatStat assignment<br> | <br>- MicroMouse<br> |
-| **Long-Term**  |                                                                   | TTK                                                                                      |                      |
+|                | Very Important                                                                                      | Important                                                                                            | Less Important                                |
+| -------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| **Short-Term** | - GPGPU presentation practice + refinement<br>- Statistics Assignment<br>- AI Exam Practice<br><br> | - DirectX Stuff<br>- Applications of Calculus Exam <br>- GPU Assignment<br>- Graphics Assignment<br> | - Graphalgorithms Exam<br>- Telecomm Exam<br> |
+| **Long-Term**  |                                                                                                     | <br>- TTK                                                                                            |                                               |
