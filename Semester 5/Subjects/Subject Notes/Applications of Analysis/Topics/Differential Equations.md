@@ -33,28 +33,29 @@
 	 - If we have a *starting value*: use the open interval that includes this *starting value* $y(\tau ) = \xi$ 
 	 - If we **don't** have a *starting value*: we must continue separately with all open intervals
 2.  **Algorithm**: 
-	1. $y'(x) = \frac{dy}{dx} = g(x) * h(y(x))$ és $h(y) \neq 0$ és $\dots$
-		-  keressük meg az intervallumokat (aszimptoták) 
+	1. $y'(x) = \frac{dy}{dx} = g(x) * h(y(x))$ and $h(y) \neq 0$ and $\dots$
+		-  find the intervals of $y$ and $x$ (asymptotes) 
 	2. $\int \frac{1}{h(y)}\ dy = \int g(x)\ dz$ 
 	3. Integrate both sides separately
 	4. $H(y) + \tilde{c} = G(x) + c$, where we can assume that $\tilde{c} = 0$ 
 	5. Calculate the value of $c$ using the *starting value*
-	6. $y(x) = H^{-1}(*{G(x) + c})$ - bring the equation to an explicit solution
+	6. $y(x) = H^{-1}(*{G(x) + c})$ - bring the equation to an explicit solution if it exists
 	7. $x \in K_{\delta}(\tau)$, where $\delta$ is sufficient (*megfelelő*)
 
 #### Notes:
-When $z=a*x + b*y + c$, we can say $z \lambda(a*x+b*y+c)$ as well in case we need to remove any additions or subtractions.
+When $z=a*x + b*y + c$, we can say $z = \lambda(a*x+b*y+c)$ as well in case we need to remove any additions or subtractions.
 Homogén fokszámú diff. egyenlet: $y=u*x$ alakkal kell dolgozni:
 - $u(x) = \frac{x}{y(x)}$
 - $u'(x) = \frac{y(x) - x*y'(x)}{y^2(x)}$ 
 
 ### Exact ODE.:
 ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x,y)}{Q(x,y)} =-\frac{P(x,y(x))}{Q(x,y(x))}$ 
-**Szükséges feltétel**: $\partial_{2}P(x,y) = \partial_{1}(Q(x,y))$ ! (*[[Analysis 3 Exam#Young tétel|Young Tétel]]*)
+**Szükséges feltétel**: $\partial_{2}P(x,y) = \partial_{1}Q(x,y)$ (*[[Analysis 3 Exam#Young tétel|Young Tétel]]*)
 
 1. $F \in \mathbb{R}^{2} \to \mathbb{R}; F\in D; F' = (\partial_{1}F,\partial_{2}F) = (P,Q)$ fv. keresése, azaz:
 	- $\partial_{1}F(x,y) = P(x,y)$
 	- $\partial_{2}F(x,y) = Q(x,y)$
+- A következő lépésekben $P$ és $Q$ felcserélhető, de válasszuk mindig a látszólag egyszerűbben integrálhatót az első lépésben. **Most** ez legyen $P$.
 2. 1. Feltétel alapján: $F(x,y) = \int P(x)\ dx = F_{1}(x,y) + c(y)$, ahol:
 	- $c:\mathbb{R}\to \mathbb{R}$
 	- $c \in D$
@@ -70,7 +71,8 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 	- $\alpha \in \mathbb{R}$
 	- $x \in K_{\delta}(\tau)$, where $\delta > 0$ is sufficient (*alkalmas*)
 	- és ha  $\alpha = \xi$ -> *k.é.p.* kielégítő fv.: $x = \tau$ és $y = \xi$ most (behelyettesítés)
-- Fejezzük ki explicit $y(x)$ 
+	- Helyettesítsük be $\tau$ és $\xi$ értékeket és fejezzük ki $\alpha$-t, majd helyettesítsük be $\alpha$-t $F$-be
+- Fejezzük ki explicit $y(x)$, amennyiben lehetséges  
 #### Multiplikátor Módszer
 **Mikor kell**: ha $\partial_{2}P(x,y) \neq \partial_{1}Q(x,y)$ 
 
@@ -90,11 +92,9 @@ ODE formája: $P(x,y)\ dx + Q(x,y)\ dy = 0 \iff y'(x) =\frac{dy}{dx} =-\frac{P(x
 - Ekkor pl.: $M = \int m$
 - $\dots$ és a multiplikátorunk: $\mu(x,y) = e^{M(\dots)}$ 
 - Ezzel a $\mu$ multiplikátorral szorozzuk be $P$ és $Q$ fv.-eket -> **Egzakt ODE-t kapunk!** 
-##### Notes:
-$m(x) = g(x)$ => $M(x) =G(x)$ => $e^{G(x)}$ lesz a multiplikátor fv. 
+
 ### Lineáris D.E.
 **Kezdeti alak**: $y'(x) + g(x) * y(x) = a(x)$
-
 
 **Homogén megoldások**:
 - *Általános levezetés*: 
@@ -106,7 +106,7 @@ $m(x) = g(x)$ => $M(x) =G(x)$ => $e^{G(x)}$ lesz a multiplikátor fv.
 	7. $\dots=e^c * e^{G(x)} = \alpha*e^{G(x)}$  
 - **Tömör forma**: $y_{h}(x)=\alpha*e^{-\int g(x)dx} = \dots = \alpha * h(x)$
 
-**Partikuláris megoldás az inhomogén egyenlethez**:
+**Partikuláris megoldás az inhomogén egyenlethez**: (ha $a(x) \neq 0$)
 1. $\exists y_{p}(x) = \beta(x) * {h(x)}$ ~ *Inhomogén megoldás*
 2. **Ekkor**: $y_p'(x) = f(x,y_{p}(x))$ (D.E.) és a fenti alapján fejezzük ki $\beta'(x)$-et
 	- **Fontos**: $\beta(x)$ részeknek mindig ki kell esniük -> ha nem, baj van!
@@ -170,7 +170,7 @@ Használjuk fel a kezdeti értékünket:
 			- $\phi_{i}(x) = \mathrm{Re}(e^{\lambda_{i}x} * s_ {i})$
 			- $\phi_{j}(x) = \mathrm{Im}(e^{\lambda_{i}x} * s_{i})$
 		- ahol:
-			- $e^{\mathrm{Im}(\lambda_{i})x} =\cos(x) + i\sin(x)$
+			- $e^{(i*a*x)} =\cos(a*x) + i\sin(a*x)$
 	- **Ekkor**: $\Phi(x) := [\phi_{1}(x)\ \phi_{2}(x)\ \dots\ \phi_{n}(x)]$ - *alapmátrix*
 1. **Homogén lineáris D.E.R megoldásai** $y'(x) = A*y(x)$ ahol $x \in \mathbb{R}$
 	- $y_{h}(x) = \alpha * \phi_{1}(x) + \beta*\phi_{2}(x) + \dots +\dots \zeta*\phi_{n}(x) = \Phi(x) * \left(\begin{matrix}\alpha \\ \beta \\ \dots \\ \zeta \end{matrix}\right)$
@@ -188,11 +188,11 @@ Használjuk fel a kezdeti értékünket:
 	1. $y(\tau) = \left(\begin{matrix}\xi_{1} \\ \xi_{2} \\ \dots \\ \xi_{n}\end{matrix} \right) = \dots$ => határozzuk meg az ismeretlen együtthatókat! 
 5. **K.É.P. probléma megoldása** (felírás) + $x$ legbővebb halmaza
 
-### Bernoulli-típusú D.E.
+### Bernoulli-típusú D.E. 
 #### Kezdet: 
 - $\emptyset = I \subseteq \mathbb{R}$ nyílt int.
 - $g,h: I \to \mathbb{R}$ folytonosak
-- $y'(x) + g(x)*y(x) = g(x)*y^\alpha(x)$ ($x \in D_{y} \subset I$), ahol $\alpha \in \mathbb{R}/\{ 1 \}$
+- $y'(x) + g(x)*y(x) = h(x)*y^\alpha(x)$ ($x \in D_{y} \subset I$), ahol $\alpha \in \mathbb{R}/\{ 1 \}$
 
 #### Algo.: 
 **Ötlet**: Alakítsuk lineáris. D.E-re 
@@ -204,7 +204,6 @@ Használjuk fel a kezdeti értékünket:
 5. Lineáris D.E. elvégeztével térjünk vissza $y(x)$-re 
 
 ### Magasabb rendű D.E.
-r5
 #### Homogén eset
 ##### Kezdet 
 $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
@@ -212,25 +211,26 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
 
 **Ötlet**: $y(x) = e^{\lambda x}$ alakban keresése
 1. $a_{n}(e^{\lambda x})^{(n)}+ a_{n-1}(e^{\lambda x})^{(n-1)} + \dots + a_{1}(e^{\lambda x})^{(1)} + a_{0}(e^{\lambda x})^{(0)} = 0$
-2.  $a_{n}\lambda^ne^{\lambda x} + a_{n-1}\lambda^{n-1}e^{\lambda x} + \dots + a_{1}\lambda e^{\lambda x} + a_{0}e^{\lambda x}$ $|\ \  /e^{\lambda x}$
-3. $a_{n}\lambda^n + a_{n-1}\lambda^{n-1} + \dots + a_{1}\lambda + a_{0}$ 
+2.  $a_{n}\lambda^ne^{\lambda x} + a_{n-1}\lambda^{n-1}e^{\lambda x} + \dots + a_{1}\lambda e^{\lambda x} + a_{0}e^{\lambda x} = 0$ $|\ \  /e^{\lambda x}$
+3. $a_{n}\lambda^n + a_{n-1}\lambda^{n-1} + \dots + a_{1}\lambda + a_{0} = 0$ 
 ##### Algo.: 
-1. Karakterisztikus egyenlet megoldása: $\lambda_{i}$ értékeket megkapjuk
-2. Ha $D > 0$: ($\lambda_{i} \neq \lambda_{j}$)
+1. **Karakterisztikus egyenlet** megoldása: $\lambda_{i}$ értékeket megkapjuk
+- Most minden $i,j$ párosra $\dots$
+3. Ha $D > 0$: ($\lambda_{i} \neq \lambda_{j}$)
 	1. **Valós alaprendszer**:
 		- $y_{i}(x) = e^{\lambda_{i}x}$
 		- $y_{j}(x) = e^{\lambda_{j}x}$
-2. Ha $D = 0$: ($\lambda_{i} = \lambda_{j}$)
+4. Ha $D = 0$: ($\lambda_{i} = \lambda_{j}$)
 	1. **Valós alaprendszer**: 
 		- $y_{i}(x) = e^{\lambda_{i}x}$
 		- $y_{j}(x) = e^{\lambda_{j}x}*x$
-1. Ha $D < 0$: ($\lambda_{i},\lambda_{j}$ konjugált komplex szám)
+5. Ha $D < 0$: ($\lambda_{i},\lambda_{j}$ konjugált komplex szám)
 	2. **Valós alaprendszer**: 
-		- $y_{i} = \mathrm{Re}(y^{\lambda_{i} x})$
+		- $y_{i} = \mathrm{Re}(e^{\lambda_{i} x})$
 		- $y_{j} = \mathrm{Im}(e^{\lambda_{j}x})$
 	- Ebben az esetben egy ú.n. [[Misc.#Quasi-polynomial (*Kvázipolinom*)|kvázipolinom]] fog megjelenni
-2. $y_{h}(x) = \alpha_{1} *y_{1}(x) + \alpha_{2}*y_{2}(x) + \dots + \alpha_{n} * y_{n}(x)$, azaz lesz $n$ db ismeretlenünk
-3. Ez egyben az **összes megoldás** is
+6. $y_{h}(x) = \alpha_{1} *y_{1}(x) + \alpha_{2}*y_{2}(x) + \dots + \alpha_{n} * y_{n}(x)$, azaz lesz $n$ db ismeretlenünk
+7. Ez egyben az **összes megoldás** is
 
 #### Megj.:	
 - $\alpha + i*\beta \in \mathbb{C}$ gyök:
@@ -242,7 +242,7 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
 1. **Homogén rész**: $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ (ld. [[#Homogén eset]])
 2. **Inhomogén rész**: (partikuláris megoldás)
 	1. $\exists y_{p}(x) = \alpha(x)*e^{\lambda_{1}x}+\beta(x)*e^{\lambda_{2}x}$ 
-	2. $\begin{bmatrix}e^{\lambda_{1}x} & e^{\lambda_{2}x} \\ (e^{\lambda_{1}x})' & (e^{\lambda_{2}x})'\end{bmatrix} = \begin{bmatrix}\alpha'(x) \\ \beta'(x)\end{bmatrix} = \begin{bmatrix} 0 \\ g(x)\end{bmatrix}$, ahol most $0$ egyébként tetszőleges egyenlet
+	2. $\begin{bmatrix}e^{\lambda_{1}x} & e^{\lambda_{2}x} \\ (e^{\lambda_{1}x})' & (e^{\lambda_{2}x})'\end{bmatrix} * \begin{bmatrix}\alpha'(x) \\ \beta'(x)\end{bmatrix} = \begin{bmatrix} 0 \\ g(x)\end{bmatrix}$, ahol most $0$ egyébként tetszőleges egyenlet
 	3. **Legyen**: $c:= \begin{bmatrix}\alpha'(x)\\ \beta'(x)\end{bmatrix}$
 	4. Megkapjuk a derivált függvényeket => Integráljuk őket egyesével $x$ szerint és a konstansokat válasszuk meg a legegyszerűbbnek
 	5. Helyettesítsük be őket $y_{p}(x)$-be
