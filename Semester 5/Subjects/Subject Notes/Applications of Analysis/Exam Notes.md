@@ -87,9 +87,87 @@ Az lenne jó, ha:
 
 # Differenciál egyenletek 
 ## D.E. (rendszer) fogalma
+- $I \subset \mathbb{R}$
+- $\Omega \subset \mathbb{R}^n$ 
+- $f:I \times \Omega \to \mathbb{R}$, $f \in C$ 
+
+**Feladat**: olyan $\phi\in I \to \Omega$, hogy:
+1. $D_{\phi}$ nyílt
+2. $\phi\in D$
+3. $\phi'(x) = f(x,\phi(x))$ 
+
+
 ## K.É.P. (Cauchy-feladat)
+
+**Ha még**: $\tau \in I$ és $\xi \in \Omega$ előre megadott, úgy hogy: $\phi(\tau) = \xi
+**Akkor**:  *K.É.P.*
+
+### K.É.P. egyértelmű megoldása
+Ha $\forall \phi, \tilde{\phi}$ megoldásra: $\phi(t) = \tilde{\phi}(t),\ (\forall t \in D_{\phi} \bigcup D_{\tilde{\phi}})$
+1. $M := \{ \phi|K.É.P. megoldása \}$
+2. $J:= \bigcup_{\phi\in M}D_{\phi}$; $\Phi:J \to \Omega$, ahol $\Phi(x) = \phi(x)\ (\forall x \in D_{\phi},\phi\in M)$ 
+3. $\Phi\in D;\ \Phi(\tau) = \xi;\ \Phi'(x) = f(x,\Phi(x))$
+4. $\forall \phi\in M: \phi = \Phi|D_{\phi}$
+5. $\Phi$ a teljes megoldás
+
 ## Egzakt egyenlet
+
+**Legyen**: 
+- $n= 1$
+- $I,J \subset \mathbb{R}$
+- $g: I \times J \to \mathbb{R}$
+- $h :I \times J \to \mathbb{R} /\{ 0 \}$
+- $F(x,y) = -\frac{g(x,y)}{h(x,y)}$, ahol $F : I \times J \to \mathbb{R}$; $F \in D$; $gradF = (g,h) = (\partial_{1}F,\partial_{2}F)$ 
+
+**Ekkor**:
+- $\phi$ megoldás => $\phi'(x) = -\frac{g(x,\phi(x))}{h(x,\phi(x))}$ 
+- Ötlet: $
+
+**Vázlat**: 
+- g, h felírása, F felírása + tulajd.
+- Ha $\phi$ megoldás... (felírás)
+- Ötlet: $\Phi(x)$ = $F(x,\phi(x))$ bevezetése, ill. $x \to (x,\phi (x)) \in D$ és $\Phi(x)'$ felírása
+- K.É.P felírása 
+- Fordítva: 
+- F tulajdonságaiból => Implicit függvény tétel felírása ($\phi$, folyt. diff, deriv. fv.)
+- + Tétel egyértelműségről
+- + Szükséges feltétel ($\partial_{2}g = \partial_{1}h$) és ($Young-tétel$)
+- + Multiplikátor módszer
+- + Minden szeparábilis módszer egzakt 
 ## Szeparábilis egyenlet
+
+**Legyen**:
+- $n = 1$ 
+- $I,J \subset \mathbb{R}$
+- $g : I \to \mathbb{R}$; $h: J \to \mathbb{R} / \{ 0 \}$; $g,h \in C$
+- $f(x,y) = g(x) * h(y)$
+
+**Ekkor**: 
+1. $\phi'(x) = g(x) * h(\phi(x))$
+2. $\frac{\phi'(x)}{h(\phi(x))} = g(x)$
+3. $G: I \to \mathbb{R}$; $H :J \to \mathbb{R}$; $G,H \in D$ 
+4. $(H\ o\ \phi)' = G$
+5. $(H(\phi(x)) - G(x))' = 0$; $H(\phi(x)) - G(x) \in D \implies$
+6. $H(\phi(x)) -G(x) =c\in \mathbb{R}$ 
+7. Ill. $D_{H'}$ nem eleme a $0$ => $H$ állandó előjelő => $H$ szigorúan monoton => $\exists H^{-1}$ 
+8. $\phi(x) = H^{-1}(G(x) + c)$
+9. Ill. **K.É.P.** esetén: $\phi(\tau) = \xi \implies H(\xi) -G(\tau) =c$, és ez a K.É.P. megoldása is
+
+
+**Vázlat:**
+- Feltételek felírása
+- D.E. felírása, majd g és h szeparálása
+- Primitív függvények felírása
+- H függv. invertálhatóságának oka és következménye
+- K.É.P. felírása H és G-vel
+
+**Van-e megoldás? (vázlat)**
+- Legyen $F(x,y) = H(y) -G(x)$ előbbi jelölésekkel
+- Írjuk fel a parciális deriváltakat, illetve folytonosságukat + parc. 2 det.
+- Implicit függvény tétel 
+- $\phi$ folytonos diff. + deriv. fv. felírása + K.É.P felírása 
+- + egyértelműség tétel
+
 ## Rakéta emelkedési idejének számítása
 
 # Lineáris differenciál egyenletek
