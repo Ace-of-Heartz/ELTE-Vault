@@ -230,7 +230,7 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
 		- $y_{j} = \mathrm{Im}(e^{\lambda_{j}x})$
 	- Ebben az esetben egy ú.n. [[Misc.#Quasi-polynomial (*Kvázipolinom*)|kvázipolinom]] fog megjelenni
 6. $y_{h}(x) = \alpha_{1} *y_{1}(x) + \alpha_{2}*y_{2}(x) + \dots + \alpha_{n} * y_{n}(x)$, azaz lesz $n$ db ismeretlenünk
-7. Ez egyben az **összes megoldás** is
+7. Ez egyben az **összes megoldás** is most
 
 #### Megj.:	
 - $\alpha + i*\beta \in \mathbb{C}$ gyök:
@@ -255,7 +255,7 @@ $a_{n}y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_{1}y' + a_{0}y = 0$ ~ ($a_{n}$ lehet 0)
 2. **Partikuláris rész** (azaz *állandók variálása*) (ld. [[#Inhomogén eset]])
 VAGY
 2. **Ha** a jobb oldal (azaz $g(x)$) ú.n. [[Misc.#Quasi-polynomial (*Kvázipolinom*)|kvázipolinom]] ($P(x)*e^{\alpha x} * (a*\cos(\beta x) + b*\sin(\beta x))$):
-	1. $\exists y_{p}(x) = Q(x) * e^{\alpha x}*(A*\cos(\beta x) + B *\sin(\beta x)) * x^k$ (X? vagy x?)
+	1. $\exists y_{p}(x) = Q(x) * e^{\alpha x}*(A*\cos(\beta x) + B *\sin(\beta x)) * x^k$
 	- $deg\ Q(x) \leq deg\ P(x)$, így például:
 		- $deg\ P(x) = 2\implies Q(x):= t_{1}x^2+t_{2}x+t_{3}$, alakú, ahol $t_{i}$ ismeretlen együtthatók
 	- K := "$(\alpha+i*\beta)$ hányszoros gyöke a kvázipolinomnak" => Azaz vizsgáljuk meg $\lambda_{i}$-ket

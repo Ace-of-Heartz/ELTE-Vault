@@ -19,7 +19,7 @@
 ### Tétellel
 Egy $A \subset (-1,1], A \neq \emptyset$ halmazra egyenletesen konvergens egy fv. sorozat $\iff$ $\pm 1 \in A'$.
 
-**Általánosan**: a $A'$-nek ($A$ torlódási pontjainak halmazának) van olyan eleme, ahol $f$ nem folytonos $\iff$ *nem* egyenletesen konvergens a fv. sorozat $A$-n.
+**Általánosan**: a $A'$-nek ($A$ torlódási pontjainak halmazának) van olyan eleme, ahol $f$ nem folytonos $\implies$ *nem* egyenletesen konvergens a fv. sorozat $A$-n.
 ### Definícióval
 Először megsejtük, hogy valóban nem igaz az egyenletes konvergencia most.
 **Majd**:
