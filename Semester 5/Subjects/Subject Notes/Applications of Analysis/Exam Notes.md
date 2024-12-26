@@ -203,11 +203,11 @@ $m *v' =-\alpha*m -\beta*v^2$
 - **Legyen**: $G:I \to \mathbb{R}$
 - $\phi_{0} = e^{G(x)}$; $\phi_{0}\in D$; $\phi_{0}'(x) = e^{G(x)}*g(x) = \phi(x) *g(x) \implies \phi_{0} \in M_{0}$
 - Ráadásul: $\forall c\in \mathbb{R}: c*\phi_{0}\in M_{0}$
- **2.)** $\forall\chi\in M_{0}$: $\frac{\chi}{\phi_{0}}\in M_{0}$
-**3.)** $\exists m:I\to \mathbb{R};m\in D; \psi:= m *\phi_{0} \in M$
+ **2.)** $\forall\chi\in M_{0}$: $\frac{\chi}{\phi_{0}}\in M_{0}$ => $M_{0}$ szerkezete! 
+**3.)** $\exists m:I\to \mathbb{R};m\in D; \psi:= m *\phi_{0} \in M$ 
 **3.)** $\psi - \phi\in M_{0}$, ahol $\psi \in M$ és $\forall \phi \in M$
 **4.)** $\forall \phi,\tilde{\phi}\in M: (\phi-\tilde{\phi})\in M_{0}$
-**5.)** 3 + 4: $\psi -\phi \in M \iff \psi - \phi = \phi_{0} * c$
+**5.)** 3 + 4: $\psi -\phi \in M \iff \psi - \phi = \phi_{0} * c$ => $M$ szerkezete!
 
 **Vázlat**:
 1. Lin. D.E. felírás + halmazok
@@ -249,7 +249,7 @@ Ha a d.e. jobb oldala eleget tesz a **Lipschitz-feltételnek**, akkor a szóban 
 1. Igaz-e, hogy $T\psi \in \digamma$?
 	1. $T\psi(x) \in K_{\mu} \iff \lvert \lvert T\psi(x) - \xi \rvert \rvert \leq \mu$
 	2. $\lvert \lvert T\psi(x) - \xi \rvert \rvert = \left\lvert  \left\lvert  \int^{x}_{\tau} f(t,\psi(t)) dt  \right\rvert  \right\rvert \leq \left\lvert   \int^{x}_{\tau} \lvert \lvert f(t,\psi(t)) dt \rvert \rvert  \right\rvert \leq\dots$
-	3. Mivel kompakt $I_{*} \times K_{n}$:
+	3. Mivel kompakt $I_{*} \times K_{\mu}$:
 	4. $\dots\leq M*(x-\tau)\leq M *\delta$ 
 	5. Ha $M *\delta \leq \mu$ => OK, egyébként csökkentsük $\delta$-t
 	6. $T: \digamma \to\digamma$ igaz!
@@ -292,13 +292,80 @@ $\phi(x) := \psi_{*}(x)$, $(x \in I_{*})$
 # Lineáris D.E. rendszerek
 ## Vizsgálatuk: Homogén/Inhomogén rendszerek
 
+**Legyen**: 
+- $n \geq 2$
+- $I \subset \mathbb{R}$ nyílt
+- $\Omega \subset \mathbb{C}^n$ 
+- $a_{ik}: I\to \mathbb{R}$ folytonosak
+- $b_{i}:I\to \mathbb{R}^n$ folytonos
+- és így: $A := (a_{ik}):I\to \mathbb{R}^{n\times n}$, ill. $f(x,y):= A(x) *y + b(x)$
+- $M_{0}:= \{ \phi:I \to \mathbb{C}^n  | \phi\in D\ és \ \phi' = A *\phi \}$ és $M:= \{ \phi:I\to \mathbb{C}^n | \phi\in D \ és \ \phi' = A *\phi + b \}$
+**Belátható:** 
+-  $\forall$ K.É.P megoldható és $\forall$ teljes megoldás a teljes $I$-n van értelmezve $\phi:I\to \mathbb{C}^n$
+
+**Tétel**: 
+1. $\forall m \in \mathbb{N}$ $\phi_{1},\dots,\phi_{n}\in M_{0}: \phi_{1}\dots \phi_{n}$ lineárisan független $\iff$ $\forall \tau \in I: \phi_{1}(\tau),\phi_{2}(\tau),\dots,\phi_{m}(\tau)$ lineárisan független
+2. $M_{0}$ n-dim. lineáris tér
+3. $\forall \phi_{1},\dots,\phi_{m} \in M_{0}: \exists g_{1},\dots,g_{m}: I \to \mathbb{C}$ : $g_{1},\dots,g_{m} \in D$ és $\psi:= \sum^m_{k = 1}g_{k} *\phi_{k} \in M$  
+4. $\phi,\tilde{\phi}\in M: \phi - \tilde{\phi} \in M_{0}$
+**Biz.**: (csak végső esetben)
+1. <=: Trivi; => Indirekt
+2. Stuff
+3. More stuff
+4. Trivi
+
 ## Megoldáshalmaz szerkezete
+
+**Tehát**: 
+- $M_{0} := \{  \phi*c | c \in \mathbb{C}^n \}$
+- $M := \{ \psi + \chi : \chi \in M_{0} \} = \{  \phi * g + \phi*c : c \in \mathbb{C}^n \}$
+- Ilyen $A$ alapmátrix meghatározása nem lehetséges
+- Ha $A$ összes komponsense konstans függvény, akkor lehetséges, de ez se szép
+
 
 # Alaprendszer/Alapmátrix
 ## Alaprendszer, alapmátrix
 ## Állandók variálásának módszere
+
+Lásd feljebb (feltétel + állítás)
+
+**Tehát**:
+- t.f.h.: $\phi_{1},\dots,\phi_{n} \in M_{0}$ bázis (*alaprendszer*)
+- **Legyen**: $\Phi:= [\phi_{1},\dots,\phi_{n}] : I\to \mathbb{C}^{n\times n}$ folytonos mtx. fv. (*alapmátrix*
+- **Ekkor**: $\Phi' = A * \Phi$, ha $\Phi' := [\phi_{1}',\dots,\phi_{n}']:I \to \mathbb{C}^{n\times n}$
+- **Ha**: $g_{1},\dots,g_{n}:I\to \mathbb{C}$ folyt. és $g:=(g_{1},\dots, g_{n}):I\to \mathbb{C}^n$ folyt. és $\sum_{k =1}^n c_{k} * g_{k} =\Phi *g$ és $(\Phi *g)' = \Phi' *g + \Phi * g'$
+- $\psi \in M \iff \psi' =A * \psi + b = A * \phi * g + b$
+- $\Phi' *g + \Phi * g' = A * \phi * g + \phi * g'$, azaz $\Phi * g' = b$
+- **De**: $\Phi$ oszlopai lin. függetlnek $\implies \forall x \in I : \exists (\Phi(x))^{-1} =\Phi^{-1}(x)$ és $\Phi^{-1}$ folytonos
+- **Legyen**: $g'  = \Phi^{-1} * b =: (h_{1},\dots,h_{n}) \iff g'_{i} = h_{i}\ (i = 1,\dots,n)$ 
+
 ## Alapmátrix előállítása állandó együtthatós, diagonalizálható mtx. esetén 
+
+**Legyen**:
+- $\forall i, k = 1\dots n: a_{ik} \equiv a_{ik} \in \mathbb{R}$ állandó fv. és => $\phi'(x) = \phi(x) * A + b$
+
+**Ekkor**: 
+- Ha $A$ mtx. diagonalizálható => $\exists T \in \mathbb{K}^{n\times n}$, hogy $\exists T^{-1}$: 
+- $T^{-1} * A * T = diag(\lambda_{1},\dots,\lambda_{n})$ 
+- **Legyen**: $T = [t_{1},\dots,t_{n}]$, $t_{i} \in \mathbb{K}^n$ 
+- **Ekkor**: $A * T = A * \Lambda$, azaz $A*t_{k} = \lambda_{k} * t_{k}$ ($k = 1,\dots,n$)
+- **De**: Mivel $T$-nek létezik inverze (bázis is így), ezért $t_{i}$-k sajátvektorok és $\lambda_{i}$-k sajátértékek
+
+**Állítás**:
+- $\phi_{k}(x) = e^{\lambda_{k}x} *t_{k}$ alaprendszer ($x \in I, k = 1\dots n$)
+- ui.: $\phi_{k}\in M_{0}$-k triviálisan, lineárisan függetlenek
+- ui.: $\forall x \in I$-re $\phi_{k}(x)$-k triviálisan, lineárisan függetlenek
 ## n = 2 eset vizsgálata tetsz. állandó együtthatós mátrixra
+
+$\begin{bmatrix} \alpha & \beta \\ \gamma & \delta \end{bmatrix}$ nem diagonalizálható $\iff$ $|\gamma| + |\beta| > 0$ és $A$-nak 1 darab kétszeres sajátértéke van, azaz $P(\lambda)$-nak diszkriminánsa = 0
+- Azaz $(\alpha -\lambda) * (\delta-\lambda) - \beta * \gamma = \lambda^2 -\lambda(\alpha + \delta) +\alpha *\delta - \gamma *\beta$ 
+- $(\alpha + \delta)^2 - 4 *\alpha *\delta + 4 \beta * \gamma = (\alpha - \delta)^2 + 4 *\beta *\gamma = 0 \implies \lambda = \frac{\alpha+\delta}{2}$
+
+**Állítás**: $\exists t_{1},t_{2} \in \mathbb{R}^2$ lin. függetlenek, hogy $A * t_{1} = \lambda_{1} * t_{1}$ és $A * t_{2} = \lambda_{2} *t_{2}+t_{1}$
+- ill.: $\phi_{1}(x):= e^{\lambda_{1}x} *t_{1}$
+- $\phi_{2}(x) := e^{\lambda_{2}x}*(t_{2} +x * t_{1})$ *alaprendszer*
+- **Biz**.: TODO
+
 # Magasabb rendű lin. D.E.
 ## Magasabb rendű lin. D.E.
 ## Átviteli elv 
