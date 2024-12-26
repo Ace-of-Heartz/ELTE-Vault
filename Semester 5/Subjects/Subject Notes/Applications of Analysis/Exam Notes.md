@@ -81,8 +81,11 @@ Az lenne jó, ha:
 4. F-nek lok. sz. é. a-ban
 5. F Gradiens függvény + egyenlet felírása + $\phi'$ helyettesítése
 6. Végső alak
+
+### Másodrendű -||-
 ## Elégséges feltétel 
 
+### Másodrendű -||-
 
 
 # Differenciál egyenletek 
@@ -121,7 +124,15 @@ Ha $\forall \phi, \tilde{\phi}$ megoldásra: $\phi(t) = \tilde{\phi}(t),\ (\fora
 
 **Ekkor**:
 - $\phi$ megoldás => $\phi'(x) = -\frac{g(x,\phi(x))}{h(x,\phi(x))}$ 
-- Ötlet: $
+- **Ötlet**: $\Phi(x) = F(x,\phi(x))$, és $x\to (x,\phi(x)) \in D$
+- $\Phi(x)' = F'(x,\phi(x)) *(x\to(x,\phi(x)))$ $=$$<(g(x,\phi(x)),h(x,\phi(x))),(1,\phi'(x))>$ $=$ $g(x,\phi(x)) + h(x,\phi(x)) *\phi'(x) = 0$
+- $\exists c \in \mathbb{R}: \Phi(x) = c = F(x,\phi(x))$
+- $\phi(\tau) = \xi \implies c=F(\tau,\xi)$ 
+- **Fordítva**:
+- $F\in C^1$; $F(\tau,\xi) =0$; $\partial_{2}(F(\tau,\xi)) = h(\tau,\xi) \neq 0$   
+- **Implicit fv. tétel**:
+- $\exists K(\tau),K(\xi): \exists\phi:K(\tau)\to K(\xi)$
+- $F(x,\phi(x)) = 0$; $\phi \in C^1$; $\phi'(x) = -\frac{\partial_{1}F(x,\phi(x))}{\partial_{2}F(x,\phi(x))} =-\frac{g(x,\phi(x))}{h(x,\phi(x))}$
 
 **Vázlat**: 
 - g, h felírása, F felírása + tulajd.
@@ -169,17 +180,114 @@ Ha $\forall \phi, \tilde{\phi}$ megoldásra: $\phi(t) = \tilde{\phi}(t),\ (\fora
 - + egyértelműség tétel
 
 ## Rakéta emelkedési idejének számítása
+$m *v' =-\alpha*m -\beta*v^2$
 
 # Lineáris differenciál egyenletek
 ## Lineáris D.E.
+
+**Legyen**:
+- $n = 1$
+- $I \subset \mathbb{R}$ nyílt intervallum 
+- $\Omega:= \mathbb{R}$ 
+- $g,h : I \to \mathbb{R}$
+- $f(x,y) = g(x) * y +h(x)$
+
+**Ekkor**: $\phi:I \to \mathbb{R}$ megoldás, ha
+- $\phi'(x) = g(x) * \phi(x) +h(x)$ 
+
+**Ötlet**:
+- $M_{0}:= \{ \phi:I\to \mathbb{R} |\phi \in D; \phi'(x) = g(x)*\phi(x)\}$
+- $M:= \{ \phi:I\to \mathbb{R} | \phi\in D; \phi'(x) = g(x)*\phi(x) + h(x)\}$
+- Van-e elemük?
+**1.)** $\phi_{0}\in M_{0}$
+- **Legyen**: $G:I \to \mathbb{R}$
+- $\phi_{0} = e^{G(x)}$; $\phi_{0}\in D$; $\phi_{0}'(x) = e^{G(x)}*g(x) = \phi(x) *g(x) \implies \phi_{0} \in M_{0}$
+- Ráadásul: $\forall c\in \mathbb{R}: c*\phi_{0}\in M_{0}$
+ **2.)** $\forall\chi\in M_{0}$: $\frac{\chi}{\phi_{0}}\in M_{0}$
+**3.)** $\exists m:I\to \mathbb{R};m\in D; \psi:= m *\phi_{0} \in M$
+**3.)** $\psi - \phi\in M_{0}$, ahol $\psi \in M$ és $\forall \phi \in M$
+**4.)** $\forall \phi,\tilde{\phi}\in M: (\phi-\tilde{\phi})\in M_{0}$
+**5.)** 3 + 4: $\psi -\phi \in M \iff \psi - \phi = \phi_{0} * c$
+
+**Vázlat**:
+1. Lin. D.E. felírás + halmazok
+2. Homogén megoldás létezése
+3. Homogén megoldások  hányadosa is homogén
+4. Létezik olyan $m:I\to \mathbb{R}$, amellyel a homogén megoldást szorozva inhomogén megoldást kapunk
+5. Inhomogén megoldások különbsége homogén megoldás
+6. 4 + 5-ös kombináció: Inhomogén megoldások létezése!
+
 ## Állandók variálásának módszere
+
+Lásd fent
+
 ## Radioaktív bomlás felezési idejének számítása
 
+- $\phi'(x) = -\alpha* \phi(x)$  
+- $\phi(0) = M$
+- => $\phi(x) = e^{-\alpha x} *c$ 
+- +felezési idő számítása
 # D.E.-hez kapcsolódó fogalmak, tételek
 ## Lipschitz-feltétel
+
+$\forall Q \subset \Omega$ kompakt
+$\exists L \geq_{0}:$ $\lvert \lvert f(x,u) - f(x,v) \rvert \rvert \leq L * \lvert \lvert u-v \rvert \rvert$
+$(x\in I;u,v\in Q)$
+
 ## Picard-Lindelöf-féle egzisztencia-tétel (fixpont-tétel alk.)
-## K.É.P. megoldásának egyertelműsége
-## Unicitási tétel ($\emptyset$ biz.)
+
+Ha a d.e. jobb oldala eleget tesz a **Lipschitz-feltételnek**, akkor a szóban forgó d.e-re vonatkozó összes K.É.P. megoldható.
+
+**Legyen**:
+- $\delta > 0, \mu > 0$
+- $I_{*}:= [\tau-\delta,\tau + \delta] \subset I$
+- $K_{\mu} := \{ z \in \mathbb{R}^n | \lvert \lvert z - \xi \rvert \rvert \leq \mu \}$
+- $\digamma := \{ \phi:I_{*}\to K_{\mu} | \phi \in C \}$
+- Ill. metrika: $\forall \phi,\psi \in \digamma: \rho(\phi,\theta):= \max \{ \lvert \lvert  \phi(x) - \psi(x) \rvert \rvert :x \in I_{*}\}$
+- $T$ a $\digamma$-n értelmezve: $T(\phi)(x) = T\phi(x):= \xi + \int^x_{\tau}f(t,\phi(t))\ dt$ 
+**Ekkor**: 
+1. Igaz-e, hogy $T\psi \in \digamma$?
+	1. $T\psi(x) \in K_{\mu} \iff \lvert \lvert T\psi(x) - \xi \rvert \rvert \leq \mu$
+	2. $\lvert \lvert T\psi(x) - \xi \rvert \rvert = \left\lvert  \left\lvert  \int^{x}_{\tau} f(t,\psi(t)) dt  \right\rvert  \right\rvert \leq \left\lvert   \int^{x}_{\tau} \lvert \lvert f(t,\psi(t)) dt \rvert \rvert  \right\rvert \leq\dots$
+	3. Mivel kompakt $I_{*} \times K_{n}$:
+	4. $\dots\leq M*(x-\tau)\leq M *\delta$ 
+	5. Ha $M *\delta \leq \mu$ => OK, egyébként csökkentsük $\delta$-t
+	6. $T: \digamma \to\digamma$ igaz!
+2. Igaz-e, hogy $T$ kontrakció?
+	1. **Lipschitz-feltétel**
+	2. **Spec.:** $Q:=I_{*} \times K_{\mu}$
+	3. Kontrakció def.
+	4. $\rho(T\psi,T\phi) = \max_{x} \left\lvert  \left\lvert  \int^x_{\tau} (f(t,\psi(t))) -f(t,\phi(t))\ dt  \right\rvert  \right\rvert \leq\dots$
+	5. $\dots\leq \left\lvert  \int^x_{\tau} \lvert \lvert f(t,\psi(t)) -f(t,\phi(t)) \ dt \rvert \rvert  \right\rvert \leq L * \delta * \rho(\psi,\phi)$
+	6. Ha $q:=L * \delta < 1$, akkor jó, egyébként csökkentsük $\delta$-t, ezzel $L$ is csökken
+	7. Tehát $T: \digamma\to \digamma$ kontrakció
+
+**+ Fixpont-tétel:**
+- $\exists! \phi_{*} \in \digamma: \phi_{*} = T\phi_{*}$
+- azaz: $\xi + \int^x_{\tau}f(t,\phi_{*}(t))\ dt = \phi_{*}(t)$
+- és $\phi_{*}(\tau) = \xi$ feltéve, hogy $T$ kontrakció
+
+**+ Legyen**: (*Szukcesszív approximáció*)
+- $\psi_{0} \equiv \xi; \psi_{n+1}:= \xi + \int^\tau_{x}f(t,\psi_{n}(t))\ dt$
+- ($T\psi_{n} =: \psi_{n+1}$) 
++ $\rho(\psi_{*},\psi_{n})\to 0$ és $\rho(\psi_{*},\psi_{n}) \leq \frac{(L*\delta)^n}{1-L*\delta}*\rho(\psi_{0},\psi_{1})$, ahol $\rho(\psi_{1},\psi_{0}) = \max_{x} \lvert \lvert \psi_{0}(x) - \psi_{1}(x) \rvert \rvert = \max_{x}  \left\lvert  \left\lvert  \int^x_{\tau} f(t,\xi)\ dt   \right\rvert  \right\rvert \leq M *\delta$
+- És így, ha $\phi_{n}(x):= \psi_{n}(x)$: $max_{x}\lvert \lvert \phi_{n}(x) - \phi(x) \rvert \rvert \to 0\ (n\to \infty)$ és $\max_{x} \lvert \lvert  \phi_{n}(x) - \phi(x) \rvert \rvert \leq \frac{(L*\delta)^n}{1-L*\delta} *M * \delta$  
+
+## K.É.P. megoldásának egyertelműsége ($\emptyset$ biz.)
+## Unicitási tétel ($\emptyset$ biz.) 
+
+ T.f.h. $\phi$ megoldás. Mivel: $x \to f(x,\phi(x))\  (x\in D_{\phi})$ folytonos
+ => $\phi' \in C$ => $\phi(x) = \xi + \int^x_{\tau}\phi'(t)\ dt = \xi + \int^x_{\tau}f(t,\phi(t))\ dt$ 
+
+**Fordítva** is igaz: K.É.P. $\iff$ "integrál egyenlet"
+
+$\phi(x) := \psi_{*}(x)$, $(x \in I_{*})$
+**Ha**:
+- $\phi(x) = \xi + \int^x_{\tau}f(t,\phi(t))\ dt$, ú.h. $x \in I_{*}$
+- és $\phi(\tau) = \xi$
+**Akkor**:
+- $\phi$ megoldása a K.É.P.-nek
+
 
 # Lineáris D.E. rendszerek
 ## Vizsgálatuk: Homogén/Inhomogén rendszerek
