@@ -215,7 +215,7 @@ $m *v' =-\alpha*m -\beta*v^2$
 3. Homogén megoldások  hányadosa is homogén
 4. Létezik olyan $m:I\to \mathbb{R}$, amellyel a homogén megoldást szorozva inhomogén megoldást kapunk
 5. Inhomogén megoldások különbsége homogén megoldás
-6. 4 + 5-ös kombináció: Inhomogén megoldások létezése!
+6. 4 + 5-ös kombináció: Inhomogén megoldások létezése! (Ismert inhomogén + homogén megoldás segítségével összes inhomogén megoldás megadása)
 
 ## Állandók variálásának módszere
 
@@ -246,16 +246,17 @@ Ha a d.e. jobb oldala eleget tesz a **Lipschitz-feltételnek**, akkor a szóban 
 - Ill. metrika: $\forall \phi,\psi \in \digamma: \rho(\phi,\theta):= \max \{ \lvert \lvert  \phi(x) - \psi(x) \rvert \rvert :x \in I_{*}\}$
 - $T$ a $\digamma$-n értelmezve: $T(\phi)(x) = T\phi(x):= \xi + \int^x_{\tau}f(t,\phi(t))\ dt$ 
 **Ekkor**: 
-1. Igaz-e, hogy $T\psi \in \digamma$?
-	1. $T\psi(x) \in K_{\mu} \iff \lvert \lvert T\psi(x) - \xi \rvert \rvert \leq \mu$
-	2. $\lvert \lvert T\psi(x) - \xi \rvert \rvert = \left\lvert  \left\lvert  \int^{x}_{\tau} f(t,\psi(t)) dt  \right\rvert  \right\rvert \leq \left\lvert   \int^{x}_{\tau} \lvert \lvert f(t,\psi(t)) dt \rvert \rvert  \right\rvert \leq\dots$
-	3. Mivel kompakt $I_{*} \times K_{\mu}$:
-	4. $\dots\leq M*(x-\tau)\leq M *\delta$ 
-	5. Ha $M *\delta \leq \mu$ => OK, egyébként csökkentsük $\delta$-t
-	6. $T: \digamma \to\digamma$ igaz!
+1. Igaz-e, hogy $T\psi \in \digamma$? 
+	1. ($T\psi\in C$ az integrál fv-ek tulajdonsága miatt)
+	2. $T\psi(x) \in K_{\mu} \iff \lvert \lvert T\psi(x) - \xi \rvert \rvert \leq \mu$
+	3. $\lvert \lvert T\psi(x) - \xi \rvert \rvert = \left\lvert  \left\lvert  \int^{x}_{\tau} f(t,\psi(t)) dt  \right\rvert  \right\rvert \leq \left\lvert   \int^{x}_{\tau} \lvert \lvert f(t,\psi(t)) dt \rvert \rvert  \right\rvert \leq\dots$
+	4. Mivel kompakt $I_{*} \times K_{\mu}$:
+	5. $\dots\leq M*|x-\tau|\leq M *\delta$ 
+	6. Ha $M *\delta \leq \mu$ => OK, egyébként csökkentsük $\delta$-t
+	7. $T: \digamma \to\digamma$ igaz!
 2. Igaz-e, hogy $T$ kontrakció?
 	1. **Lipschitz-feltétel**
-	2. **Spec.:** $Q:=I_{*} \times K_{\mu}$
+	2. **Spec.:** $Q:= K_{\mu}$
 	3. Kontrakció def.
 	4. $\rho(T\psi,T\phi) = \max_{x} \left\lvert  \left\lvert  \int^x_{\tau} (f(t,\psi(t))) -f(t,\phi(t))\ dt  \right\rvert  \right\rvert \leq\dots$
 	5. $\dots\leq \left\lvert  \int^x_{\tau} \lvert \lvert f(t,\psi(t)) -f(t,\phi(t)) \ dt \rvert \rvert  \right\rvert \leq L * \delta * \rho(\psi,\phi)$
@@ -379,17 +380,106 @@ $\begin{bmatrix} \alpha & \beta \\ \gamma & \delta \end{bmatrix}$ nem diagonaliz
 
 # Kvázi polinom és rezgés
 ## Partikuláris megoldás kvázi-polinom jobb oldal esetén (biz. vázlat)
+
+**Kvázi polinom jobb oldal**: 
+- **Legyen**:
+	-  $Q$ polinom, $\lambda \in \mathbb{K}$ és $c(x) = Q(x) * e^{\lambda x}$
+	- $P(x) := x^n + \sum^{n-1}_{k =0} a_{k}* x^k$ ($x \in \mathbb{K}$), $a_{0},\dots,a_{n-1} \in \mathbb{R}$, $n \geq 1$  
+- **Ekkor**: 
+	- $\exists \psi(x) := x^r * R(x) * e^{\lambda x}$ $(x \in I)$, ahol $R$ polinom $\deg R \leq \deg Q$, $r \in \mathbb{N}$ és a $\lambda$ a $P$-nek $r$- szeres gyöke, és $\psi$ a partikuláris megoldás
+	- $r = 0 \implies P(\lambda) \neq 0$; $r >0: P(\lambda) - P'(\lambda) = \dots = P^{(\lambda-1)}(\lambda) = 0$, de $P^{(\lambda)} \neq 0$
+	- $\psi(x)$ ilyen választása így eleget tesz $\phi^{(n)}(x)+ \sum^{n-1}_{k=0}a_{k}*\phi^{(k)}(x) = c(x):= Q(x) * e^{\lambda x}$
+
+**$r = 0$ eset**: 
+- $\psi(x) = R(x) * e^{\lambda x}\in M \iff \psi^{(n)}(x) + \sum^{n-1}_{k=0}a_{k} *\psi^{(k)}(x)$ $=$ $\sum^n_{k=0} a_{k} *(R*e^{\lambda x})^{(k)} = \sum^n_{k =0} a_{k} * \sum^k_{j =0} {k \choose j} R^{(j)} * \lambda^{k-j}*e^{\lambda x} = Q(x) *e^{\lambda x}$
+- $R$ főegyütthatója $=: \alpha \implies$
+- $\alpha * \lambda^n + \sum^{n-1}_{k=0} a_{k}* \alpha * \lambda^k = \alpha * P(\lambda) = \beta$, ahol $Q$ főegyütthatója $=:\beta$ 
+- Így $\alpha = \frac{\beta}{P(\lambda)}$
+
+**Partikuláris megoldás**:
+**1. eset**: $w \neq w_{0}$ => $(q*\sin(w*x))'' + w_{0}^2 * q*\sin(w*x) = \frac{F(x)}{m} = A*\sin(wx)$ 
+- $\implies \exists q \in \mathbb{R}: \psi(x):= q * \sin(w * x)$ partikuláris megoldás 
+- $\iff -q * w^2 * \sin(wx) + w_{0}^2 * q * \sin(wx) = \frac{F(x)}{m}= A * \sin(wx)$ ($x \in \mathbb{R}$)
+- $\iff q = \frac{A}{w_{0}^2 -w^2}$
+- $\iff \phi(x) = d*\sin(w_{0} +\delta) +\frac{A}{w_{0}^2 + w^2} * \sin(w*x)$ ($x \in \mathbb{R}$)
+**2. eset**: $w_{0} = w$ (*rezonancia*)
+- $\implies \nexists x \to q*\sin(wx)$ partikuláris megoldás
+- **DE**: $\exists q\in \mathbb{R}: \psi(x):= q * x* \cos(wx)$ ($x\in \mathbb{R}$) partikuláris megoldás
+- $\iff q*-2w*\sin(wx) = A * \sin(wx)$
+- $\iff q = \frac{A}{-2w}$
+- $\iff \phi(x) = d *\sin(wx + \delta) + q * x * \cos(wx) = d*\sin(wx +\delta) - \frac{A}{2w} *x * \cos(wx)$ 
 ## Csillapítás nélküli kényszerrezgés vizsgálata, rezonancia
+
+$m * \phi'' = F - \alpha * \phi - \beta * \phi' \iff \phi'' + \frac{\alpha}{m} * \phi + \frac{\beta}{m} * \phi' = \frac{F}{m}$
+ahol:
+- $m$ ~ *tömeg*
+- $\alpha$ ~ *visszatérítő ($\alpha>0$)*
+- $\beta$ ~ *fékezés ($\beta\geq 0$)*
+- $F$ ~ *külső erő*
+
+**Nincs csillapítás** ($\beta = 0$):
+- $\phi'' + w_{0}^2 * \phi = \frac{F}{m}$, ahol $w_{0} := \sqrt{ \frac{\alpha}{m} }$, a *sajátfrekvencia* 
+- **Ekkor**: $P(t) = t^2 + w_{0}^2 = 0 \iff t = \pm i*w_{0}$ => *valós alaprendszer*: 
+	- $x \to \cos(w_{0}*x)$
+	- $x \to \sin(w_{0}*x)$
+- $M_{0}$ valós értékű elemei: $c_{1} * \cos(w_{0}*x) + c_{2}*\sin(w_{0}*x) = d*\sin(w_{0}*x + \delta)$, ahol
+	- $\delta$ ~ *fázisszög*
+	- $d$ ~ *amplitúdó* 
+- T.f.h: $\frac{F(x)}{m} = A *\sin(w*x)$ ($x \in \mathbb{R};\ w, A \in \mathbb{R}; A, w > 0$)
 
 # Függvénysorozatok, függvénysorok 
 ## Függvénysorozat fogalma
+
+$(f_{n})$ függvénysorozat, ha $\forall n \in \mathbb{N}: f_{n}$ fv.
+- Mindig feltesszük, hogy $\exists D \neq \emptyset: f_{n}:D\to \mathbb{R} \ (n \in \mathbb{N})$  
+
 ## Függvénysor fogalma
+
+**Legyen**: $F_{n}:= \sum^n_{k =0} f_{n}\ (n\in \mathbb{N})$ és $\sum(f_{n}) = (F_{n})$ *függvénysor* a $\sum(f_{n})$ $n$-edik részletösszeg fv.  
+
 ## Hatványsorok
+
+**Legyen**:
+- $a_{n} \in \mathbb{K}$ 
+- $f_{n}(x) := a_{n} * (x-a)^n$ ($n \in \mathbb{N}, x\in \mathbb{K}$)
+
+**Ekkor**: 
+- $\sum(a_{n}*(x-a)^n) = \sum(f_{n})$ ~ *hatványsor*
+- $F_{n}(x) = \sum^n_{k = 0}a_{k}*(x-a)^k$ ~ *polinom*
+- **Cauchy-Hadamard**: $\exists! 0 \leq r \leq +\infty$ és $0 < R < +\infty$:
+	- $\{ z \in \mathbb{K} : ||z -a | < r \}=:K_{r}(a) \subset D_{0} \subset \overline{K_{R}(a)} := \{  z \in \mathbb{K} : |z -a| \leq r \}$ 
+
 ## Trigonometrikus sorok
+
+**Legyen**: 
+- $\alpha_{n} \in \mathbb{R}$
+- $\beta_{n} \in \mathbb{R}$
+- $f_{0} \equiv \alpha_{0}$
+- $f_{n}(x) := \alpha_{n} *\cos(n*x) + \beta_{n} * \sin(n*x)$ ($x\in D:=\mathbb{R}$; $1\leq n \in \mathbb{N}$)
+
+**Ekkor**:
+- $\sum (\alpha_{n} *\cos(n*x) + \beta_{n}*\sin(n*x):= \sum(f_{n})$ ~ *trigonometrikus sor*
+- $F_{n}(x) = \alpha_{0} + \sum^n_{k=1} (\alpha_{k}*\cos(k*x)+ \beta_{k}*\sin(k*x))$ ($n\in \mathbb{N}$; $x \in \mathbb{R}$) ~ *trigonometrikus polinom*
+
 ## Fourier-sorok
 ## Dirichlet-féle magfüggvény
 ## Konvergencia
+
+**T.f.h.** $x\in D$ és $(f_{n}(x)):\mathbb{N} \to \mathbb{K}$ számsorozat konvergens
+**Ekkor**: 
+- $(f_{n})$ fv. sor $x$-ben konvergens
 ## Határfüggvény/Összegfüggvény
+
+**Legyen**: $D_{0}:= \{ x \in D: (f_{n})\ az\ x-ben\ konvergens \}$ az $(f_{n})$ *konvergencia tartománya*
+
+**Hasonlóan** függvénysor esetén is 
+
+**Ha**: $D_{0} \neq \emptyset$, **akkor** $f:D_{0} \to \mathbb{K}$, $f(x):= \lim_{ n \to \infty }f_{n}(x)$ ($x \in D_{0}$), ahol $f$ a $f_{n}$ *határfüggvénye*
+
+**T.f.h.**: $D_{0} \neq \emptyset, x\in D_{0} \implies (F_{n}(x))$ konvergens, azaz $\left( \sum^n_{k =0} f_{k}(x) \right)$ konvergens
+**Tehát**: 
+- $\sum(f_{n}(x))$ számsor konvergens és 
+- $\sum^{\infty}_{k=0}f_{k}(x)$ sorösszeg a határértéke (*összegfv*.)
 ## Egyenletes konvergencia
 ## Weierstrass-féle majoráns krit.
 # Konvergens függvénysorozat tulajdonságai
