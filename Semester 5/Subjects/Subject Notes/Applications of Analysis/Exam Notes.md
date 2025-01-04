@@ -44,48 +44,85 @@ Az lenne jó, ha:
 - $R^n \equiv R^{n-m} \times \mathbb{R}^m$, ahol $\xi = (x,y) \in\mathbb{R}^n, x \in \mathbb{R}^{n-m},y \in \mathbb{R}^m$
 ## Kapcsolata az inverz függvénnyel
 
-## Implicit fv. tétel (vázlat)
-**Legyen**: (3 feltétel)
-- folytonosan deriválhatóság
-- 2. parc. determinánsa (a,b) ~ (Azért is kell, hogy valóban függvény legyen)
-- c = (a,b) pont
+**Legyen**:
+- $h \in \mathbb{R}^n \to \mathbb{R}^n$ fv.; $h(x,y) := (x,g(x,y))$ ($x \in \mathbb{R}^{n-m},y \in \mathbb{R}^n,(x,y) \in D_{g}$)
 
 **Ekkor**:
-1. Környezetek létezés, és ezen beli pontokra állítás
-2. $\phi$ függvény: folytonosan deriválhatóság, derivált formája 
+1. $h \in C^1; h(a,b) = (a,g(a,b)) = (a,0)$
+2. T.f.h.: $\exists K(c) = K(a,b) : h|K(c)$ invertálható
+3. $(h|K(c))^{-1} =: \phi =(\phi_{1},\phi_{2}) \in \mathbb{R}^n \to \mathbb{R}^n$
+4. **Világos**: $(x,y) = h(\phi(x,y)) =h(\phi_{1}(x,y),\phi_{2}(x,y))= (\phi_{1}(x,y),g(\phi_{1}(x,y),\phi_{2}(x,y))) \implies$ 
+5. $\phi_{1}(x,y) = x$ és $y = g(x,\phi_{2}(x,y))$
+6. **De**: $(a,0) \in D_{\phi} \implies y = 0$ is írható!: $0 = g(x, \phi_{2}(x,0)) \implies x \to \phi_{2}(x,0)$ lehet implicit
+
+
+## Implicit fv. tétel (vázlat)
+**Legyen**: (3 feltétel)
+- $g = (g_{1},g_{2},\dots,g_{m}) : U\to \mathbb{R}^m;\ g \in C^1$
+- $\exists c=(a,b) \in \{ g=0 \}: \det \partial_{2}f(c) \neq 0$
+
+**Ekkor**:
+1. $\exists K(a), K(b): \forall x \in K(a)\ \exists! y \in K(b):g(x,y) =0$
+2. **Ha**: $\phi:K(a) \to K(b)$ fv.-re:
+	1. $\phi(x) := y$ ($x \in K(a)$)
+3. **Akkor**: 
+	1. $\phi \in C^1$
+	2. $\phi'(x) = -(\partial_{2}g(x,\phi(x)))^{-1} * \partial_{1}g(x,\phi(x))$ ($x\in K(a)$)
 
 ## Inverz fv. tétel (vázlat)
 **Legyen**: 
-- folytonosan deriv.
-- egy pont (z)
-- z-ben a derivált determináns nem 0
+- $h\in \mathbb{R}^n\to \mathbb{R}^n$
+- $h \in C^1$
+- $z \in D_{h}: \det h'(z) \neq 0$
 
 **Ekkor**: 
-- létezik a lokális inverz
-- lokális inverz folytonosan deriválható
-- lokális inverz deriváltja megadható
+- $\exists K(z): h|K(z)$ invertálható
+- **Ha**: $\psi:=(h|K(z))^{-1}$
+- **Akkor**: $\psi \in C^1$ és $\psi'(t) = h'(\psi(t))^{-1}$ ($t \in D_{\psi}$)
 
 # Feltételes szélsőérték
-## Szükséges feltétel (+ bizonyítás)
-### Elsőrendű -||-
+
+## Elsőrendű szükséges feltétel
 **Legyen**:
-- $f,g$ függvények
-- g ~ folytonos diff.
-- f-nek c pont feltételes lok. sz. é.
-- g gradiens függvényeinek c-beli helyettesítési értéke legyenek lineárisan függetlenek
+- $f: U \to \mathbb{R},g =(g_{1},g_{2},\dots,g_{ m}) : U \to \mathbb{R}^m$ függvények
+- $g \in C^1$
+- $c \in \{ g=0 \}:$ legyen $c$ feltételes lokális szélsőérték helye $f$-nek
+- $grad\ g_{1}(c),grad\ g_{2}(c),\dots,grad\ g_m(c){} \in \mathbb{R}^m$ lineárisan függetlenek
+
+**Ekkor**:
+- $\exists \lambda = (\lambda_{1},\dots,\lambda_{m}) \in \mathbb{R}^m: grad\ F(c) = 0$, ahol:
+- $F:= f +\lambda*g = f + \sum^m_{i=1} \lambda_i * g_{i}$ 
 
 **Biz**:
 1. Mátrixos alak felírása (g diff.) -> g diff. fv. range = m
-2. $\det A \neq_{0}$, illetve feltevés: utolsó m oszlop = A
+2. $\det A \neq {0}$, illetve feltevés: utolsó m oszlop = A
 3. Implicit fv. tétel + következményei ($\phi$ grafikon, $F$ fv.)
 4. F-nek lok. sz. é. a-ban
 5. F Gradiens függvény + egyenlet felírása + $\phi'$ helyettesítése
 6. Végső alak
 
-### Másodrendű -||-
-## Elégséges feltétel 
+## Másodrendű elégséges feltétel
 
-### Másodrendű -||-
+**Legyen**: 
+- $f,g \in D^2$
+- $grad\ g_{1}(c),grad\ g_{2}(c),\dots,grad\ g_{m}(c)$ lineárisan függetlenek
+- $\exists \lambda \in \mathbb{R}^m, \lambda = (\lambda_{1},\lambda_{2},\dots,\lambda_{m}): grad\ F(c) =0$
+- $Q(x) > 0$ ú.h. $0 \neq x \in  \mathbb{R}^n$ és $g'(c)*x = 0$, ahol
+	- $Q(z) := <F''(c)*z,z>$ ($z \in \mathbb{R}^n$)
+
+**Ekkor**:
+- $f$-nek $c$-ben feltételes lokális minimuma (maximuma) van $g=0$-ra 
+
+## Másodrendű szükséges feltétel
+
+**Legyen**:
+- $f,g \in D^2$
+- $grad\ g_{1}(c), grad\ g_{2}(c),\dots, grad\ g_{m}(c)$ lineárisan függetlenek
+- $f$-nek $c \in \{ g =0 \}$-ban feltételes lokális minimuma/maximuma van
+
+**Ekkor**:
+- $\exists \lambda \in \mathbb{R}^m, \lambda = (\lambda_{1},\lambda_{2},\dots,\lambda_{m}): grad\ F(c)=0$ és $Q(x) \geq 0$ ($\leq$) 
+- $0\neq x \in \mathbb{R}^n; g'(c)*x =0$
 
 
 # Differenciál egyenletek 
@@ -102,7 +139,7 @@ Az lenne jó, ha:
 
 ## K.É.P. (Cauchy-feladat)
 
-**Ha még**: $\tau \in I$ és $\xi \in \Omega$ előre megadott, úgy hogy: $\phi(\tau) = \xi
+**Ha még**: $\tau \in I$ és $\xi \in \Omega$ előre megadott, úgy hogy: $\phi(\tau) = \xi$
 **Akkor**:  *K.É.P.*
 
 ### K.É.P. egyértelmű megoldása
@@ -231,7 +268,7 @@ Lásd fent
 ## Lipschitz-feltétel
 
 $\forall Q \subset \Omega$ kompakt
-$\exists L \geq_{0}:$ $\lvert \lvert f(x,u) - f(x,v) \rvert \rvert \leq L * \lvert \lvert u-v \rvert \rvert$
+$\exists L \geq {0}:$ $\lvert \lvert f(x,u) - f(x,v) \rvert \rvert \leq L * \lvert \lvert u-v \rvert \rvert$
 $(x\in I;u,v\in Q)$
 
 ## Picard-Lindelöf-féle egzisztencia-tétel (fixpont-tétel alk.)
@@ -243,7 +280,7 @@ Ha a d.e. jobb oldala eleget tesz a **Lipschitz-feltételnek**, akkor a szóban 
 - $I_{*}:= [\tau-\delta,\tau + \delta] \subset I$
 - $K_{\mu} := \{ z \in \mathbb{R}^n | \lvert \lvert z - \xi \rvert \rvert \leq \mu \}$
 - $\digamma := \{ \phi:I_{*}\to K_{\mu} | \phi \in C \}$
-- Ill. metrika: $\forall \phi,\psi \in \digamma: \rho(\phi,\theta):= \max \{ \lvert \lvert  \phi(x) - \psi(x) \rvert \rvert :x \in I_{*}\}$
+- Ill. metrika: $\forall \phi,\psi \in \digamma: \rho(\phi,\psi):= \max \{ \lvert \lvert  \phi(x) - \psi(x) \rvert \rvert :x \in I_{*}\}$
 - $T$ a $\digamma$-n értelmezve: $T(\phi)(x) = T\phi(x):= \xi + \int^x_{\tau}f(t,\phi(t))\ dt$ 
 **Ekkor**: 
 1. Igaz-e, hogy $T\psi \in \digamma$? 
@@ -305,7 +342,7 @@ $\phi(x) := \psi_{*}(x)$, $(x \in I_{*})$
 -  $\forall$ K.É.P megoldható és $\forall$ teljes megoldás a teljes $I$-n van értelmezve $\phi:I\to \mathbb{C}^n$
 
 **Tétel**: 
-1. $\forall m \in \mathbb{N}$ $\phi_{1},\dots,\phi_{n}\in M_{0}: \phi_{1}\dots \phi_{n}$ lineárisan független $\iff$ $\forall \tau \in I: \phi_{1}(\tau),\phi_{2}(\tau),\dots,\phi_{m}(\tau)$ lineárisan független
+1. $\forall m \in \mathbb{N}$ $\phi_{1},\dots,\phi_{n}\in M_{0}: \phi_{1}\dots \phi_{m}$ lineárisan független $\iff$ $\forall \tau \in I: \phi_{1}(\tau),\phi_{2}(\tau),\dots,\phi_{m}(\tau)$ lineárisan független
 2. $M_{0}$ n-dim. lineáris tér
 3. $\forall \phi_{1},\dots,\phi_{m} \in M_{0}: \exists g_{1},\dots,g_{m}: I \to \mathbb{C}$ : $g_{1},\dots,g_{m} \in D$ és $\psi:= \sum^m_{k = 1}g_{k} *\phi_{k} \in M$  
 4. $\phi,\tilde{\phi}\in M: \phi - \tilde{\phi} \in M_{0}$
@@ -334,9 +371,9 @@ Lásd feljebb (feltétel + állítás)
 - t.f.h.: $\phi_{1},\dots,\phi_{n} \in M_{0}$ bázis (*alaprendszer*)
 - **Legyen**: $\Phi:= [\phi_{1},\dots,\phi_{n}] : I\to \mathbb{C}^{n\times n}$ folytonos mtx. fv. (*alapmátrix*
 - **Ekkor**: $\Phi' = A * \Phi$, ha $\Phi' := [\phi_{1}',\dots,\phi_{n}']:I \to \mathbb{C}^{n\times n}$
-- **Ha**: $g_{1},\dots,g_{n}:I\to \mathbb{C}$ folyt. és $g:=(g_{1},\dots, g_{n}):I\to \mathbb{C}^n$ folyt. és $\sum_{k =1}^n c_{k} * g_{k} =\Phi *g$ és $(\Phi *g)' = \Phi' *g + \Phi * g'$
-- $\psi \in M \iff \psi' =A * \psi + b = A * \phi * g + b$
-- $\Phi' *g + \Phi * g' = A * \phi * g + \phi * g'$, azaz $\Phi * g' = b$
+- **Ha**: $g_{1},\dots,g_{n}:I\to \mathbb{C}$ folyt. és $g:=(g_{1},\dots, g_{n}):I\to \mathbb{C}^n$ folyt. és $\sum_{k =1}^n \phi_{k} * g_{k} =\Phi *g$ és $(\Phi *g)' = \Phi' *g + \Phi * g'$
+- $\psi \in M \iff \psi' =A * \psi + b = A * \Phi * g + b$
+- $\Phi' *g + \Phi * g' = A * \Phi * g + \Phi * g'$, azaz $\Phi * g' = b$
 - **De**: $\Phi$ oszlopai lin. függetlnek $\implies \forall x \in I : \exists (\Phi(x))^{-1} =\Phi^{-1}(x)$ és $\Phi^{-1}$ folytonos
 - **Legyen**: $g'  = \Phi^{-1} * b =: (h_{1},\dots,h_{n}) \iff g'_{i} = h_{i}\ (i = 1,\dots,n)$ 
 
@@ -396,6 +433,12 @@ $\begin{bmatrix} \alpha & \beta \\ \gamma & \delta \end{bmatrix}$ nem diagonaliz
 - $\tau \in I;\ \xi_{0},\xi_{1},\dots,\xi_{n-1} \in \mathbb{K}$ és
 - $\tau \in D_{\phi}; \phi^{(k)}(\tau) = \xi_{k}$, $(k =0,\dots,n-1)$: K.É.P.
 
+
+**Vázlat**:
+- Feltételek felírása (4)
+- Cél megfogalmazása (3)
+- K.É.P. formája (2)
+
 ## Átviteli elv 
 
 **Legyen**: 
@@ -437,7 +480,7 @@ Ill.:
 - Fenti felírása mátrixos/vektoros formába
 - n darab szumma, azaz:
 	- $\sum^n_{k=1} \phi_{k}^{(j)}* g_{k}' =0$, $(j= 0,\dots,n-2)$
-	- $\sum^n_{k=1} \phi_{k}^{(n-1)}*g_{k}' = c$
+	- $\sum^n_{k=1} \phi_{k}^{(n-1)}*g_{n-1}' = c$
 
 **Wronski-det.**: $W(x) := \det \Phi(x)$ ($x \in I$)
 
@@ -453,7 +496,7 @@ Ill.:
 - $P(t) := t^n +\sum^{n-1}_{k=0} a_{k} * t^k$ ~ $n$-ed fokú polinom, d.e. *karakterisztikus polinomja*
 - T.f.h: $\lambda \in \mathbb{K}: P(\lambda) = 0$ és $\phi(x) := e^{\lambda x} \implies T\phi(x) = \lambda^n * e^{\lambda x} + \sum^{n-1}_{k=0} a_{k}*\lambda^k * e^{\lambda x} = e^{\lambda x} * P(x) = 0$, ahol $T\phi(x) := \phi^{(n)}(x) + \sum^{n-1}_{k=0} a_{k} * \phi^{(k)}(x) = c(x)$
 - **Ekkor**: $\phi\in M_{0}$, illetve => ha $\lambda$ min. 2-szeres gyök: $\phi(x) := x *e^{\lambda x} \in M_{0}$ is 
-- $P(t) = \prod^s_{k = 1} (1-\lambda_{k})^{\nu_{k}}$ ~ $P(t)$ gyöktényezős alakja, ahol
+- $P(t) = \prod^s_{k = 1} (t-\lambda_{k})^{\nu_{k}}$ ~ $P(t)$ gyöktényezős alakja, ahol
 	- $s\in \mathbb{N}$
 	- $\lambda_{1},\dots,\lambda_{s}$ a polinom. különböző gyökei
 	- $\nu_{1},\dots,\nu_{s}$ a k. gyök multiplicitása
@@ -463,13 +506,26 @@ Ill.:
 **Illetve**: $\phi_{jk}$-k lineárisan függetlenek, azaz:
 $\sum^s_{j=1} \sum^{j-1}_{k=0} c_{jk} * x^k *e^{\lambda_{j}x}=0 \iff c_{jk} =0$, ($x\in I$, $c_{jk}\in \mathbb{K}$ együtthatók)
 
-
+**Vázlat**:
+1. n darab állandó együttható megadás
+2. Kar. pol. felírása + gyök létezése
+3. Homogén megoldások felírása, illetve velük kapcsolatos egyenletek felírása
+4. Kar. pol. gyöktényezős alakjának felírása + alaprendszer felírása ez alapján
+5. Alaprendszer lineáris függetlenségének felírása 
 ## Karakterisztikus polinom szerepe (biz. vázlat)
 
 ### Polinomiális függetlenség (Lemma)
+
+**Világos**, hogy: 
+$\sum^s_{j=1} \sum^{j-1}_{k=0} c_{jk} * x^k *e^{\lambda_{j}x}=0 \iff c_{jk} = \sum^s_{j=1}(\sum^{j-1}_{k=0} c_{jk} * x^k) * e^{\lambda_{j}k}$, ($x\in I$, $c_{jk}\in \mathbb{K}$ együtthatók)
+- és: $\sum^{j-1}_{k=0} c_{jk}* x^k$ polinom
+
 $\forall R_{1},\dots,R_{k}$ polinomok esetén:
 - $\sum^s_{k=1}R_{k}(x)*e^{\lambda_{k}x} =0 \iff R_{k} \equiv 0$
 
+**Vázlat**:
+1. Világos, hogy az alaprendszernél felírt linearitás vizsgálatban polinomok vannak
+2. Polinomiális függetlenség felírása
 
 # Kvázi polinom és rezgés
 ## Partikuláris megoldás kvázi-polinom jobb oldal esetén (biz. vázlat)
@@ -480,7 +536,7 @@ $\forall R_{1},\dots,R_{k}$ polinomok esetén:
 	- $P(x) := x^n + \sum^{n-1}_{k =0} a_{k}* x^k$ ($x \in \mathbb{K}$), $a_{0},\dots,a_{n-1} \in \mathbb{R}$, $n \geq 1$  
 - **Ekkor**: 
 	- $\exists \psi(x) := x^r * R(x) * e^{\lambda x}$ $(x \in I)$, ahol $R$ polinom $\deg R \leq \deg Q$, $r \in \mathbb{N}$ és a $\lambda$ a $P$-nek $r$- szeres gyöke, és $\psi$ a partikuláris megoldás
-	- $r = 0 \implies P(\lambda) \neq 0$; $r >0: P(\lambda) - P'(\lambda) = \dots = P^{(\lambda-1)}(\lambda) = 0$, de $P^{(\lambda)} \neq 0$
+	- $r = 0 \implies P(\lambda) \neq 0$; $r >0: P(\lambda) = P'(\lambda) = \dots = P^{(r-1)}(\lambda) = 0$, de $P^{(r)} \neq 0$
 	- $\psi(x)$ ilyen választása így eleget tesz $\phi^{(n)}(x)+ \sum^{n-1}_{k=0}a_{k}*\phi^{(k)}(x) = c(x):= Q(x) * e^{\lambda x}$
 
 **$r = 0$ eset**: 
@@ -538,10 +594,10 @@ $(f_{n})$ függvénysorozat, ha $\forall n \in \mathbb{N}: f_{n}$ fv.
 - $f_{n}(x) := a_{n} * (x-\alpha)^n$ ($n \in \mathbb{N}, x\in \mathbb{K}$)
 
 **Ekkor**: 
-- $\sum(a_{n}*(x-a)^n) = \sum(f_{n})$ ~ *hatványsor*
-- $F_{n}(x) = \sum^n_{k = 0}a_{k}*(x-a)^k$ ~ *polinom*
-- **Cauchy-Hadamard**: $\exists! 0 \leq r \leq +\infty$ és $0 < R < +\infty$:
-	- $\{ z \in \mathbb{K} : ||z -a | < r \}=:K_{r}(a) \subset D_{0} \subset \overline{K_{R}(a)} := \{  z \in \mathbb{K} : |z -a| \leq r \}$ 
+- $\sum(a_{n}*(x-\alpha)^n) = \sum(f_{n})$ ~ *hatványsor*
+- $F_{n}(x) = \sum^n_{k = 0}a_{k}*(x-\alpha)^k$ ~ *polinom*
+- **Cauchy-Hadamard**: $\exists! 0 \leq r \leq +\infty$:
+	- $\{ z \in \mathbb{K} : ||z -\alpha | < r \}=:K_{r}(\alpha) \subset D_{0} \subset \overline{K_{r}(\alpha)} := \{  z \in \mathbb{K} : |z -\alpha| \leq r \}$ 
 
 ## Trigonometrikus sorok
 
@@ -571,7 +627,7 @@ $(f_{n})$ függvénysorozat, ha $\forall n \in \mathbb{N}: f_{n}$ fv.
 
 ## Dirichlet-féle magfüggvény
 
-$S_{n}f(x) = \frac{1}{2\pi} * \int^{2\pi}_{0} f(t)\ dt + \sum^n_{k =1}\left( \frac{1}{\pi}*\int^{2\pi}_{0}f(t)*\cos(kt)\ dt \right) *\cos(kx) + (\frac{1}{\pi}\int^{2\pi}_{0} f(t) * \sin(nt)\ dt)*\sin(kx) =\dots$
+$S_{n}f(x) = \frac{1}{2\pi} * \int^{2\pi}_{0} f(t)\ dt + \sum^n_{k =1}\left( \frac{1}{\pi}*\int^{2\pi}_{0}f(t)*\cos(kt)\ dt \right) *\cos(kx) + (\frac{1}{\pi}\int^{2\pi}_{0} f(t) * \sin(kt)\ dt)*\sin(kx) =\dots$
 $\dots= \frac{1}{\pi} * \int^{2\pi}_{0}f(t) * \left[ \frac{1}{2} +\sum^n_{k=1} \cos(kt )*\cos (kx)+\sin(kt)*\sin(kx) \right]\ dt=\dots$ 
 $\dots= \frac{1}{\pi} *\int^{2\pi}_{0}f(t) *\left[ \frac{1}{2} + \sum^n_{k=1} \cos(k*(x-t)) \right] \ dt= \frac{1}{\pi} *\int^{2\pi}_{0}f(t) * D_{n}(x-t)\ dt$
 **ahol**:
@@ -696,6 +752,7 @@ Ha viszont $a_{n} := n$, akkor a kettő integrálja $[1,2]$ intervallumon: $0 \n
 ## Egyenletes fv.-sorozat folytonossága
 
 **Legyen**:
+- $f_{n}:D \to \mathbb{K}, f_{n}$ egyenletesen konvergens
 - $a \in D; \ f_{n} \in C\{ a \}, (n\in \mathbb{N})$
 **Ekkor**: $f \in C \{ a \}$
 
@@ -722,7 +779,7 @@ Ha viszont $a_{n} := n$, akkor a kettő integrálja $[1,2]$ intervallumon: $0 \n
 - $f\in R[a, b]$ és $\int^b_{a} f= \lim_{ n \to \infty }\left( \int^b_{a} f_{n} \right)$
 
 **Biz.**:
-1. f Riemann integrálható < = > létezik megfelelő felosztás
+1. f Riemann integrálható < = > létezik megfelelő felosztás $\forall \epsilon>0$
 2. Oszcillációs összeg felírás: $\omega(f,\tau) = \sum^{s-1}_{i=0} \sup\{ |f(x) - f(y)|: x_{i} \leq x,y \leq x_{i+1} \} *(x_{i+1} - x_{i}) < \epsilon$
 3. Legyen i tetszőleges felosztásnak indexe, x és y a két szomszédos felosztás közti szám
 4. Írjuk fel abszolút értékbeli különbségüket, és becsüljük felül $f_{n}$ segítségével
@@ -753,10 +810,10 @@ Ha viszont $a_{n} := n$, akkor a kettő integrálja $[1,2]$ intervallumon: $0 \n
 - $f \in D$, $f(x)' = \lim_{ n \to \infty } f_{n}'(x)$, ($\forall x \in I$)  
 
 **Biz.**:
-1. Legyen m, n term. szám, $a \neq x \in I$ és induljunk ki: $f_{m}(x) - f_{n}(x)$-ből
+1. Legyen $m,n$ term. szám, $a \neq x \in I$ és induljunk ki: $f_{m}(x) - f_{n}(x)$-ből
 2. $\dots = f_{m}(x) -f_{m}(a) + f_{m}(a) - f_{n}(a) + f_{n}(a) - f_{n}(x) \leq\dots$
-3.  $\dots\leq \lvert (f_{m} - f_{n})(x) - (f_{m} - f_{n})(a) \rvert + \lvert f_{m}(a) - f_{n}(a)  \rvert \leq\dots$
-4. $\dots =  |(f_{m} -  f_{n})'(\xi) * (x-a)| + |f_{m}(a) - f_{n}(a)| \leq\dots$
+3.  $\dots\leq \lvert (f_{m} - f_{n})(x) - (f_{m} - f_{n})(a) \rvert + \lvert f_{m}(a) - f_{n}(a)  \rvert =\dots$
+4. $\dots = |(f_{m} -  f_{n})'(\xi) * (x-a)| + |f_{m}(a) - f_{n}(a)| \leq\dots$
 5. $\dots \leq \lvert f_{m}'(\xi) - f_{n}'(\xi) \rvert * \lvert I \rvert +\lvert f_{m}(a) - f_{n}(a) \rvert \leq \epsilon *(1 + |I|)$, mert $f_{n}'$ egyenletesen konvergens, azaz egyenletes Cauchy kritérium teljesül, illetve $a$-ban konvergens $f_{n}$, azaz a Cauchy kritérium teljesül
 6. Legyen $z \in I$, és legyen $$\phi_{n}(x) = \begin{cases}
 \frac{f_{n}(x) - f_{n}(z)}{x -z} : z \neq x \in I \\
@@ -770,12 +827,17 @@ f_{n}'(z): z = x
 \lvert  f_{n}'(z) - f_{m}'(z) \rvert : z = x \\ 
 \end{cases}$$
 1. Mivel $f_{n}'$ egyenletesen konvergens, így egyenletes Cauchy-krit. is teljesül, azaz $\forall \epsilon>0, \exists N \in \mathbb{N};n,m \in \mathbb{N};n,m > N:\lvert f_{n}'(t) - f_{m}'(t) \rvert < \epsilon$
-2. Emiatt $|\phi_{n}(x) - \phi_{m}(x) | < \epsilon$ is igaz, azaz teljesül rá a Cauchy-krit. => Így valóban egyenletesen konvergál
+2. Emiatt $|\phi_{n}(x) - \phi_{m}(x) | < \epsilon$ is igaz, azaz teljesül rá az egyenl. Cauchy-krit. => Így valóban egyenletesen konvergál
 3. Azt is tudjuk, hogy $$\phi(x) := \lim_{ n \to \infty } \phi_{n}(x) = \begin{cases}
 \frac{f(x) - f(z)}{x -z} : x \neq z \\
 \lim_{ n \to \infty } f_{n}'(z) : x = z
 \end{cases}$$
 4. **Azaz**: $\lim_{ n \to \infty } f_{n}'(z) = \phi(z) = \lim_{ x \to z }\phi(x) = \lim_{ x \to z } \frac{f(x) - f(z)}{x-z}$
+
+**Vázlat**:
+1. Egyenletes Cauchy-krit. + Cauchy-krit. felhasználása $f_{m}(x) - f_{n}(x)$-re
+2. $\phi_{n}$ felírása + megmutatása annak, hogy egyenletesen konvergál (+ folytonos)
+3. $\phi$ határfv. felírása és határérték egyenlet felírása
 
 ## Deriválás és határátmenet felcserélhetősége
 
@@ -805,7 +867,7 @@ Illetve ez elmondható bármely $2\pi$ hosszúságú korlátos és zárt $I \in 
 
 **T.f.h.**:
 - $\sum(\alpha_{k} * \cos(kx) + \beta_{k}*\sin(kx))$ trigonometrikus sor egyenl. konvergens
-- $f(x):= a_{0} + \sum^{\infty}_{k=1} \alpha_{k} * \cos(kx) + \beta_{k}*\sin(kx)$ ($x\in \mathbb{R}$)
+- $f(x):= a_{0} + \sum^{\infty}_{k=1} a_{k} * \cos(kx) + b_{k}*\sin(kx)$ ($x\in \mathbb{R}$)
 
 **Ekkor**: $1\leq n \in \mathbb{N}$
 - $a_{0} := \frac{1}{2\pi} *\int^{2\pi}_{0} f(x)\ dx$
@@ -854,14 +916,15 @@ $\exists \min_{R} \int^{2\pi}_{0}(f-R)^2 = \int^{2\pi}_{0}f^2 - \pi * \left[ 2*a
 
 **Biz.**:
 1. Ui. $f\in C_{2\pi}$
-2. Legyen $1 \leq k \in \mathbb{N}: g(x):= \sin(kx)$, így g korlátos és $S * g$ egyenletesen konvergens
+2. Legyen $1 \leq k \in \mathbb{N}: g(x):= \sin(kx)$, így $g$ korlátos és $S * g$ egyenletesen konvergens
 3. $f(x)*g(x)$ felírása, kifejtése. Használjuk fel, hogy trigonometrikus rendszer ortogonális
 4. Így: $\pi b_{k} = \int^{2\pi}_{0}f(x)*\sin(kx)\ dx =$ "tagonkénti integrál" = $\beta_{k}\pi$, azaz $\beta_{k} = b_{k}$ 
 5. Hasonlóan $\alpha_{l} = a_{l}$
 6. **Fordítva**: $f\in C_{2\pi};\ S:= Sf$, azaz t.f.h. $Sf$ egyenletesen konvergens
 	1. Legyen $g\in C_{2\pi}$ az összefv.-e
-	2. Ekkor $Sg = Sf$, azaz $g$ és $f$ Fourer-együtthatói azonosak
+	2. Ekkor $Sg = Sf$, azaz $g$ és $f$ Fourier-együtthatói azonosak
 
+![[Pasted image 20250101225826.png]]
 
 **2. Állítás** (*teljesség*)
 **Legyen**:
@@ -884,8 +947,30 @@ $\exists \min_{R} \int^{2\pi}_{0}(f-R)^2 = \int^{2\pi}_{0}f^2 - \pi * \left[ 2*a
 11. és $\int^{-\Delta}_{-\pi}|h *T^n| + \int^\pi_{\Delta}|h*T^n| \leq 2* \lvert \lvert h \rvert \rvert_{\infty} * q_{\Delta}^n  *\pi$, ahol $q_{\Delta}:= \max_{\Delta\leq x \leq \pi}|T(x)| < 1$
 12. Legyen így $2*\lvert \lvert h \rvert \rvert_{\infty}*(\delta - \Delta) < \frac{\delta}{2}$ és $n\in \mathbb{N}: 2*\pi*\lvert \lvert h \rvert \rvert_{\infty} *q_{\Delta}^n < \delta$
 13. Ekkor $\int^\pi_{-\pi}h*T^n \geq 2*\delta - \delta -\frac{\delta}{2}= \frac{\delta}{2} >0$, tehát valóban beláttuk
+
+**Meglátások**:
+- $\cos(x) + 1 - \cos(\delta) \geq 1$ $(|x| < \delta)$
+- $q_{\Delta}:= \left\{  |\cos(x) + 1 - \cos(\delta)| : x \in [-\pi,-\Delta] \bigcup [\pi, \Delta]  \right\} < 1$
+- $|\cos(x) +1 - \cos(\delta)| \leq 1$ ($x \in [-\Delta,-\delta] \bigcup [\delta,\Delta]$)
+- $\lvert \lvert h \rvert \rvert_{\infty} := \{ \lvert h(x) \rvert : |x| \leq \pi \} < +\infty$
+
 # Fourier sorok I.
 ## Kétszer folytonosan differenciálható fv.-k Fourier sora
+
+**Weierstrass kritérium következménye**:
+Ha $\sum^\infty_{n=0}(|a_{n}| + |b_{n}|) < +\infty$, akkor az általuk meghatározott $\sum(a_{n}\cos(nx) +b_{n} \sin(nx))$ trigonometrikus sor egyenletesen konvergens.
+
+Ez a helyzet, pl.: ha $a_{n},b_{n}$ együtthatók egy $f \in C_{2\pi}$ fv. *Fourier-együtthatói* és $f \in C^2$ 
+
+**Vázlat**:
+1. $\pi * a_{n} = \int^{2\pi}_{0} f(x)*\cos(nx)\ dx = -\frac{1}{n}*\int^{2\pi}_{0} f'(x)*\sin(nx)\ dx = -\frac{1}{n^2} * \int^{2\pi}_{0} f''(x)*\cos(nx) \ dx$
+2. Világos, hogy f'' folytonos => egy alkalmas $0<C$ számmal $|f''| \leq C$, és így
+3. $|a_{n}|\leq \frac{2 C}{n^2}$
+4. Hasonlóan: $|b_{n}| \leq \frac{2 C}{n^2}$
+5. Tehát $\sum^{\infty}_{n=1}(|a_{n}| + |b_{n}|) < +\infty$
+
+Mindezt egybevetve, világos, hogy a kétszer folytonosan differenciálható függvények Fourier-sora egyenletesen konvergens, azaz Fourier sorba fejthetők!
+
 ## $f \in C_{2\pi}, f(x):=(x-\pi)^2 \ (0 \leq x\leq 2\pi)$ függvény Fourier-sora
 
 **Vázlat**:
