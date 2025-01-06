@@ -33,7 +33,7 @@
 **Általánosan**:
 - $2 \leq n\in \mathbb{N}, m = 1,\dots, n-1$
 - $\emptyset \neq U \subset \mathbb{R}^n, f:U \to \mathbb{R}$
-- $g = (g_{1},\dots,g_{m}) : U \to \mathbb{R}^n$
+- $g = (g_{1},\dots,g_{m}) : U \to \mathbb{R}^m$
 - **T.f.h**: $\{ g = 0 \}:= \{ \xi \in U: g(\xi) = 0 \} \neq \emptyset$ 
 - **Ekkor**:
 	- $f$-nek a $c \in \{ g = 0 \}$ helyen feltételes lokális szélső értéke van a $g = 0$ feltételre, ha: $f |\{ g = 0 \}$-nak lokális szélső értéke van $c$-ben
@@ -59,7 +59,7 @@ Az lenne jó, ha:
 ## Implicit fv. tétel (vázlat)
 **Legyen**: (3 feltétel)
 - $g = (g_{1},g_{2},\dots,g_{m}) : U\to \mathbb{R}^m;\ g \in C^1$
-- $\exists c=(a,b) \in \{ g=0 \}: \det \partial_{2}f(c) \neq 0$
+- $\exists c=(a,b) \in \{ g=0 \}: \det \partial_{2}g(c) \neq 0$
 
 **Ekkor**:
 1. $\exists K(a), K(b): \forall x \in K(a)\ \exists! y \in K(b):g(x,y) =0$
@@ -85,7 +85,7 @@ Az lenne jó, ha:
 ## Elsőrendű szükséges feltétel
 **Legyen**:
 - $f: U \to \mathbb{R},g =(g_{1},g_{2},\dots,g_{ m}) : U \to \mathbb{R}^m$ függvények
-- $g \in C^1$
+- $g \in C^1$, $f \in D$
 - $c \in \{ g=0 \}:$ legyen $c$ feltételes lokális szélsőérték helye $f$-nek
 - $grad\ g_{1}(c),grad\ g_{2}(c),\dots,grad\ g_m(c){} \in \mathbb{R}^m$ lineárisan függetlenek
 
@@ -154,9 +154,10 @@ Ha $\forall \phi, \tilde{\phi}$ megoldásra: $\phi(t) = \tilde{\phi}(t),\ (\fora
 
 **Legyen**: 
 - $n= 1$
-- $I,J \subset \mathbb{R}$
+- $I,J \subset \mathbb{R}$ nyílt
 - $g: I \times J \to \mathbb{R}$
 - $h :I \times J \to \mathbb{R} /\{ 0 \}$
+- $g, h \in C$
 - $F(x,y) = -\frac{g(x,y)}{h(x,y)}$, ahol $F : I \times J \to \mathbb{R}$; $F \in D$; $gradF = (g,h) = (\partial_{1}F,\partial_{2}F)$ 
 
 **Ekkor**:
@@ -186,21 +187,20 @@ Ha $\forall \phi, \tilde{\phi}$ megoldásra: $\phi(t) = \tilde{\phi}(t),\ (\fora
 
 **Legyen**:
 - $n = 1$ 
-- $I,J \subset \mathbb{R}$
+- $I,J \subset \mathbb{R}$ nyílt
 - $g : I \to \mathbb{R}$; $h: J \to \mathbb{R} / \{ 0 \}$; $g,h \in C$
 - $f(x,y) = g(x) * h(y)$
 
 **Ekkor**: 
 1. $\phi'(x) = g(x) * h(\phi(x))$
 2. $\frac{\phi'(x)}{h(\phi(x))} = g(x)$
-3. $G: I \to \mathbb{R}$; $H :J \to \mathbb{R}$; $G,H \in D$ 
-4. $(H\ o\ \phi)' = G$
+3. $G: I \to \mathbb{R}$; $H :J \to \mathbb{R}$; $G,H \in D$; $G' =g$ és $H' = \frac{1}{h}$ 
+4. $(H\ o\ \phi)' = G'$
 5. $(H(\phi(x)) - G(x))' = 0$; $H(\phi(x)) - G(x) \in D \implies$
 6. $H(\phi(x)) -G(x) =c\in \mathbb{R}$ 
 7. Ill. $D_{H'}$ nem eleme a $0$ => $H$ állandó előjelő => $H$ szigorúan monoton => $\exists H^{-1}$ 
 8. $\phi(x) = H^{-1}(G(x) + c)$
 9. Ill. **K.É.P.** esetén: $\phi(\tau) = \xi \implies H(\xi) -G(\tau) =c$, és ez a K.É.P. megoldása is
-
 
 **Vázlat:**
 - Feltételek felírása
@@ -214,11 +214,12 @@ Ha $\forall \phi, \tilde{\phi}$ megoldásra: $\phi(t) = \tilde{\phi}(t),\ (\fora
 - Írjuk fel a parciális deriváltakat, illetve folytonosságukat + parc. 2 det.
 - Implicit függvény tétel 
 - $\phi$ folytonos diff. + deriv. fv. felírása + K.É.P felírása 
-- + egyértelműség tétel
+- + egyértelműség tétel K.É.P.-ről
 
 ## Rakéta emelkedési idejének számítása
 $m *v' =-\alpha*m -\beta*v^2$
 
+- ill.: Ha $T$ ideig  emelkedik: $v(T) =0 = -\alpha*T +c$, de $c$-t tudjuk!
 # Lineáris differenciál egyenletek
 ## Lineáris D.E.
 
@@ -242,9 +243,8 @@ $m *v' =-\alpha*m -\beta*v^2$
 - Ráadásul: $\forall c\in \mathbb{R}: c*\phi_{0}\in M_{0}$
  **2.)** $\forall\chi\in M_{0}$: $\frac{\chi}{\phi_{0}}\in M_{0}$ => $M_{0}$ szerkezete! 
 **3.)** $\exists m:I\to \mathbb{R};m\in D; \psi:= m *\phi_{0} \in M$ 
-**3.)** $\psi - \phi\in M_{0}$, ahol $\psi \in M$ és $\forall \phi \in M$
 **4.)** $\forall \phi,\tilde{\phi}\in M: (\phi-\tilde{\phi})\in M_{0}$
-**5.)** 3 + 4: $\psi -\phi \in M \iff \psi - \phi = \phi_{0} * c$ => $M$ szerkezete!
+**5.)** 3 + 4: $\psi -\phi \in M_{0} \iff \psi - \phi = \phi_{0} * c$ => $M$ szerkezete!
 
 **Vázlat**:
 1. Lin. D.E. felírás + halmazok

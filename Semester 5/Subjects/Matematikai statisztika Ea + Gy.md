@@ -33,6 +33,7 @@ teachers:
 - [[Semester 5/Subjects/Subject Notes/Mathematical Statistics/2024-09-16 |2024-09-16]]
 
 ## Points
-1. Midterm: 4 + 34 
-2. Midterm: 
-3. Midterm: 
+1. **Midterm**: 4 + 34 
+2. **Midterm**: 0 + 31
+3. **Midterm**: 11 + 35
+4. **Assignment**: 48
