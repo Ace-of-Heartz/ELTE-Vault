@@ -342,7 +342,7 @@ $\phi(x) := \psi_{*}(x)$, $(x \in I_{*})$
 -  $\forall$ K.É.P megoldható és $\forall$ teljes megoldás a teljes $I$-n van értelmezve $\phi:I\to \mathbb{C}^n$
 
 **Tétel**: 
-1. $\forall m \in \mathbb{N}$ $\phi_{1},\dots,\phi_{n}\in M_{0}: \phi_{1}\dots \phi_{m}$ lineárisan független $\iff$ $\forall \tau \in I: \phi_{1}(\tau),\phi_{2}(\tau),\dots,\phi_{m}(\tau)$ lineárisan független
+1. $\forall m \in \mathbb{N}$ $\phi_{1},\dots,\phi_{m}\in M_{0}: \phi_{1}\dots \phi_{m}$ lineárisan független $\iff$ $\forall \tau \in I: \phi_{1}(\tau),\phi_{2}(\tau),\dots,\phi_{m}(\tau)$ lineárisan független
 2. $M_{0}$ n-dim. lineáris tér
 3. $\forall \phi_{1},\dots,\phi_{m} \in M_{0}: \exists g_{1},\dots,g_{m}: I \to \mathbb{C}$ : $g_{1},\dots,g_{m} \in D$ és $\psi:= \sum^m_{k = 1}g_{k} *\phi_{k} \in M$  
 4. $\phi,\tilde{\phi}\in M: \phi - \tilde{\phi} \in M_{0}$
@@ -355,8 +355,8 @@ $\phi(x) := \psi_{*}(x)$, $(x \in I_{*})$
 ## Megoldáshalmaz szerkezete
 
 **Tehát**: 
-- $M_{0} := \{  \phi*c | c \in \mathbb{C}^n \}$
-- $M := \{ \psi + \chi : \chi \in M_{0} \} = \{  \phi * g + \phi*c : c \in \mathbb{C}^n \}$
+- $M_{0} = \{  \phi*c | c \in \mathbb{C}^n \}$
+- $M = \{ \psi + \chi : \chi \in M_{0} \} = \{  \phi * g + \phi*c : c \in \mathbb{C}^n \}$
 - Ilyen $A$ alapmátrix meghatározása nem lehetséges
 - Ha $A$ összes komponsense konstans függvény, akkor lehetséges, de ez se szép
 
@@ -408,7 +408,10 @@ $\begin{bmatrix} \alpha & \beta \\ \gamma & \delta \end{bmatrix}$ nem diagonaliz
 **Állítás**: $\exists t_{1},t_{2} \in \mathbb{R}^2$ lin. függetlenek, hogy $A * t_{1} = \lambda_{1} * t_{1}$ és $A * t_{2} = \lambda_{2} *t_{2}+t_{1}$
 - ill.: $\phi_{1}(x):= e^{\lambda_{1}x} *t_{1}$
 - $\phi_{2}(x) := e^{\lambda_{2}x}*(t_{2} +x * t_{1})$ *alaprendszer*
-- **Biz**.: TODO
+- **Biz**.: 
+	- $\phi_{1}'(x) = \lambda e^{\lambda x}*t_{1} = e^{\lambda x}A*t_{1} =A(e^{\lambda x}*t_{1}) = A* \phi_{1}(x)$
+	- $\phi'_{2}(x) = \lambda*e^{\lambda x} * (t_{2}+x*t_{1}) +e^{\lambda x}*t_{1} =e^{\lambda x}* (\lambda*t_{2} +x*A*t_{1} + t_{1})=\dots$ 
+	- $\dots=e^{\lambda x}*(A*t_{2} +x*A*t_{1}) = e^{\lambda x}*A*(t_{2} + x * t_{1}) = A*\phi_{2}$ 
 
 **Vázlat**: 
 1. Nem diagonalizálható mátrix vétele (n = 2)
@@ -505,6 +508,17 @@ Ill.:
 
 **Illetve**: $\phi_{jk}$-k lineárisan függetlenek, azaz:
 $\sum^s_{j=1} \sum^{j-1}_{k=0} c_{jk} * x^k *e^{\lambda_{j}x}=0 \iff c_{jk} =0$, ($x\in I$, $c_{jk}\in \mathbb{K}$ együtthatók)
+
+**Továbbá**:
+
+- **Ha** $\lambda_{j} \in \mathbb{R}$, akkor $\phi_{jk}$ is valós értékű
+- Ha $\lambda_{j} \in \mathbb{C}$, ú.h. $\lambda_{j}= u_{j} + i*v_{j}$, ($u_{j},v_{j} \in \mathbb{R}$):
+	- Világos, hogy $P(t)$ valós együtthatós => $u_{j}-i*v_{j}$ is $\nu_{j}$ szeres gyöke
+	- $x \to x^k* e^{x(u_{j} - iv_{j})} = x^k e^{u_{j}x} * (\cos(v_{j}x)- i\sin(v_{j}x))$ *bázis fv.*
+	- Azaz $\phi_{jk}$ és $\bar{\phi_{jk}}$ *bázis fv.*-ek
+	- Viszont $M_{0}$ vektortér: $\frac{\phi_{jk}(x) + \bar{\phi_{jk}}(x)}{2}$ illetve $\frac{\phi_{jk}(x)-\bar{\phi_{jk}}}{2i}//$, azaz $\tilde{\phi_{jk}}(x)=x^k*e^{u_{j}x} *\cos(v_{j}x)$ és $\phi_{jk}^*(x) = x^k * e^{u_{j}x}*\sin(v_{j}x)$ is $M_{0}$-beliek, illetve valósak!
+	- **Így belátható**: $\phi_{jk}$ és $\bar{\phi_{jk}} \leftrightarrow$ $\tilde{\phi_{jk}}$ és $\phi^*_{jk}$ kicserélhető, és továbbra is bázist kapunk $M_{0}$-ban  
+
 
 **Vázlat**:
 1. n darab állandó együttható megadás
@@ -645,6 +659,8 @@ $\dots= \frac{1}{2} * \sin\left( \left( n+\frac{1}{2} \right) * z \right)\implie
 
 $\implies S_{n}f(x) = \frac{1}{\pi} * \int^{2\pi}_{0}f(t) * \frac{\sin\left( \left( n+\frac{1}{2} \right)*(x-t) \right)}{2*\sin\left( \frac{x-t}{2} \right)}\ dt$
 
+
+**Addíciós tétel!**
 ## Konvergencia
 
 **T.f.h.** $x\in D$ és $(f_{n}(x)):\mathbb{N} \to \mathbb{K}$ számsorozat konvergens
@@ -760,7 +776,6 @@ Ha viszont $a_{n} := n$, akkor a kettő integrálja $[1,2]$ intervallumon: $0 \n
 - $f_{n} \in C$
 **Ekkor**:
 - $f \in C$ 
-
 
 **Biz.**: 
 1. **Legyen**: $A := D$ 
@@ -945,8 +960,8 @@ $\exists \min_{R} \int^{2\pi}_{0}(f-R)^2 = \int^{2\pi}_{0}f^2 - \pi * \left[ 2*a
 9. Adjuk alsó becslést: $2\delta - \int^{-\Delta}_{-\pi}|h *T^n| - \dots - \int^{\pi}_{\Delta}|h*T^n|$
 10. Világos, hogy $\int^{-\delta}_{-\Delta} |h*T^n| + \int^{\Delta}_{\delta}|h*T^n| < 2*\lvert \lvert h \rvert \rvert_{\infty} * (\delta - \Delta)$
 11. és $\int^{-\Delta}_{-\pi}|h *T^n| + \int^\pi_{\Delta}|h*T^n| \leq 2* \lvert \lvert h \rvert \rvert_{\infty} * q_{\Delta}^n  *\pi$, ahol $q_{\Delta}:= \max_{\Delta\leq x \leq \pi}|T(x)| < 1$
-12. Legyen így $2*\lvert \lvert h \rvert \rvert_{\infty}*(\delta - \Delta) < \frac{\delta}{2}$ és $n\in \mathbb{N}: 2*\pi*\lvert \lvert h \rvert \rvert_{\infty} *q_{\Delta}^n < \delta$
-13. Ekkor $\int^\pi_{-\pi}h*T^n \geq 2*\delta - \delta -\frac{\delta}{2}= \frac{\delta}{2} >0$, tehát valóban beláttuk
+12. Legyen így $2*\lvert \lvert h \rvert \rvert_{\infty}*(\delta - \Delta) < \frac{\delta}{2}$ és $n\in \mathbb{N}: 2*\pi*\lvert \lvert h \rvert \rvert_{\infty} *q_{\Delta}^n < \frac{\delta}{2}$
+13. Ekkor $\int^\pi_{-\pi}h*T^n \geq 2*\delta - \frac{\delta}{2} -\frac{\delta}{2}= \delta >0$, tehát valóban beláttuk
 
 **Meglátások**:
 - $\cos(x) + 1 - \cos(\delta) \geq 1$ $(|x| < \delta)$
