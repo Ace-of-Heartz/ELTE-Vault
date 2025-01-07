@@ -293,7 +293,7 @@ Ha a d.e. jobb oldala eleget tesz a **Lipschitz-feltételnek**, akkor a szóban 
 	7. $T: \digamma \to\digamma$ igaz!
 2. Igaz-e, hogy $T$ kontrakció?
 	1. **Lipschitz-feltétel**
-	2. **Spec.:** $Q:= K_{\mu}$
+	2. **Spec.:** $Q:= I_{*} \times K_{\mu}$
 	3. Kontrakció def.
 	4. $\rho(T\psi,T\phi) = \max_{x} \left\lvert  \left\lvert  \int^x_{\tau} (f(t,\psi(t))) -f(t,\phi(t))\ dt  \right\rvert  \right\rvert \leq\dots$
 	5. $\dots\leq \left\lvert  \int^x_{\tau} \lvert \lvert f(t,\psi(t)) -f(t,\phi(t)) \ dt \rvert \rvert  \right\rvert \leq L * \delta * \rho(\psi,\phi)$
@@ -369,12 +369,12 @@ Lásd feljebb (feltétel + állítás)
 
 **Tehát**:
 - t.f.h.: $\phi_{1},\dots,\phi_{n} \in M_{0}$ bázis (*alaprendszer*)
-- **Legyen**: $\Phi:= [\phi_{1},\dots,\phi_{n}] : I\to \mathbb{C}^{n\times n}$ folytonos mtx. fv. (*alapmátrix*
+- **Legyen**: $\Phi:= [\phi_{1},\dots,\phi_{n}] : I\to \mathbb{C}^{n\times n}$ folytonos mtx. fv. (*alapmátrix*)
 - **Ekkor**: $\Phi' = A * \Phi$, ha $\Phi' := [\phi_{1}',\dots,\phi_{n}']:I \to \mathbb{C}^{n\times n}$
 - **Ha**: $g_{1},\dots,g_{n}:I\to \mathbb{C}$ folyt. és $g:=(g_{1},\dots, g_{n}):I\to \mathbb{C}^n$ folyt. és $\sum_{k =1}^n \phi_{k} * g_{k} =\Phi *g$ és $(\Phi *g)' = \Phi' *g + \Phi * g'$
 - $\psi \in M \iff \psi' =A * \psi + b = A * \Phi * g + b$
 - $\Phi' *g + \Phi * g' = A * \Phi * g + \Phi * g'$, azaz $\Phi * g' = b$
-- **De**: $\Phi$ oszlopai lin. függetlnek $\implies \forall x \in I : \exists (\Phi(x))^{-1} =\Phi^{-1}(x)$ és $\Phi^{-1}$ folytonos
+- **De**: $\Phi$ oszlopai lin. függetlenek $\implies \forall x \in I : \exists (\Phi(x))^{-1} =\Phi^{-1}(x)$ és $\Phi^{-1}$ folytonos
 - **Legyen**: $g'  = \Phi^{-1} * b =: (h_{1},\dots,h_{n}) \iff g'_{i} = h_{i}\ (i = 1,\dots,n)$ 
 
 ## Alapmátrix előállítása állandó együtthatós, diagonalizálható mtx. esetén 
