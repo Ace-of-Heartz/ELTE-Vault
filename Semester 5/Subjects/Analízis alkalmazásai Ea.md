@@ -16,4 +16,4 @@ teachers: "[[Dr. Simon Péter Lajos]]"
 ## Requirements
 ## Notes
 ## Related Documents
-- [[Exam Notes]]
+- [[Semester 5/Subjects/Subject Notes/Applications of Analysis/Exam Notes]]
