@@ -12,6 +12,7 @@
 | Fa                           | Digráf                                                                                                                                                                |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | $\sum^n_{i=1}d_{i} = 2(n-1)$ | $\sum^n_{i=1} \delta_{i}=\sum^n_{i=1} \rho_{i}$<br>és<br>$\forall k =1\dots n:\sum^k_{i=1}\delta_{i}=\sum^k_{i=1} \min(\rho_{i},k-1) + \sum^n_{i=k+1}min(\rho_{i},k)$ |
+|                              |                                                                                                                                                                       |
 
 ### Multigráf
 
@@ -29,9 +30,8 @@
 ### Páros gráf
 
 **Algo.**:
-1. A és B halmazhoz tartozó csúcsok két részhalmazra bontása
-2. A $k$ elemű
-3. B-beli csúcsokhoz legyen hiány érték
+1. A és B pontok felvétele élek nélkül
+3. B-beli csúcsokhoz legyen hiány érték, ez kezdetben a fokszám
 4. Minden lépésben A csúcsainak kiválasztása és összekötése B alkalmas mennyiségű legnagyobb hiányú csúcsaival
 5. Szomszédok csökkentése
 
@@ -99,6 +99,13 @@
 
 ## Hall tétele páros gráfokra
 
+**Legyen**:
+- $G=(A,B;E)$ páros gráf
+
+**Ekkor**:
+- $\exists A$-t lefedő párosítás $\iff$ *Hall-feltétel* teljesül $\forall X \subseteq A$-ra 
+
+
 **Vázlat**: 
 - $\rightarrow$: Ha **Hall-feltétel** nem teljesül, akkor már erre a nem teljesülő részhalmazra sem létezik párosítás
 - $\leftarrow$:
@@ -107,12 +114,24 @@
 
 ## Kőnig tétele páros gráfokra
 
+**Legyen**:
+- $G=(A,B;E)$ páros gráf
+- $\lvert A \rvert = \lvert  B \rvert$
+- $r > 0$ a fokszáma az összes csúcsának (azaz $r$ reguláris gráf)
+
+**Ekkor**:
+- $\exists$ teljes párosítás $G$-re
+
 **Vázlat**:
 - Megmutatjuk, hogy reguláris gráf esetén teljesül a *Hall-feltétel*
 - $X$-ből összesen kilépő élek száma
 - $B$ minden csúcsába max hány él léphet be?
 
 # Súlyozott párosítások
+
+**Legyen**: 
+- $G=(A,B;E)$ páros gráf, illetve $c:E\to \mathbb{R}$ súlyfv.
+- Egy párosítás súlya megegyezik a benne található élek súlyának összegével
 
 **Legyen**:
 - $\nu_{c}(G)$ ~ max. súlyú párosítás értéke
@@ -124,6 +143,7 @@ $\pi:V\to \mathbb{R}$ fv. súlyozott lefogás, ha:
 - $\forall uv \in E: \pi(u) + \pi(v) \geq c(uv)$
 - ahol $c:E \to \mathbb{R}$ súly fv.
 
+$\pi$ súlyozott lefogás összértéke: $\pi(V) = \sum_{v \in V}\pi(v)$, ahol $V = A \bigcup B$
 
 ## Egerváry tétel
 
@@ -239,14 +259,49 @@ Nem.
 	- $t$ nyelő ~ feltehető, hogy nincs kimenő él
 	- $g: E \to \mathbb{R}^+ \bigcup\ \{ 0,\infty  \}$
 
+**Illetve**:
+- ha $D=(V,E);f:E \to \mathbb{R}; v \in V; Y \subset V$
+- akkor: 
+	- $\delta_{f}(v) = \sum_{e\in E_{ki}(v)}f(e)$ ~ $v$-ből kilép élek összértéke
+	- $\rho_{f}(v) = \sum_{e\in E_{be}(v)}f(e)$ ~ $v$-be belépő élek összértéke
+	- $\delta_{f}(Y) = \sum_{e \in E_{ki}(Y)} f(e)$ ~ $Y$-ből kilépő élek összértéke
+	- $\rho_{f}(Y) = \sum_{e\in E_{be}(Y)}f(e)$ ~ $Y$-ba belépő élek összértéke
+
 ## Folyam
 - $f:E(G)\to \mathbb{R}$, ha:
 	- *megmaradási törvény*
 	- *megengedett folyam*
 
 ## Vágás
-- $\nu =\{ S,T \}$
-- $E(\nu), E^+(\nu),E^-(\nu)$ 
+
+**Legyen**:
+- $D=(V,E)$ digráf
+
+**Ekkor**:
+- *Vágás*: $\nu =\{ S,T \}$ ~ $V$-t két diszjunkt halmazra bontja
+	- $\nu$ egy $s-t$ vágás, ha $s \in S$ és $t \in T$ 
+- $E(\nu)$ ~ vágás élhalmaza (él két végpontja a vágás két különb. oldalára esik)
+- $E^+(\nu)$ ~ $S$-ből  $T$-be vezető élek
+- $E^-(\nu)$ ~ $T-ből$ $S$-be vezető élek
+
+
+## Lemma
+
+**Legyen**: 
+- $f$ tetsz. folyam
+
+**Ekkor**: 
+- $e(f) = \rho_{f}(t) - \delta_{f}(s)$
+- Tetsz. $\nu=\{ S,T \}$ $s-t$ vágásra:
+	- $e(f) = \delta_{f}(S) - \rho_{f}(S) = \rho_{f}(T) - \delta_{f}(T)$
+
+## Vágás kapacitása
+
+**Legyen**:
+- $f$ tetsz. folyam
+- $\nu =\{ S,T \}$ egy $s-t$ vágás
+
+**Ekkor**: $e(f) \leq \sum_{e\in E^+(\nu)}g(e)=: g(\nu)$ ~ vágási kapacitás
 
 ## MFMC
 **Legyen**:
@@ -285,7 +340,10 @@ Nem.
 	- de *nem* polinomiális 
 	- illetve, létezik $H=(D,s,t,g)$, hogy $F.F.$ sosem áll le
 
+## Edmonds-Karp algoritmus
 
+- Amikor speciális módon választjuk meg a javító utat: Pl. a legrövidebb utat használjuk az F.F. algoritmusban
+- Ekkor a futásidő: $O(nm^2)$ ~ egy növelés $O(m)$ lépés * lépések száma $O(nm)$
 
 # Folyam algoritmusok
 
@@ -352,19 +410,19 @@ Nem.
 
 ### Reguláris gráf
 
-**Állítás**: $\chi(G) \leq \Delta(G) + 1$
+**Állítás**: $\chi(G) \leq \Delta(G) + 1$, ha $G$ reguláris gráf
 
 **Biz.**: (vázlat)
 1. Összefüggő gráf feltételezése
 2. Algoritmus (konstruktív biz.)
-	1. Csúcsok sorrendben állítása
-	2. Szomszédok színezése olyan színnel, amilyenre a szomszédjait még nem színeztük
+	1. Csúcsok sorrendben állítása tetszőleges módon
+	2. Elsővel kezdve: csúcsok színezése olyan színnel, amilyenre a szomszédjait még nem színeztük
 	3. Ekkor mivel $\Delta(G)$ a max. fokszám és $\Delta(G) +1$ színt használtunk => Lesz szabad szín
 
 
 ### Nem-reguláris gráf
 
-**Állítás**: $\chi(G) \leq \Delta(G)$
+**Állítás**: $\chi(G) \leq \Delta(G)$, ahol $G$ nem-reguláris gráf
 
 **Biz.**: (vázlat) Algoritmussal (konstruktív biz.):
 1. **Legyen**: $v \in V$, ú.h. $v$-nek kisebb a foka mint $\Delta(G)$
@@ -416,7 +474,7 @@ $\chi'(G) \geq \Delta(G)$
 
 **Def.:**
 - $R(k,l)$, ahol $k,l \in \mathbb{Z}^+$
-- $R(k,l)$ azon legkisebb szám, amelyre : $\forall n\geq R(k,l)$ esetén az *$n$ pontú teljes gráf* éleit két színnel színezve van a gráfban egyszínű $K_{k}$ és $K_{l}$
+- $R(k,l)$ azon legkisebb szám, amelyre : $\forall n\geq R(k,l)$ esetén az *$n$ pontú teljes gráf* éleit két színnel színezve van a gráfban egyszínű $K_{k}$ vagy $K_{l}$
 
 ### Egyszínű háromszög n=5 esetén
 
@@ -472,6 +530,10 @@ Kiszínezhető úgy, hogy nem lesz: Pentagram belső élei 1 szín, külső éle
 
 # Síkgráfok
 
+## Euler formula
+
+Ha a gráf síkgráf: $v + l = e +2$ 
+
 ## Síkbarajzolható gráfok 5 színnel színezhetők
 
 **Állítás**: bármely síkgráf csúcsai kiszínezhetők 5 színnel
@@ -520,7 +582,7 @@ Kiszínezhető úgy, hogy nem lesz: Pentagram belső élei 1 szín, külső éle
 - Bármely síkbarajzolható gráf tartományai kiszínezhetőek 5 színnel, ú.h az élszomszédos tartományok színe különböző.
 
 **Biz.**:
-- 1. állítás a gráf duálisára
+- Alkalmazzuk az 1. állítást a gráf duálisára
 
 ## Négyszíntétel
 - Bármely síkbarajzolható gráf tartományai kiszínezhetőek 4 színnel, ú.h az élszomszédos tartományok színe különböző.
@@ -534,7 +596,7 @@ Kiszínezhető úgy, hogy nem lesz: Pentagram belső élei 1 szín, külső éle
 
 **Biz.**: Tartalmaz $K_{3,3}$-t
 
-
+![[Pasted image 20250112173554.png]]
 ## Kuratowski tétel
 
 **Állítás**: $G=(V,E)$ gráf síkbarajzolható $\iff$ nem tartalmaz felosztott $K_{3,3}$-t és $K_{5}$-t
