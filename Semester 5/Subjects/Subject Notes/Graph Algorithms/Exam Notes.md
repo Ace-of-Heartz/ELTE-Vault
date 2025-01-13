@@ -69,7 +69,7 @@
 ## Kőnig tétel
 
 **Legyen**: 
-- $G=(A,B;E)$
+- $G=(A,B;E)$ páros gráf
 
 **Ekkor**:
 - $\nu(G) = \tau(G)$, ahol 
@@ -79,9 +79,9 @@
 
 **Vázlat**: (($\nu \leq \tau$) trivi); $\tau \geq \nu$ most:
 1. Legyen $M$ egy párosítás, átalakítjuk a páros gráfot irányított gráffá: $M$-beli élek B -> A, egyébként A -> B
-2. Legyen $R_{a}$ és $R_{b}$ a két A és B-nek olyan részhalmaza, amelyet $M$ nem fog le. Legyen Z az $R_{a}$-ból elérhető csúcsokat tartalmazó halmaz (utak)
+2. Legyen $R_{a}$ és $R_{b}$ a két A és B-nek olyan részhalmaza, amelyet $M$ nem fog le. Legyen $Z$ az $R_{a}$-ból elérhető csúcsokat tartalmazó halmaz (utak)
 3. Megvizsgáljuk $R_{b} \bigcap Z$-t: *diszjunkt* eset és *nem*-*diszjunkt* eset!
-	1. *Nem-diszjunkt*: Ekkor van $R_{a}$-ből $R_{b}$-be alternáló út (P)
+	1. *Nem-diszjunkt*: Ekkor van $R_{a}$-ből $R_{b}$-be alternáló út ($P$)
 		1. Vegyük $M' := P - M$ (szimmetrikus diff.)
 		2. Ekkor $M'$-nek több éle van, mint $M$-nek
 		3. $M'$ párosításhoz megint előállítjuk az előző irányított segédgráfot
@@ -519,7 +519,7 @@ Kiszínezhető úgy, hogy nem lesz: Pentagram belső élei 1 szín, külső éle
 1. $k=1$-re nyilván teljesül (szomszédsági mtx. def)
 2. T.f.h. $k$-ra teljesül: $k+1$-re ekkor: $A(G)^{k+1} = n_{ij}$, ahol $n_{ij} = \sum^{|V|}_{l =1}m_{il}*a_{lj}$ (mátrix szorzás szabályai)
 3. Továbbá $v_{i}$-ből $v_{j}$-be vezető $k+1$ hosszú utak felbontható $k$ és 1 hosszú utakra ($v_{l}$)
-4. Továbbá $k$ hosszú utak száma $v_{i}-v_{l}$ között $m_{il}$, és 1 hosszú utak száma $v_{l}-v_{j}$ között 1
+4. Továbbá $k$ hosszú utak száma $v_{i}-v_{l}$ között $m_{il}$, és 1 hosszú utak száma $v_{l}-v_{j}$ között $a_{lj}$
 5. Ezek összeadásával $l =1\dots|V|$-re pont $n_{ij}$-t kapjuk
 
 
@@ -599,7 +599,7 @@ Ha a gráf síkgráf: $v + l = e +2$
 ![[Pasted image 20250112173554.png]]
 ## Kuratowski tétel
 
-**Állítás**: $G=(V,E)$ gráf síkbarajzolható $\iff$ nem tartalmaz felosztott $K_{3,3}$-t és $K_{5}$-t
+**Állítás**: $G=(V,E)$ gráf síkbarajzolható $\iff$ nem tartalmaz *felosztott* $K_{3,3}$-t és nem tartalmaz felosztott $K_{5}$-t
 
 
 # Approximációk
