@@ -579,7 +579,7 @@ Ha a gráf síkgráf: $v + l = e +2$
 ## Ötszíntétel
 
 **Állítás**:
-- Bármely síkbarajzolható gráf tartományai kiszínezhetőek 5 színnel, ú.h az élszomszédos tartományok színe különböző.
+- Bármely síkbarajzolható gráf tartományai kiszínezhetőek 5 színnel, ú.h az **élszomszédos tartományok** színe különböző.
 
 **Biz.**:
 - Alkalmazzuk az 1. állítást a gráf duálisára
@@ -610,6 +610,8 @@ $A$ polinom idejű algoritmus $\alpha$ approximáció, ha $\forall I$ inputra $A
 
 ## Approximáció csúcsfedésre
 
+Azaz lefogó ponthalmaz keresése!
+
 **Lépések**: (vázlat)
 - Kezdetben üres csúcshalmaz ($U= \emptyset$) és élek halmaza ($F=E$)
 - Amíg F nem üres:
@@ -622,7 +624,7 @@ $A$ polinom idejű algoritmus $\alpha$ approximáció, ha $\forall I$ inputra $A
 
 **Továbbá**: az algoritmus *2-approximáció*: (vázlat)
 1. $U$-ba páronként vesszük csúcsokat => Párosítást adnak meg a párok
-2. Ez a párosítás tartalmazásra nézve maximális, de nem feltétlen a legnagyobb méretű
+2. Ez a párosítás tartalmazásra nézve maximális, de nem feltétlen a legn﻿agyobb méretű
 3. **Legyen**: $O$ optimális csúcsfedés
 4. Ekkor ha $M$ párosítás, akkor $2\lvert O \rvert\geq \lvert M \rvert$, mert $O$ az $M$ minden élének legalább egyik csúcsát lefedi
 5. $U$ egy párosítás csúcshalmazra => $2\lvert O \rvert\geq \lvert U \rvert$
@@ -680,7 +682,7 @@ $c(uv) + c(vw) \geq c(uw)$ ($u,v,w \in V$)
 ## 2-approx. algoritmus metrikus TSP-re
 
 **Algo.**:
-1. Minimális feszítő keresés, ez legyen $F$
+1. Minimális feszítő fa keresés, ez legyen $F$
 2. $F$-éleit duplázzuk meg, ekkor *Euler-kört* kapunk
 3. Járjuk be a gráf csúcsait az Euler-kör mentén
 4. Ha egy csúcsában már voltunk, akkor azt ugorjuk át
@@ -762,13 +764,13 @@ $p_{k} = P(\deg(v) = k)$
 
 ### Tulajd.
 
-- $p=0$: Szabályos gyűrű grűf
+- $p=0$: Szabályos gyűrű gráf
 - $p=1$: Erdős-Rényi gráf
 - $0<p< 1$: 
 	- **Átl. úthossz**: $< \log n$
 	- "Kis világ tulajd." ~ **Lokálisan klaszterezett**: $\frac{3(K-2)}{4(K-1)}*(1-p)^3$
 	- **Fokszámeloszlás**: $f(k,K) = min\left( k-\frac{K}{2},K/2 \right)$
-		- $p_{k}= \sum^{f(k,K)}_{i=0} {\frac{K}{2} \choose 1}(1-p)^i *p^{\frac{K}{2}-n}* \frac{\left( p* \frac{K}{2} \right)^{k- \frac{K}{2}-i}}{\left( k-\frac{K}{2}-i \right)!}$
+		- $p_{k}= \sum^{f(k,K)}_{i=0} {\frac{K}{2} \choose i}(1-p)^i *p^{\frac{K}{2}-n}* \frac{\left( p* \frac{K}{2} \right)^{k- \frac{K}{2}-i}}{\left( k-\frac{K}{2}-i \right)!}$
 
 
 ## Barabás-Albert gráf
@@ -814,7 +816,7 @@ $p_{k} = P(\deg(v) = k)$
 - **Kezdetben**: $Z_{0} = 1$
 - **Ha** $Z_{n} = 0$ **akkor** a populáció kihalt és $Z_{k} = 0$ ($\forall k >n$)
 - Szaporodás: $X$ valószínűségi változó alapján
-- $\mu = E(x)$
+- $\mu = E(Z)$
 - $\mu^n = E(Z_{n})$ ~ a populáció várható értéke minden lépésben $\mu$ szeresére változik
 
 **Állítások**: (nem biz.)
