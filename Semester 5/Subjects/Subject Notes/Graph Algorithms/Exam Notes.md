@@ -644,7 +644,7 @@ NP-teljes!
 2. Amíg $F$ nem üres:
 	1. Legyen $uv \in F$, ú.h. $c(u) \leq c(v)$
 	2. Ekkor $U = U + \{ u \}$, és $c(v) = c(v) - c(u)$
-	3. $F$-ből töröljük az összen olyan élt, amelynek végpontja $u$
+	3. $F$-ből töröljük az összes olyan élt, amelynek végpontja $u$
 
 Ez egyben egy *2-approximáció* is! (nem biz)
 
