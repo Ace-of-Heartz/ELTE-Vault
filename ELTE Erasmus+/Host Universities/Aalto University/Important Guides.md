@@ -1,0 +1,1 @@
+- [For Incoming Exchange Students - Document and Steps](https://www.aalto.fi/en/international-students/incoming-exchange-students-to-the-schools-of-technology)

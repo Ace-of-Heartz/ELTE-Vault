@@ -1,0 +1,121 @@
+- [x] [Introduction to Machine Learning](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-36124?year=2024)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**: 
+		- #ParticipationInTeaching - I. Period
+	- **Credits**: 5
+- [Imaging Sensors and Systems](https://www.tuni.fi/en/students-guide/curriculum/course-units/otm-2b7cb1af-d4d6-42b5-9a3f-6c25be040b73?year=2024)
+	- **Prerequisites**: *basic signal processing course* ~ we will see I guess?
+	- **Completions Options**:
+		- #ParticipationInTeaching - I. Period
+	- **Credits**: 5
+- [x] [Computer Graphics](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-45745?year=2024) 
+	- **Prerequisites**: 
+		- *Software Design*
+		- *Vectors and Matrices*
+	- **Completion Options**:
+		- #ParticipationInTeaching - I-II. Period
+	- **Credits**: 5
+- [Digital Shadow: Privacy and Anonymity](https://www.tuni.fi/studentsguide/curriculum/course-units/otm-6fe0ae65-c0a5-4dc3-a248-b6f19cf67e81?year=2024&activeTab=1) - 
+	- **Prerequisites**:
+		- [Cyber Security I: Fundamentals](https://www.tuni.fi/studentsguide/curriculum/course-units/tut-cu-g-45501?year=2024) ~ Looks kinda tough?
+	- **Completion Options**:
+		- #ParticipationInTeaching - Online Teaching I-II. Period (+ exam)
+	- **Credits**: 5
+- [Embedded Linux Drivers](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-45464?year=2024) - Advanced Studies!
+	- **Prerequisites**: 
+		- C/C++ knowledge
+		- Programming Basics
+		- Operating Systems
+	- **Completion Options**:
+		- #ParticipationInTeaching - I-II. Period (Optional Final Exam?)
+	- **Credits**: 5
+- [Prototyping Interactive Systems](https://www.tuni.fi/en/students-guide/curriculum/course-units/otm-081e9971-82b5-44d2-9b3b-07c55897ac3e?year=2024)
+	- **Prerequisites**:
+		- [Human-Technology Interaction](https://www.tuni.fi/studentsguide/curriculum/course-units/otm-4da0e13d-222a-4e14-a239-86b76346ba14?year=2024)
+		- [User Interfaces and Human Centered Design](https://www.tuni.fi/studentsguide/curriculum/course-units/otm-5eba3bbe-7d82-4a25-8864-01a63bc37657?year=2024)
+	- **Completion Options**:
+		-  #ParticipationInTeaching - Contact teaching, seems to be no exam, but continuous evaluation
+	- **Credits**: 5
+- [x] [Introduction to Signal Processing](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-36355?year=2024)
+	- **Prerequisities**: 
+		- *Compulsory*:
+			- [Introductory Calculus](https://www.tuni.fi/studentsguide/curriculum/course-units/tut-cu-g-35897?year=2024)
+			- [Vectors and Matrices](https://www.tuni.fi/studentsguide/curriculum/course-units/tut-cu-g-35898?year=2024)
+		- *Recommended*: 
+			- [Signals and Measurements](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-45460?year=2024) - Only in III. and IV. semester
+	- **Completion Options**:
+		- #ParticipationInTeaching - I. Period
+		- #Exam
+	- **Credits**: 5
+- [Introduction to Image and Video Processing](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-43018?year=2024)
+	- **Prerequisities**:
+		- *Compulsory*:
+			- [Introduction to Signal Processing](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-36355?year=2024)
+	- **Completion Options**:
+		- #ParticipationInTeaching - II. Period
+		- #Exam
+	- **Credits**: 5
+- [Introduction to Audio and Speech Processing](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-43032?year=2024)
+	- **Prerequisites**:
+		- *Compulsory*:
+			- [Introduction to Signal Processing](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-36355?year=2024) 
+	- **Completion Options**:
+		- Optional Exam for extra points
+		- #ParticipationInTeaching - Continuous evaluation (project work, assignments, etc.) - II. Period
+	- **Credits**: 5
+- [x] [Deep Learning](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-42119?year=2024)
+	- **Prerequisites**:
+		- *Recommended*:
+			- [Introduction to Machine Learning](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-36124?year=2024) 
+	- **Completion Options**:
+		- #ParticipationInTeaching - II. Period
+		- #Exam
+	- **Credits**: 5
+- [ ] [3D and Extended Reality](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-36177?year=2024) - Advanced Studies!
+	- **Prerequisites**:
+		- [Introduction to Image and Video Processing](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-43018?year=2024)
+	- **Completion Options**:
+		- #ParticipationInTeaching - 7 Lectures, Quizzes, 3 Lab works, 1 Project assignment
+	- **Credits**: 5
+- [x] [Introduction to Embedded Systems](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-45577?year=2024)
+	- **Prerequisites**:
+		- Basic Programming
+	- **Completion Options**:
+		- #ParticipationInTeaching - Lectures II. Period
+	- **Credits**: 5
+- [ ] [Gamification: Walkthrough of How Games Are Shaping Our Lives](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-45330?year=2024) - Advanced Studies!
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**: 
+		- #ParticipationInTeaching - Essay, Peer-review, Presentation
+	- **Credits**: 5
+- [ ] [Introduction to Formal Specification](https://www.tuni.fi/en/students-guide/curriculum/course-units/uta-ykoodi-37057?year=2024) - Advanced Studies!
+	- **Prerequisites**: BSc degree or equivalent experience
+	- **Completion Options**:
+		- #Exam 
+		- #ParticipationInTeaching (Online Exercises) - II. Period
+	- **Credits**: 5
+- [x] [Parallel Computing](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-42084?year=2024) - Advanced Studies
+	- **Prerequisites**: 
+		- C/C++ Programming skills
+		- Recommended: Processor internals knowledge
+	- **Completion Options**:
+		- #ParticipationInTeaching: Independant project (lab project) + Lectures - I-II. Period
+		- #Exam - To upgrade the grade, if the above is completed 
+	- **Credits**: 5
+- [x] [Finnish 1.](https://www.tuni.fi/en/students-guide/curriculum/course-units/uta-ykoodi-26621?year=2024)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching - Contact teaching (small groups), group work, active participation - Max 81. hours of study and 39 hours of contact teaching
+	- **Credits**: 3
+- [x] [Finnish 2.](https://www.tuni.fi/en/students-guide/curriculum/course-units/uta-ykoodi-26622?year=2024)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**: 
+		- #ParticipationInTeaching - Contact teaching, like before - Max 54 hours of study - 26 Hours of contact teaching
+	- **Credits**: 2
+# Notes
+
+- Most #ParticipationInTeaching seems to include *Lectures* and *Exam* as well!
+
+# Questions
+
+- Can I apply for courses in the II. semester for which I don't have the prerequisite right now, but I would have after the I. semester?

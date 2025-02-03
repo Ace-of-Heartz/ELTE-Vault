@@ -1,0 +1,34 @@
+- [Ethics of AI](https://sisu.helsinki.fi/student/courseunit/otm-2154e607-fffb-4593-8aaa-87e2808a1b07/brochure) 
+	- **Prerequisites**: 
+		- *Recommended*:
+			- Introduction to Ethics
+	- **Completion Options**:
+		- #ParticipationInTeaching - Homework, exercises
+		- Online!
+	- **Credits**: 2
+- [Algorithms and AI Lab](https://sisu.helsinki.fi/student/courseunit/otm-c296f964-c8e6-441a-b7e3-790c2846e981/brochure)
+	- **Prerequisites**: 
+		- Basic studies (Algo 1-2)
+	- **Completion Options**:
+		- #ParticipationInTeaching - Weekly reports, independent work
+	- **Credits**: 4
+- [Sustainability in Space](https://sisu.helsinki.fi/student/courseunit/otm-0ca81b72-65cf-447b-8ae1-53490603de79/brochure)
+	- **Prerequisites**:  $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching - Quizies
+	- **Credits**: 2
+- [Computing and Society](https://sisu.helsinki.fi/student/courseunit/otm-5c831a5c-bc03-4856-a61d-924e7f13b54f/brochure) - Weird evaluation
+	- **Prerequisities**: $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching - Presentation, exam
+	- **Credits**: 5
+- [Test-Driven Development](https://sisu.helsinki.fi/student/courseunit/otm-fc27aa54-1060-41eb-8d3e-39ce8793cb61/brochure)
+	- **Prerequisites**: web apps, databases, programming
+	- **Completion Options**:
+		- #ParticipationInTeaching - Exercieses
+	- **Credits**: 4
+- [Introduction to Cyber Security](https://sisu.helsinki.fi/student/courseunit/otm-0e1bd33a-c2b8-444e-9d8e-32262f2dff3e/brochure)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching - 3 modules - I. and II. period
+	- **Credits**: 5

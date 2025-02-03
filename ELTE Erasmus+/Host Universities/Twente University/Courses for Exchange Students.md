@@ -1,0 +1,8 @@
+- [Smart Spaces Module](https://utwente.osiris-student.nl/onderwijscatalogus/extern/cursus?cursuscode=202001040&collegejaar=2024&taal=en) - Multiple courses in a "package" - Elective
+	- **Prerequisites**:
+		- Programming
+	- **Credits**: 15 
+- [Web Science Module](https://utwente.osiris-student.nl/onderwijscatalogus/extern/cursus?cursuscode=202001044&collegejaar=2024&taal=en) - Elective
+	- **Credits**: 15
+- [Computer Systems Module](https://utwente.osiris-student.nl/onderwijscatalogus/extern/cursus?cursuscode=202200165&collegejaar=2024&taal=en) - Module (regular programme)
+	- **Credits**: 15

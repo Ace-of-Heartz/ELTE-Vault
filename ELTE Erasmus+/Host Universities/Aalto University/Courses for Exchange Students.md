@@ -1,0 +1,77 @@
+- [x] [Logic and Hard Computational Problems](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150972790-20240801/brochure)
+	- **Prerequisities**:
+		- Basic level studies
+	- **Completion Options**:
+		- #ParticipationInTeaching: Lectures
+	- **Credits**: 5
+- [x] [Modern and Emerging Programming Languages](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150973280-20240801/brochure)
+	- **Prerequisites**:
+		- Programming 1, 2
+		- Data Structures and Algorithms
+	- **Completion Options**: 
+		- #ParticipationInTeaching: Lectures
+	- **Credits**: 5
+- [x] [Human Computer Interaction](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150973062-20240801/brochure)
+	- **Prerequisities**: $\emptyset$
+	- **Completion Options**: 
+		- #ParticipationInTeaching: Exam, exercises
+	- **Credits**: 5
+- [x] [Machine Learning](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150973068-20240801/brochure)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**: 
+		- #ParticipationInTeaching (Assignment, Project)
+	- **Credits**: 5
+- [ ] [Principles of Algorithmic Techniques](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150973087-20240801/brochure) - Advanced Studies!
+	- **Prerequisites**: Basic studies
+	- **Completion Options**: 
+		- #ParticipationInTeaching (Homework, Exercise Sessions)
+	- **Credits**: 5
+- [x] [Research Seminar in Computer Science](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150973064-20240801/completion-methods?tabId=course-unit-info-completion-methods-tab) - Advanced Studies!
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching (Active participation)
+	- **Credits**: 1 - 10
+- [ ] [Software Design and Modelling](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150973086-20240801/completion-methods?tabId=course-unit-info-completion-methods-tab) - Redundancy: Szoftver Technológia
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching (Workshops, group assignments, study sessions)
+	- **Credits**: 5
+- [ ] [Software Engineering]() 
+	- **Prerequisites**: Basic programming
+	- **Completion Options**:
+		- #ParticipationInTeaching (Exercises, lectures)
+	- **Credits**: 5
+- [x] [Practical Quantum Computing](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150973194-20240801/brochure) - Python, Emulation of Quantum circuits, etc
+	- **Prerequisites**: Basic linear algebra and classical circuits
+	- **Completion Options**:
+		- #ParticipationInTeaching 
+	- **Credits**: 5
+- [x] [Digital Health and Human Behaviour](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150973170-20240801/brochure)
+	- **Prerequisites**: Python
+	- **Completion Options**:
+		- #ParticipationInTeaching (Project work)
+	- **Credits**: 5
+- [x] [Web Software Development](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150973150-20240801/brochure)
+	- **Prerequisites**: Basic programming
+	- **Completion Options**:
+		- #ParticipationInTeaching 
+	- **Credits**: 5
+- [x] [Survival Finnish I.](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150974793-20240801/brochure)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching - Homework, active attendance - I. Period
+	- **Credits**: 1
+- [x] [Survival Finnish II.](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150974794-20240801/brochure)
+	- **Prerequisites**: Survival Finnish I.
+	- **Completion Options**: 
+		- #ParticipationInTeaching - Homework, active participation - II. Period
+	- **Credits**: 1
+- [x] [Get to know Finland](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150974779-20240801/brochure)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**: 
+		- #ParticipationInTeaching - Group work, homework
+	- **Credits**: 1-2
+
+# Notes
+
+Ask about the difference between **Finnish I.** and **Survival Finnish I.**

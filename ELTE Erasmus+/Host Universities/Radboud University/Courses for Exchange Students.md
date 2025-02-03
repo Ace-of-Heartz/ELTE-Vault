@@ -1,0 +1,57 @@
+https://ru.osiris-student.nl/onderwijscatalogus/extern/indeling/EG-NWI-BA
+
+- [Hacking in C](https://ru.osiris-student.nl/onderwijscatalogus/extern/indeling/EG-NWI-BA)
+	- **Prerequisite**:
+		- Imperative Programming
+		- Processors
+	- **Compleitons Options**:
+		- #ParticipationInTeaching - Practical assignments, online exam
+	- **Credits**: 3
+- [Introduction to Academic Writing and Research Methods for Computing Scientists](https://ru.osiris-student.nl/onderwijscatalogus/extern/indeling/EG-NWI-BA) - "Premaster" programme
+	- **Prerequisite**: $\emptyset$
+	- **Completions Options**: 
+		- #ParticipationInTeaching - Research Paper writing
+	- **Credits**: 3
+- [Introduction to Machine Learning](https://ru.osiris-student.nl/onderwijscatalogus/extern/indeling/EG-NWI-BA)
+	- **Prerequisite**: 
+		- Python
+		- Calculus
+		- Linear Algebra
+	- **Completion Options**:
+		- #ParticipationInTeaching - Written exam, computer problems
+	- **Credits**: 3
+- [Data Mining and Learning]()
+	- **Prerequisite**:
+		- _Calculus and Probability Theory_ and _Matrix Calculation_.
+	- **Completion Options**:
+		- #ParticipationInTeaching - Midterm exam, endterm exam, project
+	- **Credits**: 6
+- [Image Analysis]()
+	- **Prerequisite**:
+		- Python
+	- **Completion Options**:
+		- #ParticipationInTeaching - Assignment, written exam
+	- **Credits**: 3
+- [Introduction to Formal Reasoning]()
+	- **Prerequisite**:
+		- Math
+	- **Completion Options**:
+		- #ParticipationInTeaching - Final exam, midterm tests
+	- **Credits**: 3
+- [Parallel Computing]()
+	- **Prerequisite**:
+		- C
+	- **Completion Options**:
+		- #ParticipationInTeaching - Exam, + 2 small assignments
+	- **Credits**: 3
+- [Research Methods]()
+	- **Prerequisite**: $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching - Research project (written)
+	- **Credits**: 3
+- [Operating System Concepts]()
+	- **Prerequisite**: 
+		- 2 programming courses
+	- **Completion Options**:
+		- #ParticipationInTeaching - 3 project assignments, weekly exercises
+	- **Credits**: 3
