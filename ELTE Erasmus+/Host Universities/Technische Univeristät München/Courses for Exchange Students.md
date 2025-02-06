@@ -1,0 +1,34 @@
+- [Advanced Programming](https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.cm.reg/student/modules/detail/light/454189/study-year/1619?$scrollTo=toc_modhb_beschreibung)
+	- **Prerequisites**: 
+		- Programming languages
+		- OOP
+	- **Completion Options**:
+		- #ParticipationInTeaching - Exam, + assignment 
+	- **Credits**: 5
+- [Game Physics](https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.cm.reg/student/modules/detail/light/708343/205?$ctx=access=;debug=;design=;header=;lang=;menu=;rbacId=&$scrollTo=toc_modhb_beschreibung)
+	- **Prerequisites**:
+		- Real-time Computer Graphics
+		- Linear Algebra
+		- Analysis
+	- **Completion Options**:
+		- #ParticipationInTeaching - Exam + 4 non-mandatory exercise
+	- **Credits**: 6
+- [Introduction to Informatics for Games Engineering](https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.cm.reg/student/modules/detail/light/661433/study-year/1619?$scrollTo=toc_modhb_beschreibung)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching - Written exam, weekly assignments, team project
+		- + Exercise sessions
+	- **Credits**: 6
+- [Operating Systems and Hardware oriented Programming for Games](https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.cm.reg/student/modules/detail/light/708272/study-year/1619?$scrollTo=toc_modhb_beschreibung)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching - Written exam
+		- + Exercise sessions
+	- **Credits**: 6
+- [Image Synthesis](https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.cm.reg/student/modules/detail/light/456368/study-year/1619?$scrollTo=toc_modhb_beschreibung)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**: 
+		- #ParticipationInTeaching - Written exam
+	- **Credits**: 5
+- [Scientific Computing: 3D Game Physics](https://campus.tum.de/tumonline/wbstpcs.showSpoTree?pStStudiumNr=&pStartSemester=&pStpStpNr=5121&pSjNr=1619#)
+	- **Credits**: 10

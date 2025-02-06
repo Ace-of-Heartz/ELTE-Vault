@@ -31,3 +31,5 @@ $D_f:= [0,1]$
 - [[Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-11-05|2024-11-05]]
 - [[Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-11-12|2024-11-12]]
 - [[Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-11-19|2024-11-19]]
+- [[Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-11-26|2024-11-26]]
+- [[Semester 5/Subjects/Subject Notes/Artificial Intelligence/2024-12-03|2024-12-03]]

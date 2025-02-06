@@ -12,3 +12,7 @@
 [[ELTE Internship Overview]]
 
 ### Exchange Studies & Internships
+#### Host Universities
+1. [[Tampere Overview]]
+2. [[Aalto Overview]]
+3. 
