@@ -50,3 +50,13 @@
 	- **Completion Options**:
 		- #ParticipationInTeaching - Midterm exam, written final exam
 	- **Credits**: 6
+- [Business Simulation](https://studiegids.vu.nl/en/Exchange/2024-2025/X_401006#/)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching - Graded assignments
+	- **Credits**: 6
+- [Compiler Construction](https://studiegids.vu.nl/en/Exchange/2024-2025/XB_0003#/) - Described as very intensive
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**: 
+		- #ParticipationInTeaching - Exam + assignments
+	- **Credits**: 6

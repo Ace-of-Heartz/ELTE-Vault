@@ -112,6 +112,29 @@
 	- **Completion Options**: 
 		- #ParticipationInTeaching - Contact teaching, like before - Max 54 hours of study - 26 Hours of contact teaching
 	- **Credits**: 2
+- [x] [User Interfaces and Human-Centered Design](https://www.tuni.fi/en/students-guide/curriculum/course-units/otm-5eba3bbe-7d82-4a25-8864-01a63bc37657?year=2024)
+	- **Prerequisites**:
+		- *Recommended*:
+			- [Human Technology Interaction: Basics]()
+	- **Completion Options**:
+		- #ParticipationInTeaching - Lectures, exam, project work
+		- 1. Period
+	- **Credits**: 5
+- [x] [Software Testing](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-42031?year=2024)
+	- **Prerequisites**: 
+		- *Compulsory*: 
+			- [Introduction to Software Engineering]()
+			- *Programming 3: Interfaces and Techniques*
+	- **Completion Options**:
+		- #ParticipationInTeaching - Lectures, exam
+		- 1-2. Period
+	- **Credits**: 5
+- [x] [Cloud-technologies](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-45665?year=2024)
+	- **Prerequisites**: $\emptyset$
+	- **Completion Options**:
+		- #ParticipationInTeaching - Online lectures 
+		- 2. Period
+	- **Credits**: 3-5
 - [ ] [Time Series Analysis using Machine Learning](https://www.tuni.fi/studentsguide/curriculum/course-units/otm-f6c89a40-e9c7-4f01-bf54-51f2b2ef2d70?year=2024&activeTab=1)
 	- **Prerequisites**:
 		- Programming 1 OR Introduction to Machine Learning
