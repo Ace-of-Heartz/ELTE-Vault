@@ -89,7 +89,7 @@
 		1. Ekkor $Z \bigcap A$ és $B-Z$ között nem megy él (**indoklás**)
 		2. $L=\left( B \bigcap Z \right) \bigcup(A-Z)$ lefogó ponthalmaz ekkor (**indoklás**)
 		3. **Indoklás =>** $|L| \leq |M|$
-## Javító utas algoritmus
+## Javító utas algoritmus - Magyar algoritmus
 
 
 ### Futásidő
