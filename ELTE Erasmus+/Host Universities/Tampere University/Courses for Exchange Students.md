@@ -112,6 +112,30 @@
 	- **Completion Options**: 
 		- #ParticipationInTeaching - Contact teaching, like before - Max 54 hours of study - 26 Hours of contact teaching
 	- **Credits**: 2
+- [ ] [Time Series Analysis using Machine Learning](https://www.tuni.fi/studentsguide/curriculum/course-units/otm-f6c89a40-e9c7-4f01-bf54-51f2b2ef2d70?year=2024&activeTab=1)
+	- **Prerequisites**:
+		- Programming 1 OR Introduction to Machine Learning
+	- **Completion Options**:
+		- #ParticipationInTeaching - Online Lectures
+	- **Credits**: 5
+- [ ] [Regression Analysis](https://www.tuni.fi/en/students-guide/curriculum/course-units/uta-ykoodi-11792?year=2024)
+	- **Prerequisites**:
+		- Bayesian-interference
+	- **Completion Options**:
+		- #ParticipationInTeaching - Lectures, exam, exercises
+	- **Credits**: 5
+- [x] [Fourier Methods](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-47604?year=2024)
+	- **Prerequisites**: 
+		- Differential and Integral Analysis
+	- **Completion Methods**:
+		- #ParticipationInTeaching - Lectures + exam
+	- **Credits**: 5
+- [ ] [Data-intensive Programming](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-43075?year=2024)
+	- **Prerequisites**:
+		- Basic Databases
+	- **Completion Methods**: 
+		- #ParticipationInTeaching - Lectures + exam
+	- **Credits**: 5
 # Notes
 
 - Most #ParticipationInTeaching seems to include *Lectures* and *Exam* as well!

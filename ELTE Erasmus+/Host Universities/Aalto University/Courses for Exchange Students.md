@@ -71,7 +71,21 @@
 	- **Completion Options**: 
 		- #ParticipationInTeaching - Group work, homework
 	- **Credits**: 1-2
-
+- [x] [Curves and Surfaces](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150973204-20240801/brochure)
+	- **Prerequisites**: 
+		- Integral and differential analysis
+	- **Completion Options**: 
+		- #ParticipationInTeaching - Lectures and exercises
+		- I. period
+		- 
+	- **Credits**: 5
+- [x] [Partial Differential Equations](https://sisu.aalto.fi/student/courseunit/aalto-CU-1150973210-20240801/completion-methods?tabId=course-unit-info-completion-methods-tab)
+	- **Prerequisites**:
+		- Integral and differential analysis
+	- **Completion Options**:
+		- #ParticipationInTeaching - Lectures, exam
+		- I-II. period
+	- **Credits**: 5
 # Notes
 
 Ask about the difference between **Finnish I.** and **Survival Finnish I.**
