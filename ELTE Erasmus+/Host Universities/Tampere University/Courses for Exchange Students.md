@@ -135,7 +135,7 @@
 		- #ParticipationInTeaching - Online lectures 
 		- 2. Period
 	- **Credits**: 3-5
-- [ ] [Time Series Analysis using Machine Learning](https://www.tuni.fi/studentsguide/curriculum/course-units/otm-f6c89a40-e9c7-4f01-bf54-51f2b2ef2d70?year=2024&activeTab=1)
+- [x] [Time Series Analysis using Machine Learning](https://www.tuni.fi/studentsguide/curriculum/course-units/otm-f6c89a40-e9c7-4f01-bf54-51f2b2ef2d70?year=2024&activeTab=1)
 	- **Prerequisites**:
 		- Programming 1 OR Introduction to Machine Learning
 	- **Completion Options**:
@@ -153,7 +153,7 @@
 	- **Completion Methods**:
 		- #ParticipationInTeaching - Lectures + exam
 	- **Credits**: 5
-- [ ] [Data-intensive Programming](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-43075?year=2024)
+- [x] [Data-intensive Programming](https://www.tuni.fi/en/students-guide/curriculum/course-units/tut-cu-g-43075?year=2024)
 	- **Prerequisites**:
 		- Basic Databases
 	- **Completion Methods**: 

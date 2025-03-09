@@ -1,5 +1,5 @@
-- [ ] Motivational letter
-- [ ] CV
-- [ ] English Language Proficiency Document
-- [ ] Preliminary Learning Plan
-- [ ] Previous Year's Results 
+- [x] Motivational letter
+- [x] CV
+- [x] English Language Proficiency Document
+- [x] Preliminary Learning Plan
+- [x] Previous Year's Results 

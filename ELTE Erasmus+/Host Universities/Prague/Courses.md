@@ -1,0 +1,54 @@
+- [Basics of System Security](https://mobility.cvut.cz/prospectus/course/15762)
+	- **Prerequisite**: $\emptyset$
+	- **Completion Options**: 
+		- Exam
+	- **Credits**: 5
+- [Machine Learning](https://mobility.cvut.cz/prospectus/course/15817)
+	- **Prerequisite**: 
+		- Calculus
+		- Linear algebra
+		- Probability Theory
+	- **Credits**: 5
+- [Introduction to DevOps](https://mobility.cvut.cz/prospectus/course/15777)
+	- **Prerequisite**:
+		- Java/PHP
+		- Databases
+	- **Credits**: 5
+- [Computer Units](https://mobility.cvut.cz/prospectus/course/15794)
+	- **Prerequisite**:
+		- Entry knowledge of digital computers, combinational and sequantional circuits
+	- **Credits**: 5
+- [Embedded Software](https://mobility.cvut.cz/prospectus/course/15786)
+	- **Prerequisite**:
+		- Embedded systems fundamentals
+		- Programming in C
+	- **Credits**: 5
+- [Distributed Systems and Computing](https://mobility.cvut.cz/prospectus/course/15800)
+	- **Prerequisite**:
+		- Operating Systems
+		- Computer Networks and Communication
+	- **Credits**: 5
+- [Architecture of Computer Systems](https://mobility.cvut.cz/prospectus/course/15803)
+	- **Prerequisite**: 
+		- C
+		- Combinational and sequential logical circuits
+	- **Credits**: 5
+- [Effective C++ Programming](https://mobility.cvut.cz/prospectus/course/15803)
+	- **Prerequisite**:
+		- Programming, algorithms
+	- **Credits**: 5
+- [EXACT METHODS IN RESEARCH OF HISTORIC MONUMENTS](https://mobility.cvut.cz/prospectus/course/15725) 
+	- **Credits**: 2 
+- [CONTROL SYSTEMS AND SENSORS](https://mobility.cvut.cz/prospectus/course/15679)
+	- **Credits**: 4 
+- [SCIENTIFIC PROGRAMING IN JULIA](https://mobility.cvut.cz/prospectus/course/15893)
+	- **Credits**: 4
+- [Constructive Geometry](https://mobility.cvut.cz/prospectus/course/15306)
+	- **Credits**: 5
+- [SIGNALS AND SYSTEMS](https://mobility.cvut.cz/prospectus/course/15238)
+	- **Credits**: 5
+- [Czech Language for Beginners](https://mobility.cvut.cz/prospectus/course/15210)
+	- **Credits**: 2
+- [INSTRUMENT DESIGN](https://mobility.cvut.cz/prospectus/course/15241)
+	- **Credits**: 5
+- [JULIA FOR OPTIMIZATION AND LEARNING](https://mobility.cvut.cz/prospectus/course/14468)

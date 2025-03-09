@@ -1,28 +1,28 @@
-- [Robot Interaction](https://studiegids.vu.nl/en/Exchange/2024-2025/XB_0040#/)
+- [x] [Robot Interaction](https://studiegids.vu.nl/en/Exchange/2024-2025/XB_0040#/)
 	- **Prerequisites**: $\emptyset$ ?
 	- **Completion Options**:
 		- #ParticipationInTeaching - Exam, assignments, lectures
 	- **Credits**: 6 
-- [Knowledge and Data](https://studiegids.vu.nl/en/Exchange/2024-2025/X_400083#/)
+- [x] [Knowledge and Data](https://studiegids.vu.nl/en/Exchange/2024-2025/X_400083#/)
 	- **Prerequisites**: 
 		- Python
 		- Logic
 	- **Completion Options**:
 		- #ParticipationInTeaching - Exam, group project, individual assignments
 	- **Credits**: 6
-- [Equational Programming](https://studiegids.vu.nl/en/Exchange/2024-2025/X_401011#/)
+- [x] [Equational Programming](https://studiegids.vu.nl/en/Exchange/2024-2025/X_401011#/)
 	- **Prerequisites**:
 		- Logic and Modelling (formal reasoning)
 	- **Completion Options**:
 		- #ParticipationInTeaching - Midterms/exam, assignments, lectures + tutorials
 	- **Credits**: 6
-- [Data Wrangling](https://studiegids.vu.nl/en/Exchange/2024-2025/XB_0014#/)
+- [x] [Data Wrangling](https://studiegids.vu.nl/en/Exchange/2024-2025/XB_0014#/)
 	- **Prerequisites**:
 		- Python
 	- **Completion Options**:
 		- #ParticipationInTeaching - Assignments, presentation, report
 	- **Credits**: 6
-- [Introduction to Mathematical Modelling, Latex and Mathematica](https://studiegids.vu.nl/en/Exchange/2024-2025/XB_0006#/)
+- [x] [Introduction to Mathematical Modelling, Latex and Mathematica](https://studiegids.vu.nl/en/Exchange/2024-2025/XB_0006#/)
 	- **Prerequisites**:
 		- Single variable calculus
 	- **Completion Options**:
@@ -42,7 +42,7 @@
 	- **Completion Options**:
 		- #ParticipationInTeaching - Netlogo assignments, group project
 	- **Credits**: 6
-- [Markov Chains](https://studiegids.vu.nl/en/Exchange/2024-2025/XB_0042#/)
+- [x] [Markov Chains](https://studiegids.vu.nl/en/Exchange/2024-2025/XB_0042#/)
 	- **Prerequisites**: 
 		- Calculus
 		- Linear Algebra
@@ -59,4 +59,19 @@
 	- **Prerequisites**: $\emptyset$
 	- **Completion Options**: 
 		- #ParticipationInTeaching - Exam + assignments
+	- **Credits**: 6
+- [x] [Fourier Analysis](https://studiegids.vu.nl/en/Exchange/2024-2025/XB_0005#/)
+	- **Prerequisites**: 
+		- Multivariable Calculus
+		- Single Variable Calculus
+		- Linear Algebra
+		- Mathematical Analysis
+	- **Completion Options**:
+		- #ParticipationInTeaching - Homework assignments, exam, midterm
+	- **Credits**: 6
+- [Operating Systems](https://studiegids.vu.nl/en/Exchange/2024-2025/X_405067#/)
+	- **Prerequisites**:
+		- Good programming skills
+	- **Completion Options**:
+		- #ParticipationInTeaching - Written exam + four programming assignments
 	- **Credits**: 6

@@ -26,6 +26,42 @@
 	- **Completion Options**:
 		- #ParticipationInTeaching - Exam, lectures, quiz
 	- **Credits**: 5
+- [Software Systems Architecture and Design]()
+	- **Prerequisite**:
+		- English
+		- Practical programming expr.
+	- **Completion Options**:
+		- #ParticipationInTeaching - Exam, midterm, assignments
+	- **Credits**: 10
+- [Parallel and Distributed Programming](https://is.vu.lt/pls/pub/vustud.am$lpd_adm_app.public_view_lpd_sandas?p_sarasas_id=77779B36BF5F27D5A87CA97DA312A96A414032CD9E21AABD)
+	- **Prerequisite**: $\emptyset$
+	- **Completion Options**: 
+		- Oral presentation
+		- 2 lab. works
+		- Written exam
+	- **Credits**: 5
+- [Time Series Analysis]()
+	- **Prerequisite**: 
+		- Statistics
+		- Probability Theory
+	- **Completion Options**:
+		- 4 tests
+		- 1 midterm
+		- 1 exam
+	- **Credits**: 5
+- [Cyber Security Technology](https://is.vu.lt/pls/pub/vustud.am$lpd_adm_app.public_view_lpd_sandas?p_sarasas_id=1D66292235600ACDE481098816FB3DDC6A7543878CF3C58A)
+	- **Prerequisite**: 
+		- Unix
+		- Telecom
+	- **Completion Options**:
+		- Practical exercises
+		- Written exam
+	- **Credits**: 5
+- [Workshop: Leadership and Gender](https://is.vu.lt/pls/pub/vustud.am$lpd_adm_app.public_view_lpd_sandas?p_sarasas_id=53CB8FFC0D780CB1C5BADF17292970B6D708DB73C39859FE)
+	- **Prerequisite**: $\emptyset$
+	- **Completion Options**:
+		- Active participation
+		- Final project
 
 # Notes
 

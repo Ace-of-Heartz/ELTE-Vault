@@ -12,37 +12,17 @@ https://ru.osiris-student.nl/onderwijscatalogus/extern/indeling/EG-NWI-BA
 	- **Completions Options**: 
 		- #ParticipationInTeaching - Research Paper writing
 	- **Credits**: 3
-- [Introduction to Machine Learning](https://ru.osiris-student.nl/onderwijscatalogus/extern/indeling/EG-NWI-BA)
-	- **Prerequisite**: 
-		- Python
-		- Calculus
-		- Linear Algebra
-	- **Completion Options**:
-		- #ParticipationInTeaching - Written exam, computer problems
-	- **Credits**: 3
-- [Data Mining and Learning]()
+- [Data Mining and Machine Learning]()
 	- **Prerequisite**:
 		- _Calculus and Probability Theory_ and _Matrix Calculation_.
 	- **Completion Options**:
 		- #ParticipationInTeaching - Midterm exam, endterm exam, project
 	- **Credits**: 6
-- [Image Analysis]()
-	- **Prerequisite**:
-		- Python
-	- **Completion Options**:
-		- #ParticipationInTeaching - Assignment, written exam
-	- **Credits**: 3
 - [Introduction to Formal Reasoning]()
 	- **Prerequisite**:
 		- Math
 	- **Completion Options**:
 		- #ParticipationInTeaching - Final exam, midterm tests
-	- **Credits**: 3
-- [Parallel Computing]()
-	- **Prerequisite**:
-		- C
-	- **Completion Options**:
-		- #ParticipationInTeaching - Exam, + 2 small assignments
 	- **Credits**: 3
 - [Research Methods]()
 	- **Prerequisite**: $\emptyset$
@@ -55,3 +35,53 @@ https://ru.osiris-student.nl/onderwijscatalogus/extern/indeling/EG-NWI-BA
 	- **Completion Options**:
 		- #ParticipationInTeaching - 3 project assignments, weekly exercises
 	- **Credits**: 3
+- [Introduction to Partial Differential Equations]()
+	- **Prerequisite**:
+		- Calculus, Analysis 
+	- **Completion Options**: 
+		- #ParticipationInTeaching - Exam
+	- **Credits**: 6
+- [Semantics and Correctness](https://ru.osiris-student.nl/onderwijscatalogus/extern/indeling/EG-NWI-BA)
+	- **Prerequisite**:
+		- Languages and Automata
+		- Introduction to Formal Reasoning
+		- Logic and Applications 
+	- **Completion options**:
+		- Digital exam
+	- **Credits**: 3
+- [Vector Calculus]()
+	- **Prerequisite**: $\emptyset$
+	- **Completion Options**:
+		- Written exam
+	- **Credits**: 3
+- [Data Science with Applications for Medicine and Biology](https://ru.osiris-student.nl/onderwijscatalogus/extern/indeling/EG-NWI-BA)
+	- **Prerequisite**:
+		- Statistics, probability
+		- Analysis
+	- **Credits**: 6
+- [Operating Systems Security](https://ru.osiris-student.nl/onderwijscatalogus/extern/indeling/EG-NWI-BA)
+	- **Credits**: 3
+- [Ordinary Differential Equations]()
+	- **Credits**: 6
+- [Conspiracy Culture]()
+	- **Credits**: 5
+- [Gender and the Arts]()
+	- **Credits**: 5
+- [I made the Devil do it: Conjuring Spirits in Late Medieval England]()
+	- **Credits**: don't care, this is way too good to pass
+- [Gender, migration and religion: the other in contemporary societies]()
+	- **Credits**: 6
+- [Deep Learning]()
+	- **Credits**: 6
+- [Artificial Intelligence Lab Skills]()
+	- **Credits**: 3
+- [Applied Mathematics]()
+	- **Credits**: 3
+- [Introduction Robotics](https://ru.osiris-student.nl/onderwijscatalogus/extern/indeling/EG-SOW-BA)
+	- **Credits**: 3
+- [Sex for Social Sciences and Humanities: An Introduction to Socio-Cultural Sexuality Studies]()
+	- **Credits**: 5
+- [Finite Element Methods]()
+	- **Credits**: 8
+- [Monte Carlo Techniques]()
+	- **Credits**: 6
